@@ -1,4 +1,4 @@
-package com.youramaryllis.ddd.example.order;
+package com.youramaryllis.ddd.example.user;
 
 import com.youramaryllis.ddd.domainModel.annotations.ValueObject;
 

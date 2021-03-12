@@ -18,4 +18,7 @@ public class Order {
     public PaymentInfo paymentInfo;
     public DeliveryInfo deliveryInfo;
     public BigDecimal totalPrice;
+
+    public Order(UserId userId, PaymentInfo paymentInfo, DeliveryInfo deliveryInfo) {
+    }
 }

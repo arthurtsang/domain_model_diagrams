@@ -2,6 +2,7 @@ package com.youramaryllis.ddd.domainModel.generator;
 
 import com.youramaryllis.ddd.contextMap.annotations.BoundedContext;
 import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
+import com.youramaryllis.ddd.domainModel.annotations.CrossBoundaryReference;
 import guru.nidi.graphviz.attribute.Font;
 import guru.nidi.graphviz.attribute.Label;
 import guru.nidi.graphviz.attribute.Shape;
@@ -18,11 +19,16 @@ import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 
 import java.io.File;
+import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static guru.nidi.graphviz.attribute.Attributes.attr;
 import static guru.nidi.graphviz.model.Factory.mutGraph;
@@ -44,6 +50,7 @@ public class DomainModelGenerator {
           setup reflection
          */
         Reflections myPackages = new Reflections(packageName);
+        myPackages.getStore().put(SubTypesScanner.class, "dummy", "dummy");
         myPackages.getTypesAnnotatedWith(BoundedContext.class)
                 .forEach(bc -> {
                     domainModel.add(buildBoundedContext(bc));
@@ -51,12 +58,12 @@ public class DomainModelGenerator {
         /*
           generate graph
          */
-        Graphviz.fromGraph(domainModel).engine(Engine.FDP).render(Format.SVG).toFile(new File("domain_model.svg"));
+        Graphviz.fromGraph(domainModel).engine(Engine.DOT).render(Format.SVG).toFile(new File("domain_model.svg"));
     }
 
     private MutableGraph buildMutableGraph(String name) {
         return mutGraph(name).setDirected(true)
-                .graphAttrs().add(attr("size", "5.5"))
+                .graphAttrs().add(attr("size", "5.5"), attr("compound", "true"))
                 .nodeAttrs().add(Shape.RECORD, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12))
                 .linkAttrs().add(attr("dir", "back"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0"));
     }
@@ -68,25 +75,32 @@ public class DomainModelGenerator {
         Reflections bcPackages = new Reflections(packageName);
         bcPackages.getStore().put(SubTypesScanner.class, "dummy", "dummy");
         bcPackages.getTypesAnnotatedWith(AggregateRoot.class)
-                .forEach(ar -> {
-                    log.info("adding node " + ar.getSimpleName());
-                    addNode(bc, boundedContextPackage.getPackageName(), ar);
-                });
+                .forEach(ar -> addNode(bc, boundedContextPackage.getPackageName(), ar, null));
         return bc;
     }
 
-    private void addNode(MutableGraph bc, String bcPackageName, Class<?> aClass) {
-        if( !aClass.getCanonicalName().startsWith(bcPackageName )) return;
+    private void addNode(MutableGraph bc, String bcPackageName, Class<?> aClass, Class<?> parentClass) {
+        if (!aClass.getCanonicalName().startsWith(bcPackageName)) return;
         Node arNode = node(aClass.getCanonicalName()).with(getClassLabel(aClass));
         bc.add(arNode);
+        if (parentClass != null) {
+            Node parentNode = node(parentClass.getCanonicalName());
+            bc.add(parentNode.link(arNode));
+        }
+        Arrays.stream(aClass.getDeclaredMethods())
+                .map(method -> method.getAnnotation(CrossBoundaryReference.class))
+                .filter(Objects::nonNull)
+                .map(CrossBoundaryReference::value)
+                .flatMap(Stream::of)
+                .distinct()
+                .forEach(xrefClass -> bc.add( arNode.link(node(xrefClass.getCanonicalName()))));
         Arrays.stream(aClass.getDeclaredFields()).forEach(field -> {
             Type fieldType = field.getGenericType();
             if (fieldType instanceof ParameterizedType) {
                 ParameterizedType parameterizedType = (ParameterizedType) fieldType;
                 fieldType = parameterizedType.getActualTypeArguments()[0];
             }
-            if( fieldType.getTypeName().startsWith(bcPackageName) )
-                addNode(bc, bcPackageName, (Class<?>) fieldType);
+            addNode(bc, bcPackageName, (Class<?>) fieldType, aClass);
         });
 
     }
@@ -107,30 +121,4 @@ public class DomainModelGenerator {
         return Label.of(sb.toString());
     }
 
-    /*        Graph g = graph("example").directed()
-                .graphAttr().with("size", "5,5")
-                .nodeAttr().with(Shape.RECORD, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 8))
-                .linkAttr().with(attr("dir", "back"), attr("arrowtail", "empty"))
-                .with(
-                        node("2").wit(Label.of("{AbstractSuffixTree1239041349059|+ text\\n+ root|...}")),
-                        node("3").with(Label.of("{SimpleSuffixTree|...| + constructTree()\\l...}")),
-                        node("4").with(Label.of("{CompactSuffixTree|...| + compactNodes()\\l...}")),
-                        node("5").with(Label.of("{SuffixTreeNode|...|+ addSuffix(...)\\l...}")),
-                        node("6").with(Label.of("{SuffixTreeEdge|...|+ compactLabel(...)\\l...}")),
-                        node("2").link(node("3")),
-                        node("2").link(node("4")),
-                        node("5").link(
-                                to(node("5")).with(attr("constraint","false"), attr("arrowtail","odiamond"))
-                        ),
-                        node("4").link(
-                                to(node("3")).with(attr("constraint","false"), attr("arrowtail","odiamond"))
-                        ),
-                        node( "2").link(
-                                to(node("5")).with(attr("constraint","false"), attr("arrowtail","odiamond"))
-                        ),
-                        node("5").link(
-                                to(node("6")).with( attr("arrowtail","odiamond"))
-                        )
-                );
-        Graphviz.fromGraph(g).render(Format.PNG).toFile(new File("ex1.png"));*/
 }

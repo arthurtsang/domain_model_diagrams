@@ -11,6 +11,7 @@ import guru.nidi.graphviz.model.Node;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.reflections.Reflections;
+import org.reflections.scanners.SubTypesScanner;
 
 import java.io.File;
 import java.nio.file.Paths;
@@ -39,6 +40,7 @@ public class ContextMapGenerator {
          */
         HashMap<LinkedNodes, RelationshipLabel> upDownStreamMap = new HashMap<>();
         Reflections myPackages = new Reflections(packageName);
+        myPackages.getStore().put(SubTypesScanner.class, "dummy", "dummy");
         /*
           update graph with reflections
          */
