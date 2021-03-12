@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.youramaryllis.ddd.DDDGeneratorConfiguration
