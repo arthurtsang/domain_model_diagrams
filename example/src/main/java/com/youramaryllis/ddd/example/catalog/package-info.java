@@ -1,6 +1,6 @@
 @BoundedContext("Catalog")
-@OpenHostService("com.youramaryllis.domainModel.example.order")
-package com.youramaryllis.domainModel.example.catalog;
+@OpenHostService("com.youramaryllis.ddd.example.order")
+package com.youramaryllis.ddd.example.catalog;
 
 import com.youramaryllis.ddd.contextMap.annotations.BoundedContext;
 import com.youramaryllis.ddd.contextMap.annotations.OpenHostService;

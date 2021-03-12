@@ -1,16 +1,14 @@
-package com.youramaryllis.domainModel.example.order;
+package com.youramaryllis.ddd.example.order;
 
-import com.youramaryllis.domainModel.example.user.UserId;
-import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
 import com.youramaryllis.ddd.domainModel.annotations.Entity;
 import com.youramaryllis.ddd.domainModel.annotations.Id;
+import com.youramaryllis.ddd.example.user.UserId;
 
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-@AggregateRoot
 public class Order {
     @Id
     public OrderId orderId;

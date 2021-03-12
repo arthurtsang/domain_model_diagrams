@@ -1,4 +1,4 @@
-package com.youramaryllis.domainModel.example.user;
+package com.youramaryllis.ddd.example.user;
 
 import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
 import com.youramaryllis.ddd.domainModel.annotations.DomainService;
@@ -9,6 +9,7 @@ import java.util.List;
 @DomainService
 public class UserManagement {
     List<User> user;
+    UserId test;
 
     public UserId addUser(String name){ return null; }
     public void removeUser(UserId userId){}

@@ -1,12 +1,10 @@
-package com.youramaryllis.domainModel.example.catalog;
+package com.youramaryllis.ddd.example.catalog;
 
-import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
 import com.youramaryllis.ddd.domainModel.annotations.Entity;
 import com.youramaryllis.ddd.domainModel.annotations.Id;
 
 import java.math.BigDecimal;
 
-@AggregateRoot
 @Entity
 public class Product {
     @Id

@@ -1,4 +1,4 @@
-package com.youramaryllis.domainModel.example.catalog;
+package com.youramaryllis.ddd.example.catalog;
 
 import com.youramaryllis.ddd.domainModel.annotations.ValueObject;
 

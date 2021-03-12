@@ -1,4 +1,4 @@
-package com.youramaryllis.domainModel.example;
+package com.youramaryllis.ddd.example;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

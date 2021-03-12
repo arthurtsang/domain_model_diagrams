@@ -1,6 +1,6 @@
-package com.youramaryllis.domainModel.example.order;
+package com.youramaryllis.ddd.example.order;
 
-import com.youramaryllis.domainModel.example.catalog.ProductSku;
+import com.youramaryllis.ddd.example.catalog.ProductSku;
 import com.youramaryllis.ddd.domainModel.annotations.Entity;
 import com.youramaryllis.ddd.domainModel.annotations.Id;
 

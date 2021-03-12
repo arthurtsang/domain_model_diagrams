@@ -24,24 +24,34 @@ public class ContextMapGenerator {
     @SneakyThrows
     public ContextMapGenerator(String packageName) {
         log.info("context map generator " + packageName);
-        HashMap<LinkedNodes, RelationshipLabel> upDownStreamMap = new HashMap();
+        /*
+          setup graphviz
+         */
         GraphvizCmdLineEngine cmdLineEngine = new GraphvizCmdLineEngine();
         cmdLineEngine.setDotOutputFile(Paths.get("").toAbsolutePath().toString(), "context_map");
         Graphviz.useEngine(cmdLineEngine);
-        Reflections myPackages = new Reflections(packageName);
         MutableGraph contextMap = mutGraph("Context Map")
                 .graphAttrs().add(attr("size", "5.5"))
                 .nodeAttrs().add(Shape.ELLIPSE, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12))
                 .linkAttrs().add(attr("dir", "none"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0"));
+        /*
+          setup reflection
+         */
+        HashMap<LinkedNodes, RelationshipLabel> upDownStreamMap = new HashMap<>();
+        Reflections myPackages = new Reflections(packageName);
+        /*
+          update graph with reflections
+         */
         myPackages.getTypesAnnotatedWith(BoundedContext.class)
                 .forEach(bc -> {
-                    Node bcNode = node(bc.getPackageName())
-                            .with(Label.of(bc.getAnnotation(BoundedContext.class).value()));
+                    Node bcNode = node(bc.getPackageName()).with(Label.of(bc.getAnnotation(BoundedContext.class).value()));
                     contextMap.add(bcNode);
                     updateUpDownStreamMap(upDownStreamMap, bc);
                 });
-
         addLinkToContextMap(upDownStreamMap, contextMap);
+        /*
+          generate graph
+         */
         Graphviz.fromGraph(contextMap).engine(Engine.FDP).render(Format.SVG).toFile(new File("context_map.svg"));
     }
 

@@ -1,4 +1,4 @@
-package com.youramaryllis.domainModel.example.user;
+package com.youramaryllis.ddd.example.user;
 
 import com.youramaryllis.ddd.domainModel.annotations.ValueObject;
 
