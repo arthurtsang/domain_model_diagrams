@@ -1,5 +1,4 @@
 *.dot
-*.svg
 *.iml
 .idea/
 .classpath
