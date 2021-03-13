@@ -93,6 +93,7 @@ public class DomainModelGenerator {
                 .map(CrossBoundaryReference::value)
                 .flatMap(Stream::of)
                 .distinct()
+                .peek(this::checkCrossBoundaryReference)
                 .forEach(xrefClass -> bc.add( arNode.link(node(xrefClass.getCanonicalName()))));
         Arrays.stream(aClass.getDeclaredFields()).forEach(field -> {
             Type fieldType = field.getGenericType();
@@ -105,6 +106,10 @@ public class DomainModelGenerator {
 
     }
 
+    private void checkCrossBoundaryReference(Class<?> aClass) {
+        if( aClass.getAnnotation(AggregateRoot.class) == null )
+            throw new RuntimeException("cannot access non aggregated root class " + aClass.getCanonicalName() );
+    }
     private Label getClassLabel(Class<?> ar) {
         StringBuilder sb = new StringBuilder();
         sb.append("{").append(ar.getSimpleName()).append("|");
