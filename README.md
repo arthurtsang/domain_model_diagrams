@@ -30,13 +30,34 @@ The relationship between the bounded context is annotated with the name of the p
 All of them take a parameter, `value`, as the full package name of the other bounded context.
 `@CustomerSupplier` takes an extra parameter indicting if the bounded context is an upstream or downstream relationship.
 
+### Example
+
+![context map](context_map.svg)
+
 #### TODO
 
 * difficult color for external bounded context
 * add Published Language
+* add domain events
+* implement team map
 
 ### Domain Model
 
 Domain Model are annotated at the class level.
 Classes can be annotated as `@AggregatedRoot`, `@DomainService`, `@Entity`and `@ValueObject`.
-These annotation are shown on the generated domain model with different color and provide checks 
+These annotation are shown on the generated domain model with different color and provide checks to make sure it didn't violate any DDD rules.
+Example rules would be making sure `@Entity` has an `@Id` while `@ValueObject` doesn't.
+`@CrossBoundaryReference` indicates if a function references object in another bounded context.
+It will also make sure it can only reference an `@AggregatedRoot`.
+
+### Example
+
+![domain model](domain_model.svg)
+
+#### TODO
+
+* implement more DDD rule checks
+* implement different color for different domain objects
+* implement multiplicity
+
+
