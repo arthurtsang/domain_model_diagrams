@@ -19,15 +19,12 @@ import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 
 import java.io.File;
-import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static guru.nidi.graphviz.attribute.Attributes.attr;
@@ -52,9 +49,7 @@ public class DomainModelGenerator {
         Reflections myPackages = new Reflections(packageName);
         myPackages.getStore().put(SubTypesScanner.class, "dummy", "dummy");
         myPackages.getTypesAnnotatedWith(BoundedContext.class)
-                .forEach(bc -> {
-                    domainModel.add(buildBoundedContext(bc));
-                });
+                .forEach(bc -> domainModel.add(buildBoundedContext(bc)));
         /*
           generate graph
          */
@@ -113,15 +108,11 @@ public class DomainModelGenerator {
     private Label getClassLabel(Class<?> ar) {
         StringBuilder sb = new StringBuilder();
         sb.append("{").append(ar.getSimpleName()).append("|");
-        Arrays.stream(ar.getDeclaredFields()).forEach(field -> {
-            sb.append((field.getModifiers() == Modifier.PUBLIC) ? "+ " : "- ")
-                    .append(field.getName()).append("\\n");
-        });
+        Arrays.stream(ar.getDeclaredFields()).forEach(field -> sb.append((field.getModifiers() == Modifier.PUBLIC) ? "+ " : "- ")
+                .append(field.getName()).append("\\n"));
         sb.append("|");
-        Arrays.stream(ar.getDeclaredMethods()).forEach(method -> {
-            sb.append((method.getModifiers() == Modifier.PUBLIC) ? "+ " : "- ")
-                    .append(method.getName()).append("\\n");
-        });
+        Arrays.stream(ar.getDeclaredMethods()).forEach(method -> sb.append((method.getModifiers() == Modifier.PUBLIC) ? "+ " : "- ")
+                .append(method.getName()).append("\\n"));
         sb.append("}");
         return Label.of(sb.toString());
     }

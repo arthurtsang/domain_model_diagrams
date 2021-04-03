@@ -9,7 +9,7 @@ DSL like plantuml works good enough for simple diagrams however
 
 1. it is difficult to control the layout of the diagram.
    Tricks like hidden link and clear understanding of the ranking of each component would help,
-   but when the digram grew large, it's close to impossible to keep track of things.
+   but when the diagram grew large, it's close to impossible to keep track of things.
 1. it is difficult to maintain the diagram.
    Upgrading the diagram often quite labor intensive, mostly because it's just a giant file with many components.
    It could be modularized by using include, but that requires hosting those include files somewhere.

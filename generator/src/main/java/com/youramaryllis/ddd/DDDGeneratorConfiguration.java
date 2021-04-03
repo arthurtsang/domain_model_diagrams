@@ -15,7 +15,7 @@ public class DDDGeneratorConfiguration {
 
     @Bean
     ContextMapGenerator getContextMapGenerator() {
-        return new ContextMapGenerator(properties.getPackageName());
+        return new ContextMapGenerator(properties.getPackageName(), properties.getOutputDirectory(), "context_map");
     }
 
     @Bean

@@ -23,13 +23,15 @@ import static guru.nidi.graphviz.model.Factory.*;
 @Slf4j
 public class ContextMapGenerator {
     @SneakyThrows
-    public ContextMapGenerator(String packageName) {
+    public ContextMapGenerator(String packageName, String outputDirectory, String outputName ) {
         log.info("context map generator " + packageName);
+        String p = new File(outputDirectory).getAbsolutePath();
+        new File(outputDirectory).mkdirs();
         /*
           setup graphviz
          */
         GraphvizCmdLineEngine cmdLineEngine = new GraphvizCmdLineEngine();
-        cmdLineEngine.setDotOutputFile(Paths.get("").toAbsolutePath().toString(), "context_map");
+        cmdLineEngine.setDotOutputFile(outputDirectory, outputName);
         Graphviz.useEngine(cmdLineEngine);
         MutableGraph contextMap = mutGraph("Context Map")
                 .graphAttrs().add(attr("size", "5.5"))
@@ -54,7 +56,7 @@ public class ContextMapGenerator {
         /*
           generate graph
          */
-        Graphviz.fromGraph(contextMap).engine(Engine.FDP).render(Format.SVG).toFile(new File("context_map.svg"));
+        Graphviz.fromGraph(contextMap).engine(Engine.FDP).render(Format.SVG).toFile( Paths.get(outputDirectory, outputName+".svg").toFile() );
     }
 
     private Label getHtmlLabel(String upDown, String rel) {
@@ -75,6 +77,7 @@ public class ContextMapGenerator {
                                 throw new RuntimeException(key.getPackageName1() + " -- " + key.getPackageName2() + " has conflicting relationships: " + value.toString());
                             }
                             value.setDownRelationshipLabel("ACL");
+                            value.setUpRelationshipLabel("");
                             upDownStreamMap.put(key, value);
                             break;
                         case "OpenHostService":
