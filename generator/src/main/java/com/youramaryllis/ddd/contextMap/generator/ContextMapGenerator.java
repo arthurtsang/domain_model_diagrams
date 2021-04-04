@@ -34,9 +34,9 @@ public class ContextMapGenerator {
         cmdLineEngine.setDotOutputFile(outputDirectory, outputName);
         Graphviz.useEngine(cmdLineEngine);
         MutableGraph contextMap = mutGraph("Context Map")
-                .graphAttrs().add(attr("size", "5.5"))
-                .nodeAttrs().add(Shape.ELLIPSE, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12))
-                .linkAttrs().add(attr("dir", "none"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0"));
+                .graphAttrs().add(attr("size", "5.5"), attr("esep",1), attr("nodesep",0.5), attr("ranksep", 0.5), attr("K",1) )
+                .nodeAttrs().add(Shape.ELLIPSE, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12) )
+                .linkAttrs().add(attr("dir", "none"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0") );
         /*
           setup reflection
          */
@@ -77,7 +77,6 @@ public class ContextMapGenerator {
                                 throw new RuntimeException(key.getPackageName1() + " -- " + key.getPackageName2() + " has conflicting relationships: " + value.toString());
                             }
                             value.setDownRelationshipLabel("ACL");
-                            value.setUpRelationshipLabel("");
                             upDownStreamMap.put(key, value);
                             break;
                         case "OpenHostService":
@@ -110,17 +109,27 @@ public class ContextMapGenerator {
                             value.setDownRelationshipLabel("CF");
                             upDownStreamMap.put(key, value);
                             break;
-                        case "CustomerSupplier":
-                            CustomerSupplier cs = (CustomerSupplier) annotation;
-                            key = (cs.upStream()) ? new LinkedNodes(cs.value(), bc.getPackageName()) : new LinkedNodes(bc.getPackageName(), cs.value());
+                        case "Customer":
+                            Customer cust = (Customer) annotation;
+                            key = new LinkedNodes(cust.value(), bc.getPackageName());
                             value = upDownStreamMap.getOrDefault(key, new RelationshipLabel());
-                            if (value.getSharedRelationshipLabel() != null) {
-                                throw new RuntimeException(key.getPackageName1() + " -- " + key.getPackageName2() + " has conflicting relationships: " + value.toString());
-                            }
-                            if (cs.upStream())
-                                value.setUpRelationshipLabel("");
-                            else
-                                value.setDownRelationshipLabel("");
+                            value.setDownRelationshipLabel("Customer");
+                            //TODO: check if the other side is supplier
+                            upDownStreamMap.put(key, value);
+                            break;
+                        case "Supplier":
+                            Supplier sup = (Supplier) annotation;
+                            key = new LinkedNodes(bc.getPackageName(), sup.value());
+                            value = upDownStreamMap.getOrDefault(key, new RelationshipLabel());
+                            value.setUpRelationshipLabel("Supplier");
+                            upDownStreamMap.put(key, value);
+                            break;
+                        case "Partnership":
+                            Partnership ps = (Partnership) annotation;
+                            key = new LinkedNodes(ps.value(), bc.getPackageName());
+                            value = upDownStreamMap.getOrDefault(key, new RelationshipLabel());
+                            //TODO: check if the other direction is also set to partnership
+                            value.setSharedRelationshipLabel("Partnership");
                             upDownStreamMap.put(key, value);
                             break;
                         default:

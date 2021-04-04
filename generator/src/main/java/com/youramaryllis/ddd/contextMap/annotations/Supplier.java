@@ -3,10 +3,9 @@ package com.youramaryllis.ddd.contextMap.annotations;
 import java.lang.annotation.*;
 
 @Documented
-@Target(ElementType.TYPE)
+@Target(ElementType.PACKAGE)
 @Retention(RetentionPolicy.RUNTIME)
 @Relationship
-public @interface CustomerSupplier {
+public @interface Supplier {
     String value();
-    boolean upStream();
 }

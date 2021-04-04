@@ -6,6 +6,6 @@ import java.lang.annotation.*;
 @Target(ElementType.PACKAGE)
 @Retention(RetentionPolicy.RUNTIME)
 @Relationship
-public @interface Conformist {
+public @interface Customer {
     String value();
 }

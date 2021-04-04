@@ -35,4 +35,24 @@ public class ContextMapGeneratorTest extends TestCase {
     public void testACL() {
         testBase("acl");
     }
+
+    @Test
+    public void testOHS() {
+        testBase("ohs");
+    }
+
+    @Test
+    public void testConformist() {
+        testBase("conformist");
+    }
+
+    @Test
+    public void testPartnership() {
+        testBase("partnership");
+    }
+
+    @Test
+    public void testCustomerSupplier() {
+        testBase("customerSupplier");
+    }
 }
