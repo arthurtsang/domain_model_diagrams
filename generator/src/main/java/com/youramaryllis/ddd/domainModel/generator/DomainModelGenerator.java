@@ -3,6 +3,7 @@ package com.youramaryllis.ddd.domainModel.generator;
 import com.youramaryllis.ddd.contextMap.annotations.BoundedContext;
 import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
 import com.youramaryllis.ddd.domainModel.annotations.CrossBoundaryReference;
+import com.youramaryllis.ddd.domainModel.annotations.Event;
 import guru.nidi.graphviz.attribute.Font;
 import guru.nidi.graphviz.attribute.Label;
 import guru.nidi.graphviz.attribute.Shape;
@@ -15,6 +16,7 @@ import guru.nidi.graphviz.model.MutableGraph;
 import guru.nidi.graphviz.model.Node;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.javatuples.Pair;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 
@@ -33,6 +35,8 @@ import static guru.nidi.graphviz.model.Factory.node;
 
 @Slf4j
 public class DomainModelGenerator {
+    MutableGraph domainModel = null;
+
     @SneakyThrows
     public DomainModelGenerator(String packageName) {
         log.info("domain model generator " + packageName);
@@ -42,7 +46,7 @@ public class DomainModelGenerator {
         GraphvizCmdLineEngine cmdLineEngine = new GraphvizCmdLineEngine();
         cmdLineEngine.setDotOutputFile(Paths.get("").toAbsolutePath().toString(), "domain_model");
         Graphviz.useEngine(cmdLineEngine);
-        MutableGraph domainModel = buildMutableGraph("Domain Model");
+        domainModel = buildMutableGraph("Domain Model");
         /*
           setup reflection
          */
@@ -58,7 +62,7 @@ public class DomainModelGenerator {
 
     private MutableGraph buildMutableGraph(String name) {
         return mutGraph(name).setDirected(true)
-                .graphAttrs().add(attr("size", "5.5"), attr("compound", "true"))
+                .graphAttrs().add(attr("size", "5.5"), attr("compound", "true"), attr("K",1))
                 .nodeAttrs().add(Shape.RECORD, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12))
                 .linkAttrs().add(attr("dir", "back"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0"));
     }
@@ -83,13 +87,25 @@ public class DomainModelGenerator {
             bc.add(parentNode.link(arNode));
         }
         Arrays.stream(aClass.getDeclaredMethods())
-                .map(method -> method.getAnnotation(CrossBoundaryReference.class))
-                .filter(Objects::nonNull)
-                .map(CrossBoundaryReference::value)
-                .flatMap(Stream::of)
-                .distinct()
-                .peek(this::checkCrossBoundaryReference)
-                .forEach(xrefClass -> bc.add( arNode.link(node(xrefClass.getCanonicalName()))));
+                .filter(method -> method.getAnnotation(CrossBoundaryReference.class) != null )
+                .map( method -> {
+                    Class xrefClass = method.getDeclaredAnnotation(CrossBoundaryReference.class).value()[0];
+                    Event event = method.getDeclaredAnnotation(Event.class);
+                    String eventText = null;
+                    if( event != null ) eventText = event.value();
+                    return Pair.with( xrefClass, eventText );
+                })
+                .peek(p -> checkCrossBoundaryReference(p.getValue0()))
+                .forEach(p -> {
+                    if( p.getValue1() != null ) {
+                        Node eventNode = node(p.getValue0().getCanonicalName()+"-"+p.getValue1().replace(' ', '-')).with(attr("label", p.getValue1()));
+                        domainModel.add( eventNode );
+                        domainModel.add( arNode.link(eventNode) );
+                        domainModel.add( eventNode.link(node(p.getValue0().getCanonicalName())));
+                    } else {
+                        bc.add( arNode.link(node(p.getValue0().getCanonicalName())));
+                    }
+                });
         Arrays.stream(aClass.getDeclaredFields()).forEach(field -> {
             Type fieldType = field.getGenericType();
             if (fieldType instanceof ParameterizedType) {
@@ -105,6 +121,7 @@ public class DomainModelGenerator {
         if( aClass.getAnnotation(AggregateRoot.class) == null )
             throw new RuntimeException("cannot access non aggregated root class " + aClass.getCanonicalName() );
     }
+
     private Label getClassLabel(Class<?> ar) {
         StringBuilder sb = new StringBuilder();
         sb.append("{").append(ar.getSimpleName()).append("|");

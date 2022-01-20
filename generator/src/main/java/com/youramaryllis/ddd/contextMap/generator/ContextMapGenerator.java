@@ -25,7 +25,6 @@ public class ContextMapGenerator {
     @SneakyThrows
     public ContextMapGenerator(String packageName, String outputDirectory, String outputName ) {
         log.info("context map generator " + packageName);
-        String p = new File(outputDirectory).getAbsolutePath();
         new File(outputDirectory).mkdirs();
         /*
           setup graphviz

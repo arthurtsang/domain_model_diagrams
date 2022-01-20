@@ -61,7 +61,7 @@
                 <version>${spring.boot_version}</version>
                 <configuration>
                     <executable>true</executable>
-                    <finalName>generate-domain-model</finalName>
+                    <finalName>example-domain-model</finalName>
                 </configuration>
                 <executions>
                     <execution>
