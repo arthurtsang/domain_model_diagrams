@@ -9,6 +9,25 @@
 
     <name>ddd-generator</name>
 
+    <description>A Java based tools to generate domain model diagrams</description>
+    <url>https://github.com/arthurtsang/domain_model_diagrams</url>
+    <scm>
+        <connection>scm:git:git@github.com:arthurtsang/domain_model_diagrams.git</connection>
+        <developerConnection>scm:git:git@github.com:arthurtsang/domain_model_diagrams.git</developerConnection>
+        <url>https://github.com/arthurtsang/domain_model_diagrams</url>
+        <tag>1.0.0</tag>
+    </scm>
+    <licenses>
+        <license>
+            <name>WTFPL</name>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Arthur Tsang</name>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
@@ -141,6 +160,46 @@
             </activation>
             <build>
                 <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>3.2.0</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>3.3.1</version>
+                        <executions>
+                            <execution>
+                                <id>javadoc</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
