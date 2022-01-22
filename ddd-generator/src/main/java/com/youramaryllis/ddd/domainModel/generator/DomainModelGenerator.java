@@ -4,10 +4,7 @@ import com.youramaryllis.ddd.contextMap.annotations.BoundedContext;
 import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
 import com.youramaryllis.ddd.domainModel.annotations.CrossBoundaryReference;
 import com.youramaryllis.ddd.domainModel.annotations.Event;
-import guru.nidi.graphviz.attribute.Font;
-import guru.nidi.graphviz.attribute.Label;
-import guru.nidi.graphviz.attribute.Shape;
-import guru.nidi.graphviz.attribute.Style;
+import guru.nidi.graphviz.attribute.*;
 import guru.nidi.graphviz.engine.Engine;
 import guru.nidi.graphviz.engine.Format;
 import guru.nidi.graphviz.engine.Graphviz;
@@ -16,7 +13,10 @@ import guru.nidi.graphviz.model.MutableGraph;
 import guru.nidi.graphviz.model.Node;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.logging.log4j.util.Strings;
 import org.javatuples.Pair;
+import org.javatuples.Triplet;
+import org.javatuples.Unit;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 
@@ -26,8 +26,6 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.Objects;
-import java.util.stream.Stream;
 
 import static guru.nidi.graphviz.attribute.Attributes.attr;
 import static guru.nidi.graphviz.model.Factory.mutGraph;
@@ -35,7 +33,7 @@ import static guru.nidi.graphviz.model.Factory.node;
 
 @Slf4j
 public class DomainModelGenerator {
-    MutableGraph domainModel = null;
+    MutableGraph domainModel;
 
     @SneakyThrows
     public DomainModelGenerator(String packageName) {
@@ -64,7 +62,7 @@ public class DomainModelGenerator {
         return mutGraph(name).setDirected(true)
                 .graphAttrs().add(attr("size", "5.5"), attr("compound", "true"), attr("K",1))
                 .nodeAttrs().add(Shape.RECORD, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12))
-                .linkAttrs().add(attr("dir", "back"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0"));
+                .linkAttrs().add(attr("dir", "none"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0"));
     }
 
     private MutableGraph buildBoundedContext(Class<?> boundedContextPackage) {
@@ -91,14 +89,12 @@ public class DomainModelGenerator {
                 .map( method -> {
                     Class xrefClass = method.getDeclaredAnnotation(CrossBoundaryReference.class).value()[0];
                     Event event = method.getDeclaredAnnotation(Event.class);
-                    String eventText = null;
-                    if( event != null ) eventText = event.value();
-                    return Pair.with( xrefClass, eventText );
+                    return ( event == null ) ? Triplet.with( xrefClass, Strings.EMPTY, Strings.EMPTY) : Triplet.with( xrefClass, event.value(), event.persona() );
                 })
                 .peek(p -> checkCrossBoundaryReference(p.getValue0()))
                 .forEach(p -> {
-                    if( p.getValue1() != null ) {
-                        Node eventNode = node(p.getValue0().getCanonicalName()+"-"+p.getValue1().replace(' ', '-')).with(attr("label", p.getValue1()));
+                    if(!p.getValue1().equals(Strings.EMPTY)) {
+                        Node eventNode = node(p.getValue0().getCanonicalName()+"-"+p.getValue1().replace(' ', '-')).with(getEventLabel(p));
                         domainModel.add( eventNode );
                         domainModel.add( arNode.link(eventNode) );
                         domainModel.add( eventNode.link(node(p.getValue0().getCanonicalName())));
@@ -122,16 +118,40 @@ public class DomainModelGenerator {
             throw new RuntimeException("cannot access non aggregated root class " + aClass.getCanonicalName() );
     }
 
-    private Label getClassLabel(Class<?> ar) {
+    private Label getEventLabel(Triplet<Class, String, String> p) {
         StringBuilder sb = new StringBuilder();
-        sb.append("{").append(ar.getSimpleName()).append("|");
-        Arrays.stream(ar.getDeclaredFields()).forEach(field -> sb.append((field.getModifiers() == Modifier.PUBLIC) ? "+ " : "- ")
-                .append(field.getName()).append("\\n"));
-        sb.append("|");
-        Arrays.stream(ar.getDeclaredMethods()).forEach(method -> sb.append((method.getModifiers() == Modifier.PUBLIC) ? "+ " : "- ")
-                .append(method.getName()).append("\\n"));
-        sb.append("}");
-        return Label.of(sb.toString());
+        sb.append("<table border=\"0\" cellborder=\"1\" cellspacing=\"1\" bgcolor=\"#E9E40E\">" );
+        sb.append("<tr><td><b>");
+        sb.append( p.getValue1() );
+        sb.append("</b></td></tr>");
+        sb.append("<tr><td><font point-size=\"10\">");
+        sb.append( p.getValue2() );
+        sb.append( "</font></td></tr></table>");
+        return Label.html(sb.toString());
+    }
+
+    private Label getClassLabel(Class<?> ar) {
+        String color = ( ar.getAnnotation(AggregateRoot.class) != null ) ? "#C04633": "orange";
+        StringBuilder sb = new StringBuilder();
+        sb.append("<table border=\"0\" cellborder=\"1\" cellspacing=\"1\" bgcolor=\"" + color + "\">" );
+        sb.append("<tr><td><b><font point-size=\"16\">");
+        sb.append(ar.getSimpleName());
+        sb.append("</font></b></td></tr>");
+        if( ar.getDeclaredFields().length > 0 ) {
+            sb.append("<tr><td>");
+            Arrays.stream(ar.getDeclaredFields()).forEach(field -> sb.append((field.getModifiers() == Modifier.PUBLIC) ? "+ " : "- ")
+                    .append(field.getName()).append("<br/>"));
+            sb.append("</td></tr>");
+        }
+        if( ar.getDeclaredMethods().length > 0 )
+        {
+            sb.append("<tr><td>");
+            Arrays.stream(ar.getDeclaredMethods()).forEach(method -> sb.append((method.getModifiers() == Modifier.PUBLIC) ? "+ " : "- ")
+                    .append(method.getName()).append("<br/>"));
+            sb.append("</td></tr>");
+        }
+        sb.append("</table>");
+        return Label.html(sb.toString());
     }
 
 }

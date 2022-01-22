@@ -17,13 +17,13 @@ public class OrderService {
     private List<Order> orders;
 
     @CrossBoundaryReference(UserManagement.class)
-    @Event("order opened")
+    @Event(value = "order opened", persona = "Sales")
     public OrderId openOrder(User user) {
         return null;
     }
 
     @CrossBoundaryReference(CatalogService.class)
-    @Event("product ordered")
+    @Event(value = "product ordered", persona = "Customer")
     public void addProductToOrder(OrderId orderId, ProductSku productSku, int quantity) {
     }
 }

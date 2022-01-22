@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.youramaryllis.com.ddd</groupId>
+    <groupId>com.youramaryllis</groupId>
     <artifactId>domain_model</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -12,7 +12,7 @@
     <name>domain_model</name>
 
     <modules>
-        <module>generator</module>
-        <module>example</module>
+        <module>ddd-generator</module>
+        <module>ddd-example</module>
     </modules>
 </project>
