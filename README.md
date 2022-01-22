@@ -38,7 +38,6 @@ All of them take a parameter, `value`, as the full package name of the other bou
 
 * difficult color for external bounded context
 * add Published Language
-* add domain events
 * implement team map
 
 ### Domain Model
@@ -57,7 +56,21 @@ It will also make sure it can only reference an `@AggregatedRoot`.
 #### TODO
 
 * implement more DDD rule checks
-* implement different color for different domain objects
 * implement multiplicity
+
+## Maven
+
+To use it with maven, create a commandline springboot application with all your domain objects, add `com.youramaryllis:ddd-generator` to the dependency
+
+```
+<dependency>
+  <groupId>com.youramaryllis</groupId>
+  <artifactId>ddd-generator</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+The spring bean will auto configure and inspect the classes specified in the parameter `ddd-generator.packageName` and generate the context map and domain model diagrams.
+
 
 
