@@ -4,7 +4,10 @@ import com.youramaryllis.ddd.contextMap.annotations.BoundedContext;
 import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
 import com.youramaryllis.ddd.domainModel.annotations.CrossBoundaryReference;
 import com.youramaryllis.ddd.domainModel.annotations.Event;
-import guru.nidi.graphviz.attribute.*;
+import guru.nidi.graphviz.attribute.Font;
+import guru.nidi.graphviz.attribute.Label;
+import guru.nidi.graphviz.attribute.Shape;
+import guru.nidi.graphviz.attribute.Style;
 import guru.nidi.graphviz.engine.Engine;
 import guru.nidi.graphviz.engine.Format;
 import guru.nidi.graphviz.engine.Graphviz;
@@ -14,9 +17,7 @@ import guru.nidi.graphviz.model.Node;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
-import org.javatuples.Pair;
 import org.javatuples.Triplet;
-import org.javatuples.Unit;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 
@@ -61,7 +62,7 @@ public class DomainModelGenerator {
     private MutableGraph buildMutableGraph(String name) {
         return mutGraph(name).setDirected(true)
                 .graphAttrs().add(attr("size", "5.5"), attr("compound", "true"), attr("K",1))
-                .nodeAttrs().add(Shape.RECORD, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12))
+                .nodeAttrs().add(Shape.RECTANGLE, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12), attr("margin", "0"))
                 .linkAttrs().add(attr("dir", "none"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0"));
     }
 
@@ -120,21 +121,24 @@ public class DomainModelGenerator {
 
     private Label getEventLabel(Triplet<Class, String, String> p) {
         StringBuilder sb = new StringBuilder();
-        sb.append("<table border=\"0\" cellborder=\"1\" cellspacing=\"1\" bgcolor=\"#E9E40E\">" );
-        sb.append("<tr><td><b>");
+        sb.append("<table border=\"0\" cellborder=\"1\" cellspacing=\"1\" bgcolor=\"" + Colors.EVENT + "\">" );
+        sb.append("<tr><td cellpadding=\"10\"><b>");
         sb.append( p.getValue1() );
         sb.append("</b></td></tr>");
-        sb.append("<tr><td><font point-size=\"10\">");
-        sb.append( p.getValue2() );
-        sb.append( "</font></td></tr></table>");
+        if( !Strings.EMPTY.equals(p.getValue2())) {
+            sb.append("<tr><td><font point-size=\"10\">");
+            sb.append(p.getValue2());
+            sb.append("</font></td></tr>");
+        }
+        sb.append("</table>");
         return Label.html(sb.toString());
     }
 
     private Label getClassLabel(Class<?> ar) {
-        String color = ( ar.getAnnotation(AggregateRoot.class) != null ) ? "#C04633": "orange";
+        String color = ( ar.getAnnotation(AggregateRoot.class) != null ) ? Colors.AGGREGATE_ROOT: Colors.AGGREGATE;
         StringBuilder sb = new StringBuilder();
         sb.append("<table border=\"0\" cellborder=\"1\" cellspacing=\"1\" bgcolor=\"" + color + "\">" );
-        sb.append("<tr><td><b><font point-size=\"16\">");
+        sb.append("<tr><td cellpadding=\"10\"><b><font point-size=\"16\">");
         sb.append(ar.getSimpleName());
         sb.append("</font></b></td></tr>");
         if( ar.getDeclaredFields().length > 0 ) {

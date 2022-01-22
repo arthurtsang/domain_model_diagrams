@@ -23,7 +23,7 @@ public class OrderService {
     }
 
     @CrossBoundaryReference(CatalogService.class)
-    @Event(value = "product ordered", persona = "Customer")
+    @Event(value = "product ordered" )
     public void addProductToOrder(OrderId orderId, ProductSku productSku, int quantity) {
     }
 }
