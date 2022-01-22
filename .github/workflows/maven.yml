@@ -21,8 +21,8 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn -B package -DskipTests
+      run: mvn -B package -DskipTests -pl ddd-generator
     - name: deploy to github packages
-      run: mvn -B deploy -DskipTests -pl generator
+      run: mvn -B deploy -DskipTests -pl ddd-generator
       env:
         GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
