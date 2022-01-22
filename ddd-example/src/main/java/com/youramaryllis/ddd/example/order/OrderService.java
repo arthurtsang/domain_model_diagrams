@@ -6,6 +6,7 @@ import com.youramaryllis.ddd.domainModel.annotations.Entity;
 import com.youramaryllis.ddd.domainModel.annotations.Event;
 import com.youramaryllis.ddd.example.catalog.CatalogService;
 import com.youramaryllis.ddd.example.catalog.ProductSku;
+import com.youramaryllis.ddd.example.payment.PaymentGateway;
 import com.youramaryllis.ddd.example.user.User;
 import com.youramaryllis.ddd.example.user.UserManagement;
 
@@ -26,4 +27,8 @@ public class OrderService {
     @Event(value = "product ordered" )
     public void addProductToOrder(OrderId orderId, ProductSku productSku, int quantity) {
     }
+
+    @CrossBoundaryReference(PaymentGateway.class)
+    @Event( "order submitted")
+    public void pay() {}
 }

@@ -1,15 +1,20 @@
-<svg width="158px" height="247px"
- viewBox="0.00 0.00 158.00 247.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="186px" height="247px"
+ viewBox="0.00 0.00 186.00 247.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 243.0)">
 <title>Context Map</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-243 154,-243 154,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-243 182,-243 182,4 -4,4"/>
 <!-- com.youramaryllis.ddd.example.order -->
 <g id="node1" class="node"><title>com.youramaryllis.ddd.example.order</title>
 <ellipse fill="#f2f2f2" stroke="black" cx="33.8596" cy="-152.177" rx="31.2902" ry="18"/>
 <text text-anchor="middle" x="33.8596" y="-149.077" font-family="Bitstream Vera Sans" font-size="12.00">Order</text>
 </g>
+<!-- com.youramaryllis.ddd.example.payment -->
+<g id="node2" class="node"><title>com.youramaryllis.ddd.example.payment</title>
+<ellipse fill="#f2f2f2" stroke="black" cx="136.794" cy="-130.136" rx="41.4901" ry="18"/>
+<text text-anchor="middle" x="136.794" y="-127.036" font-family="Bitstream Vera Sans" font-size="12.00">Payment</text>
+</g>
 <!-- com.youramaryllis.ddd.example.user -->
-<g id="node2" class="node"><title>com.youramaryllis.ddd.example.user</title>
+<g id="node3" class="node"><title>com.youramaryllis.ddd.example.user</title>
 <ellipse fill="#f2f2f2" stroke="black" cx="123.11" cy="-221.314" rx="27.1719" ry="18"/>
 <text text-anchor="middle" x="123.11" y="-218.214" font-family="Bitstream Vera Sans" font-size="12.00">User</text>
 </g>
@@ -19,7 +24,7 @@
 <text text-anchor="middle" x="67.9333" y="-187.693" font-family="sans-serif" font-size="3.00">Shared Kernel</text>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog -->
-<g id="node3" class="node"><title>com.youramaryllis.ddd.example.catalog</title>
+<g id="node4" class="node"><title>com.youramaryllis.ddd.example.catalog</title>
 <ellipse fill="#f2f2f2" stroke="black" cx="37.3969" cy="-18.2109" rx="36.8706" ry="18"/>
 <text text-anchor="middle" x="37.3969" y="-15.1109" font-family="Bitstream Vera Sans" font-size="12.00">Catalog</text>
 </g>

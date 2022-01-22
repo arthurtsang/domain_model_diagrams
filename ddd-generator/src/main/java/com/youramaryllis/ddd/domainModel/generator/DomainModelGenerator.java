@@ -4,6 +4,7 @@ import com.youramaryllis.ddd.contextMap.annotations.BoundedContext;
 import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
 import com.youramaryllis.ddd.domainModel.annotations.CrossBoundaryReference;
 import com.youramaryllis.ddd.domainModel.annotations.Event;
+import com.youramaryllis.ddd.domainModel.annotations.External;
 import guru.nidi.graphviz.attribute.Font;
 import guru.nidi.graphviz.attribute.Label;
 import guru.nidi.graphviz.attribute.Shape;
@@ -135,7 +136,8 @@ public class DomainModelGenerator {
     }
 
     private Label getClassLabel(Class<?> ar) {
-        String color = ( ar.getAnnotation(AggregateRoot.class) != null ) ? Colors.AGGREGATE_ROOT: Colors.AGGREGATE;
+        String color = ( ar.getAnnotation(External.class) != null ) ? Colors.EXTERNAL :
+                ( ar.getAnnotation(AggregateRoot.class) != null ) ? Colors.AGGREGATE_ROOT: Colors.AGGREGATE;
         StringBuilder sb = new StringBuilder();
         sb.append("<table border=\"0\" cellborder=\"1\" cellspacing=\"1\" bgcolor=\"" + color + "\">" );
         sb.append("<tr><td cellpadding=\"10\"><b><font point-size=\"16\">");
