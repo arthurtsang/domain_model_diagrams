@@ -6,10 +6,17 @@
 
     <groupId>com.youramaryllis</groupId>
     <artifactId>domain_model</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>domain_model</name>
+
+    <scm>
+        <connection>scm:git:git@github.com:arthurtsang/domain_model_diagrams.git</connection>
+        <developerConnection>scm:git:git@github.com:arthurtsang/domain_model_diagrams.git</developerConnection>
+        <url>https://github.com/arthurtsang/domain_model_diagrams</url>
+        <tag>1.0.0</tag>
+    </scm>
 
     <modules>
         <module>ddd-generator</module>
