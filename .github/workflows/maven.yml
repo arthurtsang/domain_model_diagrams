@@ -25,4 +25,4 @@ jobs:
     - name: deploy to github packages
       run: mvn -B deploy -DskipTests -pl ddd-generator
       env:
-        GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
