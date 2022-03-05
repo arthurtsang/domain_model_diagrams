@@ -1,48 +1,54 @@
-<svg width="186px" height="247px"
- viewBox="0.00 0.00 186.00 247.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="189px" height="247px"
+ viewBox="0.00 0.00 189.00 247.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 243.0)">
 <title>Context Map</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-243 182,-243 182,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-243 185,-243 185,4 -4,4"/>
 <!-- com.youramaryllis.ddd.example.order -->
-<g id="node1" class="node"><title>com.youramaryllis.ddd.example.order</title>
-<ellipse fill="#f2f2f2" stroke="black" cx="33.8596" cy="-152.177" rx="31.2902" ry="18"/>
-<text text-anchor="middle" x="33.8596" y="-149.077" font-family="Bitstream Vera Sans" font-size="12.00">Order</text>
+<g id="node1" class="node">
+<title>com.youramaryllis.ddd.example.order</title>
+<ellipse fill="#f2f2f2" stroke="#000000" cx="34.8596" cy="-152.1773" rx="32.0211" ry="18"/>
+<text text-anchor="middle" x="34.8596" y="-149.0773" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Order</text>
 </g>
 <!-- com.youramaryllis.ddd.example.payment -->
-<g id="node2" class="node"><title>com.youramaryllis.ddd.example.payment</title>
-<ellipse fill="#f2f2f2" stroke="black" cx="136.794" cy="-130.136" rx="41.4901" ry="18"/>
-<text text-anchor="middle" x="136.794" y="-127.036" font-family="Bitstream Vera Sans" font-size="12.00">Payment</text>
+<g id="node2" class="node">
+<title>com.youramaryllis.ddd.example.payment</title>
+<ellipse fill="#f2f2f2" stroke="#000000" cx="138.7937" cy="-130.1363" rx="42.451" ry="18"/>
+<text text-anchor="middle" x="138.7937" y="-127.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Payment</text>
 </g>
 <!-- com.youramaryllis.ddd.example.user -->
-<g id="node3" class="node"><title>com.youramaryllis.ddd.example.user</title>
-<ellipse fill="#f2f2f2" stroke="black" cx="123.11" cy="-221.314" rx="27.1719" ry="18"/>
-<text text-anchor="middle" x="123.11" y="-218.214" font-family="Bitstream Vera Sans" font-size="12.00">User</text>
+<g id="node3" class="node">
+<title>com.youramaryllis.ddd.example.user</title>
+<ellipse fill="#f2f2f2" stroke="#000000" cx="124.1097" cy="-221.3143" rx="27.1719" ry="18"/>
+<text text-anchor="middle" x="124.1097" y="-218.2143" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">User</text>
 </g>
 <!-- com.youramaryllis.ddd.example.user&#45;&#45;com.youramaryllis.ddd.example.order -->
-<g id="edge1" class="edge"><title>com.youramaryllis.ddd.example.user&#45;&#45;com.youramaryllis.ddd.example.order</title>
-<path fill="none" stroke="black" d="M105.049,-207.323C89.8698,-195.565 68.244,-178.813 52.818,-166.863"/>
-<text text-anchor="middle" x="67.9333" y="-187.693" font-family="sans-serif" font-size="3.00">Shared Kernel</text>
+<g id="edge1" class="edge">
+<title>com.youramaryllis.ddd.example.user&#45;&#45;com.youramaryllis.ddd.example.order</title>
+<path fill="none" stroke="#000000" d="M106.0486,-207.3234C90.8698,-195.5652 69.244,-178.813 53.818,-166.8633"/>
+<text text-anchor="middle" x="68.9333" y="-187.6934" font-family="sans-serif" font-size="3.00" fill="#000000">Shared Kernel</text>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog -->
-<g id="node4" class="node"><title>com.youramaryllis.ddd.example.catalog</title>
-<ellipse fill="#f2f2f2" stroke="black" cx="37.3969" cy="-18.2109" rx="36.8706" ry="18"/>
-<text text-anchor="middle" x="37.3969" y="-15.1109" font-family="Bitstream Vera Sans" font-size="12.00">Catalog</text>
+<g id="node4" class="node">
+<title>com.youramaryllis.ddd.example.catalog</title>
+<ellipse fill="#f2f2f2" stroke="#000000" cx="38.3969" cy="-18.2109" rx="38.3335" ry="18"/>
+<text text-anchor="middle" x="38.3969" y="-15.1109" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Catalog</text>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog&#45;&#45;com.youramaryllis.ddd.example.order -->
-<g id="edge2" class="edge"><title>com.youramaryllis.ddd.example.catalog&#45;&#45;com.youramaryllis.ddd.example.order</title>
-<path fill="none" stroke="black" d="M36.9198,-36.2782C36.2447,-61.8466 35.0176,-108.323 34.3404,-133.968"/>
-<polygon fill="white" stroke="none" points="23.3404,-128.968 23.3404,-137.968 32.3404,-137.968 32.3404,-128.968 23.3404,-128.968"/>
-<polyline fill="none" stroke="black" points="32.3404,-128.968 32.3404,-137.968 "/>
-<text text-anchor="start" x="26.3404" y="-132.568" font-family="sans-serif" font-size="3.00">D</text>
-<polygon fill="white" stroke="none" points="32.3404,-128.968 32.3404,-137.968 45.3404,-137.968 45.3404,-128.968 32.3404,-128.968"/>
-<polygon fill="none" stroke="black" points="32.3404,-128.968 32.3404,-137.968 45.3404,-137.968 45.3404,-128.968 32.3404,-128.968"/>
-<text text-anchor="start" x="35.3404" y="-132.568" font-family="sans-serif" font-size="3.00">ACL</text>
-<polygon fill="white" stroke="none" points="25.9198,-31.2782 25.9198,-40.2782 34.9198,-40.2782 34.9198,-31.2782 25.9198,-31.2782"/>
-<polyline fill="none" stroke="black" points="34.9198,-31.2782 34.9198,-40.2782 "/>
-<text text-anchor="start" x="28.9198" y="-34.8782" font-family="sans-serif" font-size="3.00">U</text>
-<polygon fill="white" stroke="none" points="34.9198,-31.2782 34.9198,-40.2782 47.9198,-40.2782 47.9198,-31.2782 34.9198,-31.2782"/>
-<polygon fill="none" stroke="black" points="34.9198,-31.2782 34.9198,-40.2782 47.9198,-40.2782 47.9198,-31.2782 34.9198,-31.2782"/>
-<text text-anchor="start" x="37.9198" y="-34.8782" font-family="sans-serif" font-size="3.00">OHS</text>
+<g id="edge2" class="edge">
+<title>com.youramaryllis.ddd.example.catalog&#45;&#45;com.youramaryllis.ddd.example.order</title>
+<path fill="none" stroke="#000000" d="M37.9198,-36.2782C37.2447,-61.8466 36.0176,-108.3231 35.3404,-133.9684"/>
+<polygon fill="#ffffff" stroke="transparent" points="24.3404,-128.9684 24.3404,-137.9684 33.3404,-137.9684 33.3404,-128.9684 24.3404,-128.9684"/>
+<polyline fill="none" stroke="#000000" points="33.3404,-128.9684 33.3404,-137.9684 "/>
+<text text-anchor="start" x="27.3404" y="-132.5684" font-family="sans-serif" font-size="3.00" fill="#000000">D</text>
+<polygon fill="#ffffff" stroke="transparent" points="33.3404,-128.9684 33.3404,-137.9684 46.3404,-137.9684 46.3404,-128.9684 33.3404,-128.9684"/>
+<polygon fill="none" stroke="#000000" points="33.3404,-128.9684 33.3404,-137.9684 46.3404,-137.9684 46.3404,-128.9684 33.3404,-128.9684"/>
+<text text-anchor="start" x="36.3404" y="-132.5684" font-family="sans-serif" font-size="3.00" fill="#000000">ACL</text>
+<polygon fill="#ffffff" stroke="transparent" points="26.9198,-31.2782 26.9198,-40.2782 35.9198,-40.2782 35.9198,-31.2782 26.9198,-31.2782"/>
+<polyline fill="none" stroke="#000000" points="35.9198,-31.2782 35.9198,-40.2782 "/>
+<text text-anchor="start" x="29.9198" y="-34.8782" font-family="sans-serif" font-size="3.00" fill="#000000">U</text>
+<polygon fill="#ffffff" stroke="transparent" points="35.9198,-31.2782 35.9198,-40.2782 48.9198,-40.2782 48.9198,-31.2782 35.9198,-31.2782"/>
+<polygon fill="none" stroke="#000000" points="35.9198,-31.2782 35.9198,-40.2782 48.9198,-40.2782 48.9198,-31.2782 35.9198,-31.2782"/>
+<text text-anchor="start" x="38.9198" y="-34.8782" font-family="sans-serif" font-size="3.00" fill="#000000">OHS</text>
 </g>
 </g>
 </svg>

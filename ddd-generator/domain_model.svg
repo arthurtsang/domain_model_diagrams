@@ -1,0 +1,42 @@
+<svg width="172px" height="138px"
+ viewBox="0.00 0.00 172.00 138.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 134.0)">
+<title>Domain Model</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-134 168,-134 168,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_B</title>
+<path fill="none" stroke="#000000" d="M20,-8C20,-8 66,-8 66,-8 72,-8 78,-14 78,-20 78,-20 78,-110 78,-110 78,-116 72,-122 66,-122 66,-122 20,-122 20,-122 14,-122 8,-116 8,-110 8,-110 8,-20 8,-20 8,-14 14,-8 20,-8"/>
+<text text-anchor="middle" x="43" y="-106.8" font-family="Times,serif" font-size="14.00" fill="#000000">B</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_A</title>
+<g id="a_clust2"><a xlink:title="Subdomain A">
+<path fill="none" stroke="#000000" d="M98,-8C98,-8 144,-8 144,-8 150,-8 156,-14 156,-20 156,-20 156,-110 156,-110 156,-116 150,-122 144,-122 144,-122 98,-122 98,-122 92,-122 86,-116 86,-110 86,-110 86,-20 86,-20 86,-14 92,-8 98,-8"/>
+<text text-anchor="middle" x="121" y="-106.8" font-family="Times,serif" font-size="14.00" fill="#000000">A</text>
+</a>
+</g>
+</g>
+<!-- com.youramaryllis.ddd.domainModel.generator.example.B.B1 -->
+<g id="node1" class="node">
+<title>com.youramaryllis.ddd.domainModel.generator.example.B.B1</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="70,-91 16,-91 16,-16 70,-16 70,-91"/>
+<polygon fill="#c04633" stroke="transparent" points="19,-16 19,-91 67,-91 67,-16 19,-16"/>
+<polygon fill="none" stroke="#000000" points="20,-49.5 20,-89.5 66,-89.5 66,-49.5 20,-49.5"/>
+<text text-anchor="start" x="31" y="-66.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">B1</text>
+<polygon fill="none" stroke="#000000" points="20,-16.5 20,-48.5 66,-48.5 66,-16.5 20,-16.5"/>
+<text text-anchor="start" x="33.5" y="-35.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; id</text>
+<text text-anchor="start" x="23" y="-22.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; text2</text>
+</g>
+<!-- com.youramaryllis.ddd.domainModel.generator.example.A.A1 -->
+<g id="node2" class="node">
+<title>com.youramaryllis.ddd.domainModel.generator.example.A.A1</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="148,-91 94,-91 94,-16 148,-16 148,-91"/>
+<polygon fill="#c04633" stroke="transparent" points="97,-16 97,-91 145,-91 145,-16 97,-16"/>
+<polygon fill="none" stroke="#000000" points="98,-49.5 98,-89.5 144,-89.5 144,-49.5 98,-49.5"/>
+<text text-anchor="start" x="109" y="-66.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">A1</text>
+<polygon fill="none" stroke="#000000" points="98,-16.5 98,-48.5 144,-48.5 144,-16.5 98,-16.5"/>
+<text text-anchor="start" x="111.5" y="-35.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; id</text>
+<text text-anchor="start" x="101" y="-22.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; text1</text>
+</g>
+</g>
+</svg>

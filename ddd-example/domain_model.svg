@@ -1,346 +1,457 @@
 <svg width="396px" height="284px"
  viewBox="0.00 0.00 396.00 283.61" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(0.294205 0.294205) rotate(0.0) translate(4.0 960.0)">
+<g id="graph0" class="graph" transform="scale(0.2942 0.2942) rotate(0.0) translate(4.0 960.0)">
 <title>Domain Model</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-960 1342,-960 1342,4 -4,4"/>
-<g id="clust1" class="cluster"><title>cluster_Order</title>
-<path fill="none" stroke="black" d="M20,-279C20,-279 528,-279 528,-279 534,-279 540,-285 540,-291 540,-291 540,-936 540,-936 540,-942 534,-948 528,-948 528,-948 20,-948 20,-948 14,-948 8,-942 8,-936 8,-936 8,-291 8,-291 8,-285 14,-279 20,-279"/>
-<text text-anchor="middle" x="274" y="-932.8" font-family="Times,serif" font-size="14.00">Order</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-960 1342,-960 1342,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_Order</title>
+<path fill="none" stroke="#000000" d="M20,-279C20,-279 528,-279 528,-279 534,-279 540,-285 540,-291 540,-291 540,-936 540,-936 540,-942 534,-948 528,-948 528,-948 20,-948 20,-948 14,-948 8,-942 8,-936 8,-936 8,-291 8,-291 8,-285 14,-279 20,-279"/>
+<text text-anchor="middle" x="274" y="-932.8" font-family="Times,serif" font-size="14.00" fill="#000000">Order</text>
 </g>
-<g id="clust2" class="cluster"><title>cluster_Payment</title>
-<path fill="none" stroke="black" d="M1150,-475C1150,-475 1318,-475 1318,-475 1324,-475 1330,-481 1330,-487 1330,-487 1330,-564 1330,-564 1330,-570 1324,-576 1318,-576 1318,-576 1150,-576 1150,-576 1144,-576 1138,-570 1138,-564 1138,-564 1138,-487 1138,-487 1138,-481 1144,-475 1150,-475"/>
-<text text-anchor="middle" x="1234" y="-560.8" font-family="Times,serif" font-size="14.00">Payment</text>
+<g id="clust2" class="cluster">
+<title>cluster_Payment</title>
+<path fill="none" stroke="#000000" d="M560,-475C560,-475 728,-475 728,-475 734,-475 740,-481 740,-487 740,-487 740,-564 740,-564 740,-570 734,-576 728,-576 728,-576 560,-576 560,-576 554,-576 548,-570 548,-564 548,-564 548,-487 548,-487 548,-481 554,-475 560,-475"/>
+<text text-anchor="middle" x="644" y="-560.8" font-family="Times,serif" font-size="14.00" fill="#000000">Payment</text>
 </g>
-<g id="clust3" class="cluster"><title>cluster_User</title>
-<path fill="none" stroke="black" d="M560,-8C560,-8 938,-8 938,-8 944,-8 950,-14 950,-20 950,-20 950,-613 950,-613 950,-619 944,-625 938,-625 938,-625 560,-625 560,-625 554,-625 548,-619 548,-613 548,-613 548,-20 548,-20 548,-14 554,-8 560,-8"/>
-<text text-anchor="middle" x="749" y="-609.8" font-family="Times,serif" font-size="14.00">User</text>
+<g id="clust3" class="cluster">
+<title>cluster_User</title>
+<path fill="none" stroke="#000000" d="M760,-8C760,-8 1138,-8 1138,-8 1144,-8 1150,-14 1150,-20 1150,-20 1150,-613 1150,-613 1150,-619 1144,-625 1138,-625 1138,-625 760,-625 760,-625 754,-625 748,-619 748,-613 748,-613 748,-20 748,-20 748,-14 754,-8 760,-8"/>
+<text text-anchor="middle" x="949" y="-609.8" font-family="Times,serif" font-size="14.00" fill="#000000">User</text>
 </g>
-<g id="clust4" class="cluster"><title>cluster_Catalog</title>
-<path fill="none" stroke="black" d="M970,-27.5C970,-27.5 1118,-27.5 1118,-27.5 1124,-27.5 1130,-33.5 1130,-39.5 1130,-39.5 1130,-580.5 1130,-580.5 1130,-586.5 1124,-592.5 1118,-592.5 1118,-592.5 970,-592.5 970,-592.5 964,-592.5 958,-586.5 958,-580.5 958,-580.5 958,-39.5 958,-39.5 958,-33.5 964,-27.5 970,-27.5"/>
-<text text-anchor="middle" x="1044" y="-577.3" font-family="Times,serif" font-size="14.00">Catalog</text>
-</g>
-<!-- com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened -->
-<g id="node1" class="node"><title>com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened</title>
-<polygon fill="#f2f2f2" stroke="black" points="748.5,-730.5 633.5,-730.5 633.5,-675.5 748.5,-675.5 748.5,-730.5"/>
-<polygon fill="#e9e40e" stroke="none" points="633.5,-675.5 633.5,-730.5 748.5,-730.5 748.5,-675.5 633.5,-675.5"/>
-<polygon fill="none" stroke="black" points="635,-694 635,-729 748,-729 748,-694 635,-694"/>
-<text text-anchor="start" x="646" y="-709.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00">order opened</text>
-<polygon fill="none" stroke="black" points="635,-676 635,-693 748,-693 748,-676 635,-676"/>
-<text text-anchor="start" x="678" y="-682" font-family="Bitstream Vera Sans" font-size="10.00">Sales</text>
-</g>
-<!-- com.youramaryllis.ddd.example.user.UserManagement -->
-<g id="node12" class="node"><title>com.youramaryllis.ddd.example.user.UserManagement</title>
-<polygon fill="#f2f2f2" stroke="black" points="866.5,-594 685.5,-594 685.5,-434 866.5,-434 866.5,-594"/>
-<polygon fill="#c04633" stroke="none" points="685.5,-434 685.5,-594 866.5,-594 866.5,-434 685.5,-434"/>
-<polygon fill="none" stroke="black" points="687,-553 687,-593 866,-593 866,-553 687,-553"/>
-<text text-anchor="start" x="698" y="-570.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">UserManagement</text>
-<polygon fill="none" stroke="black" points="687,-520 687,-552 866,-552 866,-520 687,-520"/>
-<text text-anchor="start" x="759" y="-539.4" font-family="Bitstream Vera Sans" font-size="12.00">&#45; user</text>
-<text text-anchor="start" x="761" y="-526.4" font-family="Bitstream Vera Sans" font-size="12.00">&#45; test</text>
-<polygon fill="none" stroke="black" points="687,-435 687,-519 866,-519 866,-435 687,-435"/>
-<text text-anchor="start" x="746" y="-506.4" font-family="Bitstream Vera Sans" font-size="12.00">+ getUser</text>
-<text text-anchor="start" x="744.5" y="-493.4" font-family="Bitstream Vera Sans" font-size="12.00">+ addUser</text>
-<text text-anchor="start" x="733.5" y="-480.4" font-family="Bitstream Vera Sans" font-size="12.00">+ removeUser</text>
-<text text-anchor="start" x="735.5" y="-467.4" font-family="Bitstream Vera Sans" font-size="12.00">+ updateUser</text>
-<text text-anchor="start" x="744.5" y="-454.4" font-family="Bitstream Vera Sans" font-size="12.00">+ listUsers</text>
-<text text-anchor="start" x="732.5" y="-441.4" font-family="Bitstream Vera Sans" font-size="12.00">+ searchUsers</text>
-</g>
-<!-- com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement -->
-<g id="edge18" class="edge"><title>com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement</title>
-<path fill="none" stroke="black" d="M703.178,-675.207C712.818,-653.999 726.801,-623.237 739.943,-594.326"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService -->
-<g id="node2" class="node"><title>com.youramaryllis.ddd.example.order.OrderService</title>
-<polygon fill="#f2f2f2" stroke="black" points="531.5,-917 392.5,-917 392.5,-809 531.5,-809 531.5,-917"/>
-<polygon fill="#c04633" stroke="none" points="392.5,-809 392.5,-917 531.5,-917 531.5,-809 392.5,-809"/>
-<polygon fill="none" stroke="black" points="394,-876 394,-916 531,-916 531,-876 394,-876"/>
-<text text-anchor="start" x="405" y="-893.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">OrderService</text>
-<polygon fill="none" stroke="black" points="394,-856 394,-875 531,-875 531,-856 394,-856"/>
-<text text-anchor="start" x="438.5" y="-862.4" font-family="Bitstream Vera Sans" font-size="12.00">&#45; orders</text>
-<polygon fill="none" stroke="black" points="394,-810 394,-855 531,-855 531,-810 394,-810"/>
-<text text-anchor="start" x="423.5" y="-842.4" font-family="Bitstream Vera Sans" font-size="12.00">+ openOrder</text>
-<text text-anchor="start" x="398" y="-829.4" font-family="Bitstream Vera Sans" font-size="12.00">+ addProductToOrder</text>
-<text text-anchor="start" x="445" y="-816.4" font-family="Bitstream Vera Sans" font-size="12.00">+ pay</text>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened -->
-<g id="edge21" class="edge"><title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened</title>
-<path fill="none" stroke="black" d="M531.64,-813.951C571.248,-786.623 619.363,-753.426 652.293,-730.706"/>
-</g>
-<!-- com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered -->
-<g id="node3" class="node"><title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered</title>
-<polygon fill="#f2f2f2" stroke="black" points="1006.5,-721.5 871.5,-721.5 871.5,-684.5 1006.5,-684.5 1006.5,-721.5"/>
-<polygon fill="#e9e40e" stroke="none" points="871.5,-684.5 871.5,-721.5 1006.5,-721.5 1006.5,-684.5 871.5,-684.5"/>
-<polygon fill="none" stroke="black" points="873,-685 873,-720 1006,-720 1006,-685 873,-685"/>
-<text text-anchor="start" x="884" y="-700.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00">product ordered</text>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered -->
-<g id="edge20" class="edge"><title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered</title>
-<path fill="none" stroke="black" d="M531.574,-842.486C591.628,-825.292 680.521,-798.999 757,-773 804.67,-756.794 858.504,-736.079 895.177,-721.593"/>
+<g id="clust4" class="cluster">
+<title>cluster_Catalog</title>
+<path fill="none" stroke="#000000" d="M1170,-27.5C1170,-27.5 1318,-27.5 1318,-27.5 1324,-27.5 1330,-33.5 1330,-39.5 1330,-39.5 1330,-580.5 1330,-580.5 1330,-586.5 1324,-592.5 1318,-592.5 1318,-592.5 1170,-592.5 1170,-592.5 1164,-592.5 1158,-586.5 1158,-580.5 1158,-580.5 1158,-39.5 1158,-39.5 1158,-33.5 1164,-27.5 1170,-27.5"/>
+<text text-anchor="middle" x="1244" y="-577.3" font-family="Times,serif" font-size="14.00" fill="#000000">Catalog</text>
 </g>
 <!-- com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted -->
-<g id="node4" class="node"><title>com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted</title>
-<polygon fill="#f2f2f2" stroke="black" points="1228.5,-721.5 1095.5,-721.5 1095.5,-684.5 1228.5,-684.5 1228.5,-721.5"/>
-<polygon fill="#e9e40e" stroke="none" points="1095.5,-684.5 1095.5,-721.5 1228.5,-721.5 1228.5,-684.5 1095.5,-684.5"/>
-<polygon fill="none" stroke="black" points="1097,-685 1097,-720 1228,-720 1228,-685 1097,-685"/>
-<text text-anchor="start" x="1108" y="-700.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00">order submitted</text>
+<g id="node1" class="node">
+<title>com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted</title>
+<g id="a_node1"><a xlink:title="order submitted">
+<polygon fill="#f2f2f2" stroke="#000000" points="697.5,-721.5 562.5,-721.5 562.5,-684.5 697.5,-684.5 697.5,-721.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="562.5,-684.5 562.5,-721.5 697.5,-721.5 697.5,-684.5 562.5,-684.5"/>
+<polygon fill="none" stroke="#000000" points="564,-685 564,-720 697,-720 697,-685 564,-685"/>
+<text text-anchor="start" x="575" y="-700.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">order submitted</text>
+</a>
 </g>
-<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted -->
-<g id="edge19" class="edge"><title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted</title>
-<path fill="none" stroke="black" d="M531.515,-857.067C637.725,-848.144 845.883,-825.169 1015,-773 1056.89,-760.077 1102.13,-737.395 1131.19,-721.578"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.Order -->
-<g id="node5" class="node"><title>com.youramaryllis.ddd.example.order.Order</title>
-<polygon fill="#f2f2f2" stroke="black" points="362,-773 266,-773 266,-633 362,-633 362,-773"/>
-<polygon fill="orange" stroke="none" points="266,-633 266,-773 362,-773 362,-633 266,-633"/>
-<polygon fill="none" stroke="black" points="267,-732 267,-772 361,-772 361,-732 267,-732"/>
-<text text-anchor="start" x="288.5" y="-749.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">Order</text>
-<polygon fill="none" stroke="black" points="267,-634 267,-731 361,-731 361,-634 267,-634"/>
-<text text-anchor="start" x="285" y="-718.4" font-family="Bitstream Vera Sans" font-size="12.00">+ orderId</text>
-<text text-anchor="start" x="281" y="-705.4" font-family="Bitstream Vera Sans" font-size="12.00">+ lineItems</text>
-<text text-anchor="start" x="277.5" y="-692.4" font-family="Bitstream Vera Sans" font-size="12.00">+ orderDate</text>
-<text text-anchor="start" x="288" y="-679.4" font-family="Bitstream Vera Sans" font-size="12.00">+ userId</text>
-<text text-anchor="start" x="270" y="-666.4" font-family="Bitstream Vera Sans" font-size="12.00">+ paymentInfo</text>
-<text text-anchor="start" x="273" y="-653.4" font-family="Bitstream Vera Sans" font-size="12.00">+ deliveryInfo</text>
-<text text-anchor="start" x="280" y="-640.4" font-family="Bitstream Vera Sans" font-size="12.00">+ totalPrice</text>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.order.Order -->
-<g id="edge1" class="edge"><title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.order.Order</title>
-<path fill="none" stroke="black" d="M412.306,-808.949C396.099,-791.646 378.142,-772.476 362.057,-755.304"/>
-</g>
-<!-- com.youramaryllis.ddd.example.catalog.CatalogService -->
-<g id="node18" class="node"><title>com.youramaryllis.ddd.example.catalog.CatalogService</title>
-<polygon fill="#f2f2f2" stroke="black" points="1122,-561.5 966,-561.5 966,-466.5 1122,-466.5 1122,-561.5"/>
-<polygon fill="#c04633" stroke="none" points="966,-466.5 966,-561.5 1122,-561.5 1122,-466.5 966,-466.5"/>
-<polygon fill="none" stroke="black" points="967,-520 967,-560 1121,-560 1121,-520 967,-520"/>
-<text text-anchor="start" x="978" y="-537.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">CatalogService</text>
-<polygon fill="none" stroke="black" points="967,-500 967,-519 1121,-519 1121,-500 967,-500"/>
-<text text-anchor="start" x="1008.5" y="-506.4" font-family="Bitstream Vera Sans" font-size="12.00">&#45; catalogList</text>
-<polygon fill="none" stroke="black" points="967,-467 967,-499 1121,-499 1121,-467 967,-467"/>
-<text text-anchor="start" x="997" y="-486.4" font-family="Bitstream Vera Sans" font-size="12.00">+ createCatalog</text>
-<text text-anchor="start" x="995.5" y="-473.4" font-family="Bitstream Vera Sans" font-size="12.00">+ createProduct</text>
-</g>
-<!-- com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService -->
-<g id="edge22" class="edge"><title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService</title>
-<path fill="none" stroke="black" d="M948.878,-684.407C964.5,-656.586 995.426,-601.509 1017.78,-561.692"/>
 </g>
 <!-- com.youramaryllis.ddd.example.payment.PaymentGateway -->
-<g id="node11" class="node"><title>com.youramaryllis.ddd.example.payment.PaymentGateway</title>
-<polygon fill="#f2f2f2" stroke="black" points="1322.5,-545 1145.5,-545 1145.5,-483 1322.5,-483 1322.5,-545"/>
-<polygon fill="#841de2" stroke="none" points="1145.5,-483 1145.5,-545 1322.5,-545 1322.5,-483 1145.5,-483"/>
-<polygon fill="none" stroke="black" points="1147,-504 1147,-544 1322,-544 1322,-504 1147,-504"/>
-<text text-anchor="start" x="1158" y="-521.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">PaymentGateway</text>
-<polygon fill="none" stroke="black" points="1147,-484 1147,-503 1322,-503 1322,-484 1147,-484"/>
-<text text-anchor="start" x="1197" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00">+ creditCard</text>
+<g id="node11" class="node">
+<title>com.youramaryllis.ddd.example.payment.PaymentGateway</title>
+<g id="a_node11"><a xlink:title="PaymentGateway">
+<polygon fill="#f2f2f2" stroke="#000000" points="732.5,-545 555.5,-545 555.5,-483 732.5,-483 732.5,-545"/>
+<polygon fill="#841de2" stroke="transparent" points="555.5,-483 555.5,-545 732.5,-545 732.5,-483 555.5,-483"/>
+<polygon fill="none" stroke="#000000" points="557,-504 557,-544 732,-544 732,-504 557,-504"/>
+<text text-anchor="start" x="568" y="-521.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">PaymentGateway</text>
+<polygon fill="none" stroke="#000000" points="557,-484 557,-503 732,-503 732,-484 557,-484"/>
+<text text-anchor="start" x="606" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ creditCard</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway -->
-<g id="edge23" class="edge"><title>com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway</title>
-<path fill="none" stroke="black" d="M1168.77,-684.407C1181.06,-652.495 1207.16,-584.72 1222.35,-545.252"/>
+<g id="edge18" class="edge">
+<title>com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway</title>
+<path fill="none" stroke="#000000" d="M631.3936,-684.187C633.8004,-651.6943 638.7593,-584.7492 641.6892,-545.1963"/>
+</g>
+<!-- com.youramaryllis.ddd.example.order.OrderService -->
+<g id="node2" class="node">
+<title>com.youramaryllis.ddd.example.order.OrderService</title>
+<g id="a_node2"><a xlink:title="OrderService">
+<polygon fill="#f2f2f2" stroke="#000000" points="531.5,-917 392.5,-917 392.5,-809 531.5,-809 531.5,-917"/>
+<polygon fill="#c04633" stroke="transparent" points="392.5,-809 392.5,-917 531.5,-917 531.5,-809 392.5,-809"/>
+<polygon fill="none" stroke="#000000" points="394,-876 394,-916 531,-916 531,-876 394,-876"/>
+<text text-anchor="start" x="405" y="-893.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">OrderService</text>
+<polygon fill="none" stroke="#000000" points="394,-856 394,-875 531,-875 531,-856 394,-856"/>
+<text text-anchor="start" x="438.5" y="-862.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; orders</text>
+<polygon fill="none" stroke="#000000" points="394,-810 394,-855 531,-855 531,-810 394,-810"/>
+<text text-anchor="start" x="444.5" y="-842.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ pay</text>
+<text text-anchor="start" x="423" y="-829.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ openOrder</text>
+<text text-anchor="start" x="397" y="-816.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ addProductToOrder</text>
+</a>
+</g>
+</g>
+<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted -->
+<g id="edge21" class="edge">
+<title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted</title>
+<path fill="none" stroke="#000000" d="M518.8771,-808.8313C550.6711,-778.5513 588.2725,-742.7405 610.5744,-721.5006"/>
+</g>
+<!-- com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened -->
+<g id="node3" class="node">
+<title>com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened</title>
+<g id="a_node3"><a xlink:title="order opened">
+<polygon fill="#f2f2f2" stroke="#000000" points="931.5,-730.5 816.5,-730.5 816.5,-675.5 931.5,-675.5 931.5,-730.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="816.5,-675.5 816.5,-730.5 931.5,-730.5 931.5,-675.5 816.5,-675.5"/>
+<polygon fill="none" stroke="#000000" points="818,-694 818,-729 931,-729 931,-694 818,-694"/>
+<text text-anchor="start" x="829" y="-709.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">order opened</text>
+<polygon fill="none" stroke="#000000" points="818,-676 818,-693 931,-693 931,-676 818,-676"/>
+<text text-anchor="start" x="861" y="-682" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Sales</text>
+</a>
+</g>
+</g>
+<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened -->
+<g id="edge20" class="edge">
+<title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened</title>
+<path fill="none" stroke="#000000" d="M531.7046,-838.1574C580.666,-820.496 647.5805,-795.9335 706,-773 742.9122,-758.5096 784.0085,-741.4035 816.3155,-727.7288"/>
+</g>
+<!-- com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered -->
+<g id="node4" class="node">
+<title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered</title>
+<g id="a_node4"><a xlink:title="product ordered">
+<polygon fill="#f2f2f2" stroke="#000000" points="1197,-721.5 1063,-721.5 1063,-684.5 1197,-684.5 1197,-721.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="1063,-684.5 1063,-721.5 1197,-721.5 1197,-684.5 1063,-684.5"/>
+<polygon fill="none" stroke="#000000" points="1064,-685 1064,-720 1196,-720 1196,-685 1064,-685"/>
+<text text-anchor="start" x="1075" y="-700.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">product ordered</text>
+</a>
+</g>
+</g>
+<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered -->
+<g id="edge19" class="edge">
+<title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered</title>
+<path fill="none" stroke="#000000" d="M531.6949,-853.606C625.5139,-840.1175 797.1516,-812.465 940,-773 991.1652,-758.8645 1048.0754,-737.0504 1086.1522,-721.534"/>
+</g>
+<!-- com.youramaryllis.ddd.example.order.Order -->
+<g id="node5" class="node">
+<title>com.youramaryllis.ddd.example.order.Order</title>
+<g id="a_node5"><a xlink:title="Order">
+<polygon fill="#f2f2f2" stroke="#000000" points="363.5,-773 264.5,-773 264.5,-633 363.5,-633 363.5,-773"/>
+<polygon fill="#ffa500" stroke="transparent" points="264.5,-633 264.5,-773 363.5,-773 363.5,-633 264.5,-633"/>
+<polygon fill="none" stroke="#000000" points="266,-732 266,-772 363,-772 363,-732 266,-732"/>
+<text text-anchor="start" x="289" y="-749.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Order</text>
+<polygon fill="none" stroke="#000000" points="266,-634 266,-731 363,-731 363,-634 266,-634"/>
+<text text-anchor="start" x="285.5" y="-718.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderId</text>
+<text text-anchor="start" x="280" y="-705.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ lineItems</text>
+<text text-anchor="start" x="276.5" y="-692.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderDate</text>
+<text text-anchor="start" x="288.5" y="-679.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ userId</text>
+<text text-anchor="start" x="269" y="-666.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ paymentInfo</text>
+<text text-anchor="start" x="272" y="-653.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ deliveryInfo</text>
+<text text-anchor="start" x="279" y="-640.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ totalPrice</text>
+</a>
+</g>
+</g>
+<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.order.Order -->
+<g id="edge1" class="edge">
+<title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.order.Order</title>
+<path fill="none" stroke="#000000" d="M411.894,-808.8313C396.2961,-791.9688 379.1117,-773.391 363.552,-756.5697"/>
+</g>
+<!-- com.youramaryllis.ddd.example.user.UserManagement -->
+<g id="node12" class="node">
+<title>com.youramaryllis.ddd.example.user.UserManagement</title>
+<g id="a_node12"><a xlink:title="UserManagement">
+<polygon fill="#f2f2f2" stroke="#000000" points="1066.5,-594 885.5,-594 885.5,-434 1066.5,-434 1066.5,-594"/>
+<polygon fill="#c04633" stroke="transparent" points="885.5,-434 885.5,-594 1066.5,-594 1066.5,-434 885.5,-434"/>
+<polygon fill="none" stroke="#000000" points="887,-553 887,-593 1066,-593 1066,-553 887,-553"/>
+<text text-anchor="start" x="898" y="-570.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">UserManagement</text>
+<polygon fill="none" stroke="#000000" points="887,-520 887,-552 1066,-552 1066,-520 887,-520"/>
+<text text-anchor="start" x="959" y="-539.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; user</text>
+<text text-anchor="start" x="961" y="-526.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; test</text>
+<polygon fill="none" stroke="#000000" points="887,-435 887,-519 1066,-519 1066,-435 887,-435"/>
+<text text-anchor="start" x="946" y="-506.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ getUser</text>
+<text text-anchor="start" x="932.5" y="-493.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ searchUsers</text>
+<text text-anchor="start" x="944.5" y="-480.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ addUser</text>
+<text text-anchor="start" x="932.5" y="-467.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ removeUser</text>
+<text text-anchor="start" x="934.5" y="-454.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ updateUser</text>
+<text text-anchor="start" x="944.5" y="-441.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ listUsers</text>
+</a>
+</g>
+</g>
+<!-- com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement -->
+<g id="edge22" class="edge">
+<title>com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement</title>
+<path fill="none" stroke="#000000" d="M889.0505,-675.1124C900.577,-653.7544 917.0883,-623.1599 932.6319,-594.3585"/>
+</g>
+<!-- com.youramaryllis.ddd.example.catalog.CatalogService -->
+<g id="node18" class="node">
+<title>com.youramaryllis.ddd.example.catalog.CatalogService</title>
+<g id="a_node18"><a xlink:title="CatalogService">
+<polygon fill="#f2f2f2" stroke="#000000" points="1322,-561.5 1166,-561.5 1166,-466.5 1322,-466.5 1322,-561.5"/>
+<polygon fill="#c04633" stroke="transparent" points="1166,-466.5 1166,-561.5 1322,-561.5 1322,-466.5 1166,-466.5"/>
+<polygon fill="none" stroke="#000000" points="1167,-520 1167,-560 1321,-560 1321,-520 1167,-520"/>
+<text text-anchor="start" x="1178" y="-537.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">CatalogService</text>
+<polygon fill="none" stroke="#000000" points="1167,-500 1167,-519 1321,-519 1321,-500 1167,-500"/>
+<text text-anchor="start" x="1207.5" y="-506.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; catalogList</text>
+<polygon fill="none" stroke="#000000" points="1167,-467 1167,-499 1321,-499 1321,-467 1167,-467"/>
+<text text-anchor="start" x="1194.5" y="-486.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createCatalog</text>
+<text text-anchor="start" x="1194" y="-473.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createProduct</text>
+</a>
+</g>
+</g>
+<!-- com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService -->
+<g id="edge23" class="edge">
+<title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService</title>
+<path fill="none" stroke="#000000" d="M1141.3475,-684.187C1158.412,-655.8959 1191.2304,-601.4865 1215.1801,-561.7804"/>
 </g>
 <!-- com.youramaryllis.ddd.example.order.OrderId -->
-<g id="node6" class="node"><title>com.youramaryllis.ddd.example.order.OrderId</title>
-<polygon fill="#f2f2f2" stroke="black" points="108,-545 16,-545 16,-483 108,-483 108,-545"/>
-<polygon fill="orange" stroke="none" points="16,-483 16,-545 108,-545 108,-483 16,-483"/>
-<polygon fill="none" stroke="black" points="17,-504 17,-544 107,-544 107,-504 17,-504"/>
-<text text-anchor="start" x="28" y="-521.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">OrderId</text>
-<polygon fill="none" stroke="black" points="17,-484 17,-503 107,-503 107,-484 17,-484"/>
-<text text-anchor="start" x="33" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00">+ orderId</text>
+<g id="node6" class="node">
+<title>com.youramaryllis.ddd.example.order.OrderId</title>
+<g id="a_node6"><a xlink:title="OrderId">
+<polygon fill="#f2f2f2" stroke="#000000" points="108,-545 16,-545 16,-483 108,-483 108,-545"/>
+<polygon fill="#ffa500" stroke="transparent" points="16,-483 16,-545 108,-545 108,-483 16,-483"/>
+<polygon fill="none" stroke="#000000" points="17,-504 17,-544 107,-544 107,-504 17,-504"/>
+<text text-anchor="start" x="28" y="-521.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">OrderId</text>
+<polygon fill="none" stroke="#000000" points="17,-484 17,-503 107,-503 107,-484 17,-484"/>
+<text text-anchor="start" x="33" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderId</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.OrderId -->
-<g id="edge5" class="edge"><title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.OrderId</title>
-<path fill="none" stroke="black" d="M265.833,-693.42C222.388,-683.507 159.037,-663.374 117,-625 93.5041,-603.551 78.7271,-569.807 70.4791,-545.345"/>
+<g id="edge5" class="edge">
+<title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.OrderId</title>
+<path fill="none" stroke="#000000" d="M264.1028,-693.7884C220.6922,-683.5279 158.4139,-663.1103 117,-625 93.578,-603.4464 78.8551,-569.7148 70.6013,-545.0898"/>
 </g>
 <!-- com.youramaryllis.ddd.example.order.LineItem -->
-<g id="node7" class="node"><title>com.youramaryllis.ddd.example.order.LineItem</title>
-<polygon fill="#f2f2f2" stroke="black" points="228,-564.5 126,-564.5 126,-463.5 228,-463.5 228,-564.5"/>
-<polygon fill="orange" stroke="none" points="126,-463.5 126,-564.5 228,-564.5 228,-463.5 126,-463.5"/>
-<polygon fill="none" stroke="black" points="127,-523 127,-563 227,-563 227,-523 127,-523"/>
-<text text-anchor="start" x="138" y="-540.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">LineItem</text>
-<polygon fill="none" stroke="black" points="127,-464 127,-522 227,-522 227,-464 127,-464"/>
-<text text-anchor="start" x="142" y="-509.4" font-family="Bitstream Vera Sans" font-size="12.00">+ lineItemId</text>
-<text text-anchor="start" x="136" y="-496.4" font-family="Bitstream Vera Sans" font-size="12.00">+ productSku</text>
-<text text-anchor="start" x="146.5" y="-483.4" font-family="Bitstream Vera Sans" font-size="12.00">+ quantity</text>
-<text text-anchor="start" x="145" y="-470.4" font-family="Bitstream Vera Sans" font-size="12.00">+ unitPrice</text>
+<g id="node7" class="node">
+<title>com.youramaryllis.ddd.example.order.LineItem</title>
+<g id="a_node7"><a xlink:title="LineItem">
+<polygon fill="#f2f2f2" stroke="#000000" points="228,-564.5 126,-564.5 126,-463.5 228,-463.5 228,-564.5"/>
+<polygon fill="#ffa500" stroke="transparent" points="126,-463.5 126,-564.5 228,-564.5 228,-463.5 126,-463.5"/>
+<polygon fill="none" stroke="#000000" points="127,-523 127,-563 227,-563 227,-523 127,-523"/>
+<text text-anchor="start" x="138" y="-540.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">LineItem</text>
+<polygon fill="none" stroke="#000000" points="127,-464 127,-522 227,-522 227,-464 127,-464"/>
+<text text-anchor="start" x="140" y="-509.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ lineItemId</text>
+<text text-anchor="start" x="136" y="-496.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ productSku</text>
+<text text-anchor="start" x="145.5" y="-483.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ quantity</text>
+<text text-anchor="start" x="143.5" y="-470.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ unitPrice</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.LineItem -->
-<g id="edge4" class="edge"><title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.LineItem</title>
-<path fill="none" stroke="black" d="M265.694,-657.98C255.621,-647.662 245.495,-636.353 237,-625 223.12,-606.45 210.405,-584.297 200.287,-564.749"/>
+<g id="edge4" class="edge">
+<title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.LineItem</title>
+<path fill="none" stroke="#000000" d="M264.4798,-657.105C254.8088,-646.999 245.1516,-636.0116 237,-625 223.2494,-606.425 210.6422,-584.3083 200.5714,-564.7237"/>
 </g>
 <!-- com.youramaryllis.ddd.example.order.PaymentInfo -->
-<g id="node8" class="node"><title>com.youramaryllis.ddd.example.order.PaymentInfo</title>
-<polygon fill="#f2f2f2" stroke="black" points="382,-558 246,-558 246,-470 382,-470 382,-558"/>
-<polygon fill="orange" stroke="none" points="246,-470 246,-558 382,-558 382,-470 246,-470"/>
-<polygon fill="none" stroke="black" points="247,-517 247,-557 381,-557 381,-517 247,-517"/>
-<text text-anchor="start" x="258" y="-534.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">PaymentInfo</text>
-<polygon fill="none" stroke="black" points="247,-471 247,-516 381,-516 381,-471 247,-471"/>
-<text text-anchor="start" x="291" y="-503.4" font-family="Bitstream Vera Sans" font-size="12.00">+ name</text>
-<text text-anchor="start" x="270" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00">+ cardNumber</text>
-<text text-anchor="start" x="267" y="-477.4" font-family="Bitstream Vera Sans" font-size="12.00">+ billingAddress</text>
+<g id="node8" class="node">
+<title>com.youramaryllis.ddd.example.order.PaymentInfo</title>
+<g id="a_node8"><a xlink:title="PaymentInfo">
+<polygon fill="#f2f2f2" stroke="#000000" points="382,-558 246,-558 246,-470 382,-470 382,-558"/>
+<polygon fill="#ffa500" stroke="transparent" points="246,-470 246,-558 382,-558 382,-470 246,-470"/>
+<polygon fill="none" stroke="#000000" points="247,-517 247,-557 381,-557 381,-517 247,-517"/>
+<text text-anchor="start" x="258" y="-534.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">PaymentInfo</text>
+<polygon fill="none" stroke="#000000" points="247,-471 247,-516 381,-516 381,-471 247,-471"/>
+<text text-anchor="start" x="289.5" y="-503.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
+<text text-anchor="start" x="269" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ cardNumber</text>
+<text text-anchor="start" x="265.5" y="-477.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ billingAddress</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.PaymentInfo -->
-<g id="edge3" class="edge"><title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.PaymentInfo</title>
-<path fill="none" stroke="black" d="M314,-632.899C314,-607.825 314,-580.234 314,-558.051"/>
+<g id="edge3" class="edge">
+<title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.PaymentInfo</title>
+<path fill="none" stroke="#000000" d="M314,-632.892C314,-607.8892 314,-580.441 314,-558.2235"/>
 </g>
 <!-- com.youramaryllis.ddd.example.order.DeliveryInfo -->
-<g id="node10" class="node"><title>com.youramaryllis.ddd.example.order.DeliveryInfo</title>
-<polygon fill="#f2f2f2" stroke="black" points="532,-551.5 400,-551.5 400,-476.5 532,-476.5 532,-551.5"/>
-<polygon fill="orange" stroke="none" points="400,-476.5 400,-551.5 532,-551.5 532,-476.5 400,-476.5"/>
-<polygon fill="none" stroke="black" points="401,-510 401,-550 531,-550 531,-510 401,-510"/>
-<text text-anchor="start" x="412" y="-527.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">DeliveryInfo</text>
-<polygon fill="none" stroke="black" points="401,-477 401,-509 531,-509 531,-477 401,-477"/>
-<text text-anchor="start" x="443" y="-496.4" font-family="Bitstream Vera Sans" font-size="12.00">+ name</text>
-<text text-anchor="start" x="435.5" y="-483.4" font-family="Bitstream Vera Sans" font-size="12.00">+ address</text>
+<g id="node10" class="node">
+<title>com.youramaryllis.ddd.example.order.DeliveryInfo</title>
+<g id="a_node10"><a xlink:title="DeliveryInfo">
+<polygon fill="#f2f2f2" stroke="#000000" points="532,-551.5 400,-551.5 400,-476.5 532,-476.5 532,-551.5"/>
+<polygon fill="#ffa500" stroke="transparent" points="400,-476.5 400,-551.5 532,-551.5 532,-476.5 400,-476.5"/>
+<polygon fill="none" stroke="#000000" points="401,-510 401,-550 531,-550 531,-510 401,-510"/>
+<text text-anchor="start" x="412" y="-527.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">DeliveryInfo</text>
+<polygon fill="none" stroke="#000000" points="401,-477 401,-509 531,-509 531,-477 401,-477"/>
+<text text-anchor="start" x="441.5" y="-496.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
+<text text-anchor="start" x="435.5" y="-483.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ address</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.DeliveryInfo -->
-<g id="edge2" class="edge"><title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.DeliveryInfo</title>
-<path fill="none" stroke="black" d="M362.289,-656.504C372.15,-646.455 382.195,-635.627 391,-625 410.245,-601.773 429.358,-573.642 443.474,-551.643"/>
+<g id="edge2" class="edge">
+<title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.DeliveryInfo</title>
+<path fill="none" stroke="#000000" d="M363.5053,-655.6212C372.9735,-645.8018 382.5566,-635.3019 391,-625 410.0182,-601.7959 428.9137,-573.7919 442.9811,-551.7174"/>
 </g>
 <!-- com.youramaryllis.ddd.example.order.Address -->
-<g id="node9" class="node"><title>com.youramaryllis.ddd.example.order.Address</title>
-<polygon fill="#f2f2f2" stroke="black" points="438.5,-388 341.5,-388 341.5,-287 438.5,-287 438.5,-388"/>
-<polygon fill="orange" stroke="none" points="341.5,-287 341.5,-388 438.5,-388 438.5,-287 341.5,-287"/>
-<polygon fill="none" stroke="black" points="343,-346.5 343,-386.5 438,-386.5 438,-346.5 343,-346.5"/>
-<text text-anchor="start" x="354" y="-363.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">Address</text>
-<polygon fill="none" stroke="black" points="343,-287.5 343,-345.5 438,-345.5 438,-287.5 343,-287.5"/>
-<text text-anchor="start" x="366" y="-332.9" font-family="Bitstream Vera Sans" font-size="12.00">+ street</text>
-<text text-anchor="start" x="373.5" y="-319.9" font-family="Bitstream Vera Sans" font-size="12.00">+ city</text>
-<text text-anchor="start" x="369" y="-306.9" font-family="Bitstream Vera Sans" font-size="12.00">+ state</text>
-<text text-anchor="start" x="375" y="-293.9" font-family="Bitstream Vera Sans" font-size="12.00">+ zip</text>
+<g id="node9" class="node">
+<title>com.youramaryllis.ddd.example.order.Address</title>
+<g id="a_node9"><a xlink:title="Address">
+<polygon fill="#f2f2f2" stroke="#000000" points="438.5,-388 341.5,-388 341.5,-287 438.5,-287 438.5,-388"/>
+<polygon fill="#ffa500" stroke="transparent" points="341.5,-287 341.5,-388 438.5,-388 438.5,-287 341.5,-287"/>
+<polygon fill="none" stroke="#000000" points="343,-346.5 343,-386.5 438,-386.5 438,-346.5 343,-346.5"/>
+<text text-anchor="start" x="354" y="-363.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Address</text>
+<polygon fill="none" stroke="#000000" points="343,-287.5 343,-345.5 438,-345.5 438,-287.5 343,-287.5"/>
+<text text-anchor="start" x="366" y="-332.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ street</text>
+<text text-anchor="start" x="373" y="-319.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ city</text>
+<text text-anchor="start" x="368.5" y="-306.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ state</text>
+<text text-anchor="start" x="375" y="-293.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ zip</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.order.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address -->
-<g id="edge6" class="edge"><title>com.youramaryllis.ddd.example.order.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address</title>
-<path fill="none" stroke="black" d="M332.787,-469.865C343.556,-445.138 357.119,-413.996 368.337,-388.24"/>
+<g id="edge6" class="edge">
+<title>com.youramaryllis.ddd.example.order.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address</title>
+<path fill="none" stroke="#000000" d="M332.982,-469.9169C343.6657,-445.1052 357.0518,-414.0178 368.1686,-388.2006"/>
 </g>
 <!-- com.youramaryllis.ddd.example.order.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address -->
-<g id="edge7" class="edge"><title>com.youramaryllis.ddd.example.order.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address</title>
-<path fill="none" stroke="black" d="M450.068,-476.419C438.925,-450.835 423.908,-416.355 411.677,-388.271"/>
+<g id="edge7" class="edge">
+<title>com.youramaryllis.ddd.example.order.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address</title>
+<path fill="none" stroke="#000000" d="M449.6961,-476.1363C438.6177,-450.4082 423.8394,-416.0875 411.7587,-388.0317"/>
 </g>
 <!-- com.youramaryllis.ddd.example.user.User -->
-<g id="node13" class="node"><title>com.youramaryllis.ddd.example.user.User</title>
-<polygon fill="#f2f2f2" stroke="black" points="827.5,-388 724.5,-388 724.5,-287 827.5,-287 827.5,-388"/>
-<polygon fill="orange" stroke="none" points="724.5,-287 724.5,-388 827.5,-388 827.5,-287 724.5,-287"/>
-<polygon fill="none" stroke="black" points="726,-346.5 726,-386.5 827,-386.5 827,-346.5 726,-346.5"/>
-<text text-anchor="start" x="756" y="-363.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">User</text>
-<polygon fill="none" stroke="black" points="726,-287.5 726,-345.5 827,-345.5 827,-287.5 726,-287.5"/>
-<text text-anchor="start" x="750.5" y="-332.9" font-family="Bitstream Vera Sans" font-size="12.00">+ userId</text>
-<text text-anchor="start" x="753.5" y="-319.9" font-family="Bitstream Vera Sans" font-size="12.00">+ name</text>
-<text text-anchor="start" x="729" y="-306.9" font-family="Bitstream Vera Sans" font-size="12.00">+ paymentInfos</text>
-<text text-anchor="start" x="732.5" y="-293.9" font-family="Bitstream Vera Sans" font-size="12.00">+ deliveryInfos</text>
+<g id="node13" class="node">
+<title>com.youramaryllis.ddd.example.user.User</title>
+<g id="a_node13"><a xlink:title="User">
+<polygon fill="#f2f2f2" stroke="#000000" points="1028.5,-388 923.5,-388 923.5,-287 1028.5,-287 1028.5,-388"/>
+<polygon fill="#ffa500" stroke="transparent" points="923.5,-287 923.5,-388 1028.5,-388 1028.5,-287 923.5,-287"/>
+<polygon fill="none" stroke="#000000" points="925,-346.5 925,-386.5 1028,-386.5 1028,-346.5 925,-346.5"/>
+<text text-anchor="start" x="956" y="-363.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">User</text>
+<polygon fill="none" stroke="#000000" points="925,-287.5 925,-345.5 1028,-345.5 1028,-287.5 925,-287.5"/>
+<text text-anchor="start" x="950.5" y="-332.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ userId</text>
+<text text-anchor="start" x="952" y="-319.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
+<text text-anchor="start" x="928" y="-306.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ paymentInfos</text>
+<text text-anchor="start" x="931" y="-293.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ deliveryInfos</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.User -->
-<g id="edge9" class="edge"><title>com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.User</title>
-<path fill="none" stroke="black" d="M776,-433.919C776,-418.409 776,-402.551 776,-388.33"/>
+<g id="edge9" class="edge">
+<title>com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.User</title>
+<path fill="none" stroke="#000000" d="M976,-433.7551C976,-418.2741 976,-402.4619 976,-388.245"/>
 </g>
 <!-- com.youramaryllis.ddd.example.user.UserId -->
-<g id="node14" class="node"><title>com.youramaryllis.ddd.example.user.UserId</title>
-<polygon fill="#f2f2f2" stroke="black" points="942,-228 860,-228 860,-166 942,-166 942,-228"/>
-<polygon fill="orange" stroke="none" points="860,-166 860,-228 942,-228 942,-166 860,-166"/>
-<polygon fill="none" stroke="black" points="861,-187 861,-227 941,-227 941,-187 861,-187"/>
-<text text-anchor="start" x="872" y="-204.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">UserId</text>
-<polygon fill="none" stroke="black" points="861,-167 861,-186 941,-186 941,-167 861,-167"/>
-<text text-anchor="start" x="875" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00">+ userId</text>
+<g id="node14" class="node">
+<title>com.youramaryllis.ddd.example.user.UserId</title>
+<g id="a_node14"><a xlink:title="UserId">
+<polygon fill="#f2f2f2" stroke="#000000" points="1142,-228 1060,-228 1060,-166 1142,-166 1142,-228"/>
+<polygon fill="#ffa500" stroke="transparent" points="1060,-166 1060,-228 1142,-228 1142,-166 1060,-166"/>
+<polygon fill="none" stroke="#000000" points="1061,-187 1061,-227 1141,-227 1141,-187 1061,-187"/>
+<text text-anchor="start" x="1072" y="-204.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">UserId</text>
+<polygon fill="none" stroke="#000000" points="1061,-167 1061,-186 1141,-186 1141,-167 1061,-167"/>
+<text text-anchor="start" x="1075" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ userId</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.UserId -->
-<g id="edge8" class="edge"><title>com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.UserId</title>
-<path fill="none" stroke="black" d="M819.547,-433.705C825.4,-421.886 831.074,-409.731 836,-398 860.667,-339.259 881.907,-267.672 892.931,-228.044"/>
+<g id="edge8" class="edge">
+<title>com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.UserId</title>
+<path fill="none" stroke="#000000" d="M1021.3379,-433.8149C1027.3022,-421.9751 1033.0522,-409.7916 1038,-398 1062.479,-339.662 1082.644,-268.3787 1093.1465,-228.2883"/>
 </g>
 <!-- com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.UserId -->
-<g id="edge12" class="edge"><title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.UserId</title>
-<path fill="none" stroke="black" d="M820.775,-286.89C838.428,-267.329 858.139,-245.49 873.604,-228.354"/>
+<g id="edge12" class="edge">
+<title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.UserId</title>
+<path fill="none" stroke="#000000" d="M1021.1279,-286.7763C1038.6107,-267.1256 1058.0634,-245.2607 1073.3941,-228.029"/>
 </g>
 <!-- com.youramaryllis.ddd.example.user.PaymentInfo -->
-<g id="node15" class="node"><title>com.youramaryllis.ddd.example.user.PaymentInfo</title>
-<polygon fill="#f2f2f2" stroke="black" points="692,-241 556,-241 556,-153 692,-153 692,-241"/>
-<polygon fill="orange" stroke="none" points="556,-153 556,-241 692,-241 692,-153 556,-153"/>
-<polygon fill="none" stroke="black" points="557,-200 557,-240 691,-240 691,-200 557,-200"/>
-<text text-anchor="start" x="568" y="-217.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">PaymentInfo</text>
-<polygon fill="none" stroke="black" points="557,-154 557,-199 691,-199 691,-154 557,-154"/>
-<text text-anchor="start" x="601" y="-186.4" font-family="Bitstream Vera Sans" font-size="12.00">+ name</text>
-<text text-anchor="start" x="580" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00">+ cardNumber</text>
-<text text-anchor="start" x="577" y="-160.4" font-family="Bitstream Vera Sans" font-size="12.00">+ billingAddress</text>
+<g id="node15" class="node">
+<title>com.youramaryllis.ddd.example.user.PaymentInfo</title>
+<g id="a_node15"><a xlink:title="PaymentInfo">
+<polygon fill="#f2f2f2" stroke="#000000" points="892,-241 756,-241 756,-153 892,-153 892,-241"/>
+<polygon fill="#ffa500" stroke="transparent" points="756,-153 756,-241 892,-241 892,-153 756,-153"/>
+<polygon fill="none" stroke="#000000" points="757,-200 757,-240 891,-240 891,-200 757,-200"/>
+<text text-anchor="start" x="768" y="-217.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">PaymentInfo</text>
+<polygon fill="none" stroke="#000000" points="757,-154 757,-199 891,-199 891,-154 757,-154"/>
+<text text-anchor="start" x="799.5" y="-186.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
+<text text-anchor="start" x="779" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ cardNumber</text>
+<text text-anchor="start" x="775.5" y="-160.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ billingAddress</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.PaymentInfo -->
-<g id="edge11" class="edge"><title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.PaymentInfo</title>
-<path fill="none" stroke="black" d="M724.115,-289.224C707.001,-273.629 688.066,-256.376 671.312,-241.11"/>
+<g id="edge11" class="edge">
+<title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.PaymentInfo</title>
+<path fill="none" stroke="#000000" d="M923.2644,-288.7542C906.5442,-273.299 888.1614,-256.3071 871.8078,-241.1907"/>
 </g>
 <!-- com.youramaryllis.ddd.example.user.DeliveryInfo -->
-<g id="node17" class="node"><title>com.youramaryllis.ddd.example.user.DeliveryInfo</title>
-<polygon fill="#f2f2f2" stroke="black" points="842,-234.5 710,-234.5 710,-159.5 842,-159.5 842,-234.5"/>
-<polygon fill="orange" stroke="none" points="710,-159.5 710,-234.5 842,-234.5 842,-159.5 710,-159.5"/>
-<polygon fill="none" stroke="black" points="711,-193 711,-233 841,-233 841,-193 711,-193"/>
-<text text-anchor="start" x="722" y="-210.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">DeliveryInfo</text>
-<polygon fill="none" stroke="black" points="711,-160 711,-192 841,-192 841,-160 711,-160"/>
-<text text-anchor="start" x="753" y="-179.4" font-family="Bitstream Vera Sans" font-size="12.00">+ name</text>
-<text text-anchor="start" x="745.5" y="-166.4" font-family="Bitstream Vera Sans" font-size="12.00">+ address</text>
+<g id="node17" class="node">
+<title>com.youramaryllis.ddd.example.user.DeliveryInfo</title>
+<g id="a_node17"><a xlink:title="DeliveryInfo">
+<polygon fill="#f2f2f2" stroke="#000000" points="1042,-234.5 910,-234.5 910,-159.5 1042,-159.5 1042,-234.5"/>
+<polygon fill="#ffa500" stroke="transparent" points="910,-159.5 910,-234.5 1042,-234.5 1042,-159.5 910,-159.5"/>
+<polygon fill="none" stroke="#000000" points="911,-193 911,-233 1041,-233 1041,-193 911,-193"/>
+<text text-anchor="start" x="922" y="-210.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">DeliveryInfo</text>
+<polygon fill="none" stroke="#000000" points="911,-160 911,-192 1041,-192 1041,-160 911,-160"/>
+<text text-anchor="start" x="951.5" y="-179.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
+<text text-anchor="start" x="945.5" y="-166.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ address</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.DeliveryInfo -->
-<g id="edge10" class="edge"><title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.DeliveryInfo</title>
-<path fill="none" stroke="black" d="M776,-286.89C776,-269.658 776,-250.658 776,-234.663"/>
+<g id="edge10" class="edge">
+<title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.DeliveryInfo</title>
+<path fill="none" stroke="#000000" d="M976,-286.7763C976,-269.6409 976,-250.8219 976,-234.8594"/>
 </g>
 <!-- com.youramaryllis.ddd.example.user.Address -->
-<g id="node16" class="node"><title>com.youramaryllis.ddd.example.user.Address</title>
-<polygon fill="#f2f2f2" stroke="black" points="748.5,-117 651.5,-117 651.5,-16 748.5,-16 748.5,-117"/>
-<polygon fill="orange" stroke="none" points="651.5,-16 651.5,-117 748.5,-117 748.5,-16 651.5,-16"/>
-<polygon fill="none" stroke="black" points="653,-75.5 653,-115.5 748,-115.5 748,-75.5 653,-75.5"/>
-<text text-anchor="start" x="664" y="-92.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">Address</text>
-<polygon fill="none" stroke="black" points="653,-16.5 653,-74.5 748,-74.5 748,-16.5 653,-16.5"/>
-<text text-anchor="start" x="676" y="-61.9" font-family="Bitstream Vera Sans" font-size="12.00">+ street</text>
-<text text-anchor="start" x="683.5" y="-48.9" font-family="Bitstream Vera Sans" font-size="12.00">+ city</text>
-<text text-anchor="start" x="679" y="-35.9" font-family="Bitstream Vera Sans" font-size="12.00">+ state</text>
-<text text-anchor="start" x="685" y="-22.9" font-family="Bitstream Vera Sans" font-size="12.00">+ zip</text>
+<g id="node16" class="node">
+<title>com.youramaryllis.ddd.example.user.Address</title>
+<g id="a_node16"><a xlink:title="Address">
+<polygon fill="#f2f2f2" stroke="#000000" points="948.5,-117 851.5,-117 851.5,-16 948.5,-16 948.5,-117"/>
+<polygon fill="#ffa500" stroke="transparent" points="851.5,-16 851.5,-117 948.5,-117 948.5,-16 851.5,-16"/>
+<polygon fill="none" stroke="#000000" points="853,-75.5 853,-115.5 948,-115.5 948,-75.5 853,-75.5"/>
+<text text-anchor="start" x="864" y="-92.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Address</text>
+<polygon fill="none" stroke="#000000" points="853,-16.5 853,-74.5 948,-74.5 948,-16.5 853,-16.5"/>
+<text text-anchor="start" x="876" y="-61.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ street</text>
+<text text-anchor="start" x="883" y="-48.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ city</text>
+<text text-anchor="start" x="878.5" y="-35.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ state</text>
+<text text-anchor="start" x="885" y="-22.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ zip</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.user.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address -->
-<g id="edge13" class="edge"><title>com.youramaryllis.ddd.example.user.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address</title>
-<path fill="none" stroke="black" d="M649.518,-152.854C656.245,-141.48 663.56,-129.113 670.479,-117.414"/>
+<g id="edge13" class="edge">
+<title>com.youramaryllis.ddd.example.user.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address</title>
+<path fill="none" stroke="#000000" d="M849.7301,-152.8187C856.3618,-141.4314 863.552,-129.085 870.3648,-117.3868"/>
 </g>
 <!-- com.youramaryllis.ddd.example.user.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address -->
-<g id="edge14" class="edge"><title>com.youramaryllis.ddd.example.user.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address</title>
-<path fill="none" stroke="black" d="M754.221,-159.177C746.502,-146.124 737.682,-131.212 729.431,-117.262"/>
+<g id="edge14" class="edge">
+<title>com.youramaryllis.ddd.example.user.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address</title>
+<path fill="none" stroke="#000000" d="M954.0177,-159.254C946.3896,-146.1559 937.7076,-131.2479 929.5689,-117.2729"/>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog.Catalog -->
-<g id="node19" class="node"><title>com.youramaryllis.ddd.example.catalog.Catalog</title>
-<polygon fill="#f2f2f2" stroke="black" points="1100.5,-398 987.5,-398 987.5,-277 1100.5,-277 1100.5,-398"/>
-<polygon fill="orange" stroke="none" points="987.5,-277 987.5,-398 1100.5,-398 1100.5,-277 987.5,-277"/>
-<polygon fill="none" stroke="black" points="989,-356.5 989,-396.5 1100,-396.5 1100,-356.5 989,-356.5"/>
-<text text-anchor="start" x="1011" y="-373.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">Catalog</text>
-<polygon fill="none" stroke="black" points="989,-310.5 989,-355.5 1100,-355.5 1100,-310.5 989,-310.5"/>
-<text text-anchor="start" x="1011" y="-342.9" font-family="Bitstream Vera Sans" font-size="12.00">+ catalogId</text>
-<text text-anchor="start" x="1021.5" y="-329.9" font-family="Bitstream Vera Sans" font-size="12.00">+ name</text>
-<text text-anchor="start" x="1013.5" y="-316.9" font-family="Bitstream Vera Sans" font-size="12.00">&#45; products</text>
-<polygon fill="none" stroke="black" points="989,-277.5 989,-309.5 1100,-309.5 1100,-277.5 989,-277.5"/>
-<text text-anchor="start" x="1003.5" y="-296.9" font-family="Bitstream Vera Sans" font-size="12.00">+ addProduct</text>
-<text text-anchor="start" x="992" y="-283.9" font-family="Bitstream Vera Sans" font-size="12.00">+ removeProduct</text>
+<g id="node19" class="node">
+<title>com.youramaryllis.ddd.example.catalog.Catalog</title>
+<g id="a_node19"><a xlink:title="Catalog">
+<polygon fill="#f2f2f2" stroke="#000000" points="1301.5,-398 1186.5,-398 1186.5,-277 1301.5,-277 1301.5,-398"/>
+<polygon fill="#ffa500" stroke="transparent" points="1186.5,-277 1186.5,-398 1301.5,-398 1301.5,-277 1186.5,-277"/>
+<polygon fill="none" stroke="#000000" points="1188,-356.5 1188,-396.5 1301,-396.5 1301,-356.5 1188,-356.5"/>
+<text text-anchor="start" x="1211" y="-373.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Catalog</text>
+<polygon fill="none" stroke="#000000" points="1188,-310.5 1188,-355.5 1301,-355.5 1301,-310.5 1188,-310.5"/>
+<text text-anchor="start" x="1209.5" y="-342.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ catalogId</text>
+<text text-anchor="start" x="1220" y="-329.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
+<text text-anchor="start" x="1214" y="-316.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; products</text>
+<polygon fill="none" stroke="#000000" points="1188,-277.5 1188,-309.5 1301,-309.5 1301,-277.5 1188,-277.5"/>
+<text text-anchor="start" x="1203" y="-296.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ addProduct</text>
+<text text-anchor="start" x="1191" y="-283.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ removeProduct</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog.CatalogService&#45;&gt;com.youramaryllis.ddd.example.catalog.Catalog -->
-<g id="edge15" class="edge"><title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;&gt;com.youramaryllis.ddd.example.catalog.Catalog</title>
-<path fill="none" stroke="black" d="M1044,-466.237C1044,-445.339 1044,-420.46 1044,-398.235"/>
+<g id="edge15" class="edge">
+<title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;&gt;com.youramaryllis.ddd.example.catalog.Catalog</title>
+<path fill="none" stroke="#000000" d="M1244,-466.2366C1244,-445.3077 1244,-420.5001 1244,-398.2751"/>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog.Product -->
-<g id="node20" class="node"><title>com.youramaryllis.ddd.example.catalog.Product</title>
-<polygon fill="#f2f2f2" stroke="black" points="1090.5,-241 997.5,-241 997.5,-153 1090.5,-153 1090.5,-241"/>
-<polygon fill="orange" stroke="none" points="997.5,-153 997.5,-241 1090.5,-241 1090.5,-153 997.5,-153"/>
-<polygon fill="none" stroke="black" points="999,-200 999,-240 1090,-240 1090,-200 999,-200"/>
-<text text-anchor="start" x="1010" y="-217.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">Product</text>
-<polygon fill="none" stroke="black" points="999,-154 999,-199 1090,-199 1090,-154 999,-154"/>
-<text text-anchor="start" x="1003.5" y="-186.4" font-family="Bitstream Vera Sans" font-size="12.00">+ productSku</text>
-<text text-anchor="start" x="1023" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00">+ price</text>
-<text text-anchor="start" x="1021.5" y="-160.4" font-family="Bitstream Vera Sans" font-size="12.00">+ name</text>
+<g id="node20" class="node">
+<title>com.youramaryllis.ddd.example.catalog.Product</title>
+<g id="a_node20"><a xlink:title="Product">
+<polygon fill="#f2f2f2" stroke="#000000" points="1290.5,-241 1197.5,-241 1197.5,-153 1290.5,-153 1290.5,-241"/>
+<polygon fill="#ffa500" stroke="transparent" points="1197.5,-153 1197.5,-241 1290.5,-241 1290.5,-153 1197.5,-153"/>
+<polygon fill="none" stroke="#000000" points="1199,-200 1199,-240 1290,-240 1290,-200 1199,-200"/>
+<text text-anchor="start" x="1210" y="-217.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Product</text>
+<polygon fill="none" stroke="#000000" points="1199,-154 1199,-199 1290,-199 1290,-154 1199,-154"/>
+<text text-anchor="start" x="1203.5" y="-186.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ productSku</text>
+<text text-anchor="start" x="1222.5" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ price</text>
+<text text-anchor="start" x="1220" y="-160.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog.Catalog&#45;&gt;com.youramaryllis.ddd.example.catalog.Product -->
-<g id="edge16" class="edge"><title>com.youramaryllis.ddd.example.catalog.Catalog&#45;&gt;com.youramaryllis.ddd.example.catalog.Product</title>
-<path fill="none" stroke="black" d="M1044,-276.96C1044,-264.936 1044,-252.513 1044,-241.181"/>
+<g id="edge16" class="edge">
+<title>com.youramaryllis.ddd.example.catalog.Catalog&#45;&gt;com.youramaryllis.ddd.example.catalog.Product</title>
+<path fill="none" stroke="#000000" d="M1244,-276.6918C1244,-264.8256 1244,-252.5934 1244,-241.3827"/>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog.ProductSku -->
-<g id="node21" class="node"><title>com.youramaryllis.ddd.example.catalog.ProductSku</title>
-<polygon fill="#f2f2f2" stroke="black" points="1107,-97.5 981,-97.5 981,-35.5 1107,-35.5 1107,-97.5"/>
-<polygon fill="orange" stroke="none" points="981,-35.5 981,-97.5 1107,-97.5 1107,-35.5 981,-35.5"/>
-<polygon fill="none" stroke="black" points="982,-56.5 982,-96.5 1106,-96.5 1106,-56.5 982,-56.5"/>
-<text text-anchor="start" x="993" y="-73.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00">ProductSku</text>
-<polygon fill="none" stroke="black" points="982,-36.5 982,-55.5 1106,-55.5 1106,-36.5 982,-36.5"/>
-<text text-anchor="start" x="1026.5" y="-42.9" font-family="Bitstream Vera Sans" font-size="12.00">+ sku</text>
+<g id="node21" class="node">
+<title>com.youramaryllis.ddd.example.catalog.ProductSku</title>
+<g id="a_node21"><a xlink:title="ProductSku">
+<polygon fill="#f2f2f2" stroke="#000000" points="1307,-97.5 1181,-97.5 1181,-35.5 1307,-35.5 1307,-97.5"/>
+<polygon fill="#ffa500" stroke="transparent" points="1181,-35.5 1181,-97.5 1307,-97.5 1307,-35.5 1181,-35.5"/>
+<polygon fill="none" stroke="#000000" points="1182,-56.5 1182,-96.5 1306,-96.5 1306,-56.5 1182,-56.5"/>
+<text text-anchor="start" x="1193" y="-73.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">ProductSku</text>
+<polygon fill="none" stroke="#000000" points="1182,-36.5 1182,-55.5 1306,-55.5 1306,-36.5 1182,-36.5"/>
+<text text-anchor="start" x="1227" y="-42.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ sku</text>
+</a>
+</g>
 </g>
 <!-- com.youramaryllis.ddd.example.catalog.Product&#45;&gt;com.youramaryllis.ddd.example.catalog.ProductSku -->
-<g id="edge17" class="edge"><title>com.youramaryllis.ddd.example.catalog.Product&#45;&gt;com.youramaryllis.ddd.example.catalog.ProductSku</title>
-<path fill="none" stroke="black" d="M1044,-152.854C1044,-134.772 1044,-114.181 1044,-97.7544"/>
+<g id="edge17" class="edge">
+<title>com.youramaryllis.ddd.example.catalog.Product&#45;&gt;com.youramaryllis.ddd.example.catalog.ProductSku</title>
+<path fill="none" stroke="#000000" d="M1244,-152.8187C1244,-134.7764 1244,-114.3267 1244,-97.8618"/>
 </g>
 </g>
 </svg>

@@ -20,6 +20,6 @@ public class DDDGeneratorConfiguration {
 
     @Bean
     DomainModelGenerator getDomainModelGenerator() {
-        return new DomainModelGenerator(properties.getPackageName());
+        return new DomainModelGenerator(properties.getPackageName(), properties.getOutputDirectory(), "domain_model");
     }
 }
