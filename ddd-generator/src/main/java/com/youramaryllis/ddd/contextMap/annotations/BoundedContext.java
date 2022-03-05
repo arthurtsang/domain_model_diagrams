@@ -6,6 +6,9 @@ import java.lang.annotation.*;
 @Documented
 @Target(ElementType.PACKAGE)
 @Retention(RetentionPolicy.RUNTIME)
+/**
+ * Bounded Context
+ */
 public @interface BoundedContext {
     String value();
 }

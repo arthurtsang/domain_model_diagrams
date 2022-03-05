@@ -6,6 +6,9 @@ import java.lang.annotation.*;
 @Target(ElementType.PACKAGE)
 @Retention(RetentionPolicy.RUNTIME)
 @Relationship
+/**
+ * OpenHostService
+ */
 public @interface OpenHostService {
     String value();
 }
