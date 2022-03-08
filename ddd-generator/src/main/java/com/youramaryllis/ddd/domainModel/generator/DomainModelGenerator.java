@@ -20,20 +20,19 @@ import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 
 import java.io.File;
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
+import java.lang.reflect.*;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.MissingResourceException;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.function.Function;
+import java.util.stream.Stream;
 
 import static guru.nidi.graphviz.attribute.Attributes.attr;
 import static guru.nidi.graphviz.model.Factory.mutGraph;
 import static guru.nidi.graphviz.model.Factory.node;
+import static guru.nidi.graphviz.model.Link.to;
 
 @Slf4j
 public class DomainModelGenerator {
@@ -63,7 +62,7 @@ public class DomainModelGenerator {
         /*
           generate graph
          */
-        Graphviz.fromGraph(domainModel).engine(Engine.DOT).render(Format.SVG).toFile( Paths.get(outputDirectory, outputName+".svg").toFile() );
+        Graphviz.fromGraph(domainModel).engine(Engine.FDP).render(Format.SVG).toFile( Paths.get(outputDirectory, outputName+".svg").toFile() );
     }
 
     private MutableGraph buildMutableGraph(String name) {
@@ -76,12 +75,13 @@ public class DomainModelGenerator {
     private MutableGraph buildBoundedContext(Class<?> boundedContextPackage) {
         String bcName = boundedContextPackage.getAnnotation(BoundedContext.class).value();
         Optional<ResourceBundle> ubiquitousLanguage = getUbiquitousLanguage(bcName);
-        MutableGraph bc = mutGraph(bcName).setCluster(true).graphAttrs().add(attr("label", bcName), attr("style", "rounded"));
+        MutableGraph bc = mutGraph(bcName.replace(' ', '_')).setCluster(true).graphAttrs().add(attr("label", bcName), attr("style", "rounded"));
         if( ubiquitousLanguage.isPresent() && ubiquitousLanguage.get().containsKey(bcName) ) bc.graphAttrs().add(attr("tooltip", ubiquitousLanguage.get().getString(bcName)));
         String packageName = boundedContextPackage.getPackageName();
         Reflections bcPackages = new Reflections(packageName);
         bcPackages.getStore().put(SubTypesScanner.class, "dummy", "dummy");
         bcPackages.getTypesAnnotatedWith(AggregateRoot.class)
+                .stream().filter(ar->ar.getPackageName().equals(packageName))
                 .forEach(ar -> addNode(bc, boundedContextPackage.getPackageName(), ar, null, ubiquitousLanguage));
         return bc;
     }
@@ -105,22 +105,29 @@ public class DomainModelGenerator {
         /*
             add links if method is annotated with CrossBoundaryReference
          */
-        Arrays.stream(aClass.getDeclaredMethods())
-                .filter(method -> method.getAnnotation(Events.class) != null )
-                .map( method -> {
+        Stream<Method> methodStream = Arrays.stream(aClass.getDeclaredMethods());
+        Stream<Triplet<Class, String, String>> eventStream1 = methodStream.filter(method -> method.getAnnotation(Events.class) != null)
+                .map(method -> {
                     Event[] events = method.getDeclaredAnnotation(Events.class).value();
-                    return Arrays.stream(events).map(event -> Triplet.with( event.target(), event.value(), event.persona() ) );
+                    return Arrays.stream(events).map(event -> Triplet.with(event.target(), event.value(), event.persona()));
                 })
-                .flatMap(Function.identity())
-                .peek(p -> checkEventTarget(p.getValue0()))
+                .flatMap(Function.identity());
+        methodStream = Arrays.stream(aClass.getDeclaredMethods());
+        Stream<Triplet<Class, String, String>> eventStream2 = methodStream.filter(method -> method.getAnnotation(Event.class) != null)
+                .map(method -> {
+                    Event event = method.getDeclaredAnnotation(Event.class);
+                    return Triplet.with(event.target(), event.value(), event.persona());
+                });
+        Stream.concat(eventStream1, eventStream2)
+                .peek(p -> checkEventTarget(p.getValue0(), aClass))
                 .forEach(p -> {
                     if(!p.getValue1().equals(Strings.EMPTY)) {
                         Node eventNode = node(p.getValue0().getCanonicalName()+"-"+p.getValue1().replace(' ', '-')).with(getEventLabel(p)).with(attr("tooltip", p.getValue1()));
                         domainModel.add( eventNode );
-                        domainModel.add( arNode.link(eventNode) );
-                        domainModel.add( eventNode.link(node(p.getValue0().getCanonicalName())));
+                        domainModel.add( arNode.link( to(eventNode).with(attr("color", "blue"), attr("weight", 5))));
+                        domainModel.add( eventNode.link( to(node(p.getValue0().getCanonicalName())).with(attr("weight",5),attr("color", "blue"))));
                     } else {
-                        bc.add( arNode.link(node(p.getValue0().getCanonicalName())));
+                        bc.add( arNode.link( to(node(p.getValue0().getCanonicalName())).with(attr("weight",5),attr("color","blue"))));
                     }
                 });
         /*
@@ -139,10 +146,11 @@ public class DomainModelGenerator {
     /**
      * Any method referencing outside domains must only reference to it's root aggregate
      * @param aClass
+     * @param aClass1
      */
-    private void checkEventTarget(Class<?> aClass) {
+    private void checkEventTarget(Class<?> aClass, Class<?> aClass1) {
         if( aClass.getAnnotation(AggregateRoot.class) == null )
-            throw new RuntimeException("cannot access non aggregated root class " + aClass.getCanonicalName() );
+            throw new RuntimeException("cannot access non aggregated root class " + aClass.getCanonicalName() + " from " + aClass1.getCanonicalName() );
     }
 
     /**
