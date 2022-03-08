@@ -1,73 +1,54 @@
-<svg width="363px" height="260px"
- viewBox="0.00 0.00 363.00 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 256.0)">
+<svg width="189px" height="247px"
+ viewBox="0.00 0.00 189.00 247.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 243.0)">
 <title>Context Map</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-256 359,-256 359,4 -4,4"/>
-<!-- com.roche.udw.ddd.panel -->
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-243 185,-243 185,4 -4,4"/>
+<!-- com.youramaryllis.ddd.example.order -->
 <g id="node1" class="node">
-<title>com.roche.udw.ddd.panel</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="66.437" cy="-142.7655" rx="30.3284" ry="18"/>
-<text text-anchor="middle" x="66.437" y="-139.6655" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Panel</text>
+<title>com.youramaryllis.ddd.example.order</title>
+<ellipse fill="#f2f2f2" stroke="#000000" cx="34.8596" cy="-152.1773" rx="32.0211" ry="18"/>
+<text text-anchor="middle" x="34.8596" y="-149.0773" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Order</text>
 </g>
-<!-- com.roche.udw.ddd.tenant -->
-<g id="node6" class="node">
-<title>com.roche.udw.ddd.tenant</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="181.7915" cy="-125.5309" rx="34.4458" ry="18"/>
-<text text-anchor="middle" x="181.7915" y="-122.4309" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Tenant</text>
-</g>
-<!-- com.roche.udw.ddd.panel&#45;&#45;com.roche.udw.ddd.tenant -->
-<g id="edge1" class="edge">
-<title>com.roche.udw.ddd.panel&#45;&#45;com.roche.udw.ddd.tenant</title>
-<path fill="none" stroke="#000000" d="M95.8442,-138.3718C111.8646,-135.9783 131.7507,-133.0072 148.3584,-130.5259"/>
-<text text-anchor="middle" x="111.1013" y="-135.0489" font-family="sans-serif" font-size="3.00" fill="#000000">Shared Kernel</text>
-</g>
-<!-- com.roche.udw.ddd.sequencing_prep -->
+<!-- com.youramaryllis.ddd.example.payment -->
 <g id="node2" class="node">
-<title>com.roche.udw.ddd.sequencing_prep</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="279.7937" cy="-234.1363" rx="72.7788" ry="18"/>
-<text text-anchor="middle" x="279.7937" y="-231.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Sequencing Prep</text>
+<title>com.youramaryllis.ddd.example.payment</title>
+<ellipse fill="#f2f2f2" stroke="#000000" cx="138.7937" cy="-130.1363" rx="42.451" ry="18"/>
+<text text-anchor="middle" x="138.7937" y="-127.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Payment</text>
 </g>
-<!-- com.roche.udw.ddd.workflow_management -->
+<!-- com.youramaryllis.ddd.example.user -->
 <g id="node3" class="node">
-<title>com.roche.udw.ddd.workflow_management</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="248.7937" cy="-180.1363" rx="95.332" ry="18"/>
-<text text-anchor="middle" x="248.7937" y="-177.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Workflow Management</text>
+<title>com.youramaryllis.ddd.example.user</title>
+<ellipse fill="#f2f2f2" stroke="#000000" cx="124.1097" cy="-221.3143" rx="27.1719" ry="18"/>
+<text text-anchor="middle" x="124.1097" y="-218.2143" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">User</text>
 </g>
-<!-- com.roche.udw.ddd.ordering -->
+<!-- com.youramaryllis.ddd.example.user&#45;&#45;com.youramaryllis.ddd.example.order -->
+<g id="edge1" class="edge">
+<title>com.youramaryllis.ddd.example.user&#45;&#45;com.youramaryllis.ddd.example.order</title>
+<path fill="none" stroke="#000000" d="M106.0486,-207.3234C90.8698,-195.5652 69.244,-178.813 53.818,-166.8633"/>
+<text text-anchor="middle" x="68.9333" y="-187.6934" font-family="sans-serif" font-size="3.00" fill="#000000">Shared Kernel</text>
+</g>
+<!-- com.youramaryllis.ddd.example.catalog -->
 <g id="node4" class="node">
-<title>com.roche.udw.ddd.ordering</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="51.7937" cy="-36.1363" rx="43.1824" ry="18"/>
-<text text-anchor="middle" x="51.7937" y="-33.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Ordering</text>
+<title>com.youramaryllis.ddd.example.catalog</title>
+<ellipse fill="#f2f2f2" stroke="#000000" cx="38.3969" cy="-18.2109" rx="38.3335" ry="18"/>
+<text text-anchor="middle" x="38.3969" y="-15.1109" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Catalog</text>
 </g>
-<!-- com.roche.udw.ddd.sequencing -->
-<g id="node5" class="node">
-<title>com.roche.udw.ddd.sequencing</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="52.7937" cy="-90.1363" rx="52.881" ry="18"/>
-<text text-anchor="middle" x="52.7937" y="-87.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Sequencing</text>
-</g>
-<!-- com.roche.udw.ddd.lis -->
-<g id="node7" class="node">
-<title>com.roche.udw.ddd.lis</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="152.7937" cy="-18.1363" rx="27" ry="18"/>
-<text text-anchor="middle" x="152.7937" y="-15.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">LIS</text>
-</g>
-<!-- com.roche.udw.ddd.workflow_design -->
-<g id="node8" class="node">
-<title>com.roche.udw.ddd.workflow_design</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="116.7937" cy="-234.1363" rx="71.3163" ry="18"/>
-<text text-anchor="middle" x="116.7937" y="-231.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Workflow Design</text>
-</g>
-<!-- com.roche.udw.ddd.analysis -->
-<g id="node9" class="node">
-<title>com.roche.udw.ddd.analysis</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="206.7937" cy="-72.1363" rx="81.0157" ry="18"/>
-<text text-anchor="middle" x="206.7937" y="-69.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">Secondary Analysis</text>
-</g>
-<!-- com.roche.udw.ddd.nae -->
-<g id="node10" class="node">
-<title>com.roche.udw.ddd.nae</title>
-<ellipse fill="#f2f2f2" stroke="#000000" cx="294.7937" cy="-126.1363" rx="60.1555" ry="18"/>
-<text text-anchor="middle" x="294.7937" y="-123.0363" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">NA Extraction</text>
+<!-- com.youramaryllis.ddd.example.catalog&#45;&#45;com.youramaryllis.ddd.example.order -->
+<g id="edge2" class="edge">
+<title>com.youramaryllis.ddd.example.catalog&#45;&#45;com.youramaryllis.ddd.example.order</title>
+<path fill="none" stroke="#000000" d="M37.9198,-36.2782C37.2447,-61.8466 36.0176,-108.3231 35.3404,-133.9684"/>
+<polygon fill="#ffffff" stroke="transparent" points="24.3404,-128.9684 24.3404,-137.9684 33.3404,-137.9684 33.3404,-128.9684 24.3404,-128.9684"/>
+<polyline fill="none" stroke="#000000" points="33.3404,-128.9684 33.3404,-137.9684 "/>
+<text text-anchor="start" x="27.3404" y="-132.5684" font-family="sans-serif" font-size="3.00" fill="#000000">D</text>
+<polygon fill="#ffffff" stroke="transparent" points="33.3404,-128.9684 33.3404,-137.9684 46.3404,-137.9684 46.3404,-128.9684 33.3404,-128.9684"/>
+<polygon fill="none" stroke="#000000" points="33.3404,-128.9684 33.3404,-137.9684 46.3404,-137.9684 46.3404,-128.9684 33.3404,-128.9684"/>
+<text text-anchor="start" x="36.3404" y="-132.5684" font-family="sans-serif" font-size="3.00" fill="#000000">ACL</text>
+<polygon fill="#ffffff" stroke="transparent" points="26.9198,-31.2782 26.9198,-40.2782 35.9198,-40.2782 35.9198,-31.2782 26.9198,-31.2782"/>
+<polyline fill="none" stroke="#000000" points="35.9198,-31.2782 35.9198,-40.2782 "/>
+<text text-anchor="start" x="29.9198" y="-34.8782" font-family="sans-serif" font-size="3.00" fill="#000000">U</text>
+<polygon fill="#ffffff" stroke="transparent" points="35.9198,-31.2782 35.9198,-40.2782 48.9198,-40.2782 48.9198,-31.2782 35.9198,-31.2782"/>
+<polygon fill="none" stroke="#000000" points="35.9198,-31.2782 35.9198,-40.2782 48.9198,-40.2782 48.9198,-31.2782 35.9198,-31.2782"/>
+<text text-anchor="start" x="38.9198" y="-34.8782" font-family="sans-serif" font-size="3.00" fill="#000000">OHS</text>
 </g>
 </g>
 </svg>
