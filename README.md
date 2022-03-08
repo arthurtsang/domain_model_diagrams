@@ -44,9 +44,9 @@ All of them take a parameter, `value`, as the full package name of the other bou
 
 Domain Model are annotated at the class level.
 Classes can be annotated as `@AggregatedRoot`, `@DomainService`, `@Entity`and `@ValueObject`.
-These annotation are shown on the generated domain model with different color and provide checks to make sure it didn't violate any DDD rules.
+These annotations are shown on the generated domain model with different color and provide checks to make sure it didn't violate any DDD rules.
 Example rules would be making sure `@Entity` has an `@Id` while `@ValueObject` doesn't.
-`@CrossBoundaryReference` indicates if a function references object in another bounded context.
+`@Event` indicates if a function references object in another bounded context.
 It will also make sure it can only reference an `@AggregatedRoot`.
 
 ### Example
@@ -66,7 +66,7 @@ To use it with maven, create a commandline springboot application with all your 
 <dependency>
   <groupId>com.youramaryllis</groupId>
   <artifactId>ddd-generator</artifactId>
-  <version>1.0.0</version>
+  <version>1.2.0</version>
 </dependency>
 ```
 

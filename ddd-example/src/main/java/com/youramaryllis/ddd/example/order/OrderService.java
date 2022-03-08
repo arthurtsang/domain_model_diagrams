@@ -1,7 +1,6 @@
 package com.youramaryllis.ddd.example.order;
 
 import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
-import com.youramaryllis.ddd.domainModel.annotations.CrossBoundaryReference;
 import com.youramaryllis.ddd.domainModel.annotations.Entity;
 import com.youramaryllis.ddd.domainModel.annotations.Event;
 import com.youramaryllis.ddd.example.catalog.CatalogService;
@@ -17,18 +16,15 @@ import java.util.List;
 public class OrderService {
     private List<Order> orders;
 
-    @CrossBoundaryReference(UserManagement.class)
-    @Event(value = "order opened", persona = "Sales")
+    @Event(value = "order opened", target = UserManagement.class, persona = "Sales")
     public OrderId openOrder(User user) {
         return null;
     }
 
-    @CrossBoundaryReference(CatalogService.class)
-    @Event(value = "product ordered" )
+    @Event(value = "product ordered", target = CatalogService.class)
     public void addProductToOrder(OrderId orderId, ProductSku productSku, int quantity) {
     }
 
-    @CrossBoundaryReference(PaymentGateway.class)
-    @Event( "order submitted")
+    @Event( value = "order submitted", target = PaymentGateway.class)
     public void pay() {}
 }

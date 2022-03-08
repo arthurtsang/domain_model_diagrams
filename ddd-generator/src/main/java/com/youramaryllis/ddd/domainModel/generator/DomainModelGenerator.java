@@ -1,10 +1,7 @@
 package com.youramaryllis.ddd.domainModel.generator;
 
 import com.youramaryllis.ddd.contextMap.annotations.BoundedContext;
-import com.youramaryllis.ddd.domainModel.annotations.AggregateRoot;
-import com.youramaryllis.ddd.domainModel.annotations.CrossBoundaryReference;
-import com.youramaryllis.ddd.domainModel.annotations.Event;
-import com.youramaryllis.ddd.domainModel.annotations.External;
+import com.youramaryllis.ddd.domainModel.annotations.*;
 import guru.nidi.graphviz.attribute.Font;
 import guru.nidi.graphviz.attribute.Label;
 import guru.nidi.graphviz.attribute.Shape;
@@ -32,7 +29,7 @@ import java.util.Arrays;
 import java.util.MissingResourceException;
 import java.util.Optional;
 import java.util.ResourceBundle;
-import java.util.stream.Collectors;
+import java.util.function.Function;
 
 import static guru.nidi.graphviz.attribute.Attributes.attr;
 import static guru.nidi.graphviz.model.Factory.mutGraph;
@@ -109,13 +106,13 @@ public class DomainModelGenerator {
             add links if method is annotated with CrossBoundaryReference
          */
         Arrays.stream(aClass.getDeclaredMethods())
-                .filter(method -> method.getAnnotation(CrossBoundaryReference.class) != null )
+                .filter(method -> method.getAnnotation(Events.class) != null )
                 .map( method -> {
-                    Class xrefClass = method.getDeclaredAnnotation(CrossBoundaryReference.class).value()[0];
-                    Event event = method.getDeclaredAnnotation(Event.class);
-                    return ( event == null ) ? Triplet.with( xrefClass, Strings.EMPTY, Strings.EMPTY) : Triplet.with( xrefClass, event.value(), event.persona() );
+                    Event[] events = method.getDeclaredAnnotation(Events.class).value();
+                    return Arrays.stream(events).map(event -> Triplet.with( event.target(), event.value(), event.persona() ) );
                 })
-                .peek(p -> checkCrossBoundaryReference(p.getValue0()))
+                .flatMap(Function.identity())
+                .peek(p -> checkEventTarget(p.getValue0()))
                 .forEach(p -> {
                     if(!p.getValue1().equals(Strings.EMPTY)) {
                         Node eventNode = node(p.getValue0().getCanonicalName()+"-"+p.getValue1().replace(' ', '-')).with(getEventLabel(p)).with(attr("tooltip", p.getValue1()));
@@ -143,7 +140,7 @@ public class DomainModelGenerator {
      * Any method referencing outside domains must only reference to it's root aggregate
      * @param aClass
      */
-    private void checkCrossBoundaryReference(Class<?> aClass) {
+    private void checkEventTarget(Class<?> aClass) {
         if( aClass.getAnnotation(AggregateRoot.class) == null )
             throw new RuntimeException("cannot access non aggregated root class " + aClass.getCanonicalName() );
     }

@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface CrossBoundaryReference {
-    Class[] value();
+public @interface Events {
+    Event[] value();
 }
