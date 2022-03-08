@@ -62,12 +62,12 @@ public class DomainModelGenerator {
         /*
           generate graph
          */
-        Graphviz.fromGraph(domainModel).engine(Engine.FDP).render(Format.SVG).toFile( Paths.get(outputDirectory, outputName+".svg").toFile() );
+        Graphviz.fromGraph(domainModel).engine(Engine.DOT).render(Format.SVG).toFile( Paths.get(outputDirectory, outputName+".svg").toFile() );
     }
 
     private MutableGraph buildMutableGraph(String name) {
         return mutGraph(name).setDirected(true)
-                .graphAttrs().add(attr("size", "5.5"), attr("compound", "true"), attr("K",1))
+                .graphAttrs().add(attr("size", "5.5"), attr("compound", "true"), attr("K",1), attr("ranksep", 3))
                 .nodeAttrs().add(Shape.RECTANGLE, Style.FILLED, attr("fillcolor", "gray95"), Font.config("Bitstream Vera Sans", 12), attr("margin", "0"))
                 .linkAttrs().add(attr("dir", "none"), attr("fontsize", "3"), attr("fontname", "sans-serif"), attr("labeldistance", "0"));
     }

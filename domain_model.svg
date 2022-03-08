@@ -1,457 +1,785 @@
-<svg width="396px" height="284px"
- viewBox="0.00 0.00 396.00 283.61" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(0.2942 0.2942) rotate(0.0) translate(4.0 960.0)">
+<svg width="396px" height="228px"
+ viewBox="0.00 0.00 396.00 227.85" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.1183 0.1183) rotate(0.0) translate(4.0 1922.0)">
 <title>Domain Model</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-960 1342,-960 1342,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-1922 3343.3198,-1922 3343.3198,4 -4,4"/>
 <g id="clust1" class="cluster">
-<title>cluster_Order</title>
-<path fill="none" stroke="#000000" d="M20,-279C20,-279 528,-279 528,-279 534,-279 540,-285 540,-291 540,-291 540,-936 540,-936 540,-942 534,-948 528,-948 528,-948 20,-948 20,-948 14,-948 8,-942 8,-936 8,-936 8,-291 8,-291 8,-285 14,-279 20,-279"/>
-<text text-anchor="middle" x="274" y="-932.8" font-family="Times,serif" font-size="14.00" fill="#000000">Order</text>
+<title>cluster_Panel</title>
+<path fill="none" stroke="#000000" d="M1607.8198,-1086.5C1607.8198,-1086.5 1900.8198,-1086.5 1900.8198,-1086.5 1906.8198,-1086.5 1912.8198,-1092.5 1912.8198,-1098.5 1912.8198,-1098.5 1912.8198,-1188.5 1912.8198,-1188.5 1912.8198,-1194.5 1906.8198,-1200.5 1900.8198,-1200.5 1900.8198,-1200.5 1607.8198,-1200.5 1607.8198,-1200.5 1601.8198,-1200.5 1595.8198,-1194.5 1595.8198,-1188.5 1595.8198,-1188.5 1595.8198,-1098.5 1595.8198,-1098.5 1595.8198,-1092.5 1601.8198,-1086.5 1607.8198,-1086.5"/>
+<text text-anchor="middle" x="1754.3198" y="-1185.3" font-family="Times,serif" font-size="14.00" fill="#000000">Panel</text>
 </g>
 <g id="clust2" class="cluster">
-<title>cluster_Payment</title>
-<path fill="none" stroke="#000000" d="M1150,-475C1150,-475 1318,-475 1318,-475 1324,-475 1330,-481 1330,-487 1330,-487 1330,-564 1330,-564 1330,-570 1324,-576 1318,-576 1318,-576 1150,-576 1150,-576 1144,-576 1138,-570 1138,-564 1138,-564 1138,-487 1138,-487 1138,-481 1144,-475 1150,-475"/>
-<text text-anchor="middle" x="1234" y="-560.8" font-family="Times,serif" font-size="14.00" fill="#000000">Payment</text>
+<title>cluster_Sequencing_Prep</title>
+<path fill="none" stroke="#000000" d="M403.8198,-730.5C403.8198,-730.5 533.8198,-730.5 533.8198,-730.5 539.8198,-730.5 545.8198,-736.5 545.8198,-742.5 545.8198,-742.5 545.8198,-799.5 545.8198,-799.5 545.8198,-805.5 539.8198,-811.5 533.8198,-811.5 533.8198,-811.5 403.8198,-811.5 403.8198,-811.5 397.8198,-811.5 391.8198,-805.5 391.8198,-799.5 391.8198,-799.5 391.8198,-742.5 391.8198,-742.5 391.8198,-736.5 397.8198,-730.5 403.8198,-730.5"/>
+<text text-anchor="middle" x="468.8198" y="-796.3" font-family="Times,serif" font-size="14.00" fill="#000000">Sequencing Prep</text>
 </g>
 <g id="clust3" class="cluster">
-<title>cluster_User</title>
-<path fill="none" stroke="#000000" d="M560,-8C560,-8 938,-8 938,-8 944,-8 950,-14 950,-20 950,-20 950,-613 950,-613 950,-619 944,-625 938,-625 938,-625 560,-625 560,-625 554,-625 548,-619 548,-613 548,-613 548,-20 548,-20 548,-14 554,-8 560,-8"/>
-<text text-anchor="middle" x="749" y="-609.8" font-family="Times,serif" font-size="14.00" fill="#000000">User</text>
+<title>cluster_Workflow_Management</title>
+<path fill="none" stroke="#000000" d="M1019.8198,-1086.5C1019.8198,-1086.5 1321.8198,-1086.5 1321.8198,-1086.5 1327.8198,-1086.5 1333.8198,-1092.5 1333.8198,-1098.5 1333.8198,-1098.5 1333.8198,-1551.5 1333.8198,-1551.5 1333.8198,-1557.5 1327.8198,-1563.5 1321.8198,-1563.5 1321.8198,-1563.5 1019.8198,-1563.5 1019.8198,-1563.5 1013.8198,-1563.5 1007.8198,-1557.5 1007.8198,-1551.5 1007.8198,-1551.5 1007.8198,-1098.5 1007.8198,-1098.5 1007.8198,-1092.5 1013.8198,-1086.5 1019.8198,-1086.5"/>
+<text text-anchor="middle" x="1170.8198" y="-1548.3" font-family="Times,serif" font-size="14.00" fill="#000000">Workflow Management</text>
 </g>
 <g id="clust4" class="cluster">
-<title>cluster_Catalog</title>
-<path fill="none" stroke="#000000" d="M970,-27.5C970,-27.5 1118,-27.5 1118,-27.5 1124,-27.5 1130,-33.5 1130,-39.5 1130,-39.5 1130,-580.5 1130,-580.5 1130,-586.5 1124,-592.5 1118,-592.5 1118,-592.5 970,-592.5 970,-592.5 964,-592.5 958,-586.5 958,-580.5 958,-580.5 958,-39.5 958,-39.5 958,-33.5 964,-27.5 970,-27.5"/>
-<text text-anchor="middle" x="1044" y="-577.3" font-family="Times,serif" font-size="14.00" fill="#000000">Catalog</text>
+<title>cluster_Ordering</title>
+<path fill="none" stroke="#000000" d="M2650.8198,-1093C2650.8198,-1093 3062.8198,-1093 3062.8198,-1093 3068.8198,-1093 3074.8198,-1099 3074.8198,-1105 3074.8198,-1105 3074.8198,-1182 3074.8198,-1182 3074.8198,-1188 3068.8198,-1194 3062.8198,-1194 3062.8198,-1194 2650.8198,-1194 2650.8198,-1194 2644.8198,-1194 2638.8198,-1188 2638.8198,-1182 2638.8198,-1182 2638.8198,-1105 2638.8198,-1105 2638.8198,-1099 2644.8198,-1093 2650.8198,-1093"/>
+<text text-anchor="middle" x="2856.8198" y="-1178.8" font-family="Times,serif" font-size="14.00" fill="#000000">Ordering</text>
 </g>
-<!-- com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened -->
+<g id="clust5" class="cluster">
+<title>cluster_Sequencing</title>
+<path fill="none" stroke="#000000" d="M676.8198,-730.5C676.8198,-730.5 806.8198,-730.5 806.8198,-730.5 812.8198,-730.5 818.8198,-736.5 818.8198,-742.5 818.8198,-742.5 818.8198,-799.5 818.8198,-799.5 818.8198,-805.5 812.8198,-811.5 806.8198,-811.5 806.8198,-811.5 676.8198,-811.5 676.8198,-811.5 670.8198,-811.5 664.8198,-805.5 664.8198,-799.5 664.8198,-799.5 664.8198,-742.5 664.8198,-742.5 664.8198,-736.5 670.8198,-730.5 676.8198,-730.5"/>
+<text text-anchor="middle" x="741.8198" y="-796.3" font-family="Times,serif" font-size="14.00" fill="#000000">Sequencing</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_Tenant</title>
+<g id="a_clust6"><a xlink:title="Customer&#39;s organization">
+<path fill="none" stroke="#000000" d="M1063.8198,-8C1063.8198,-8 1157.8198,-8 1157.8198,-8 1163.8198,-8 1169.8198,-14 1169.8198,-20 1169.8198,-20 1169.8198,-473 1169.8198,-473 1169.8198,-479 1163.8198,-485 1157.8198,-485 1157.8198,-485 1063.8198,-485 1063.8198,-485 1057.8198,-485 1051.8198,-479 1051.8198,-473 1051.8198,-473 1051.8198,-20 1051.8198,-20 1051.8198,-14 1057.8198,-8 1063.8198,-8"/>
+<text text-anchor="middle" x="1110.8198" y="-469.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tenant</text>
+</a>
+</g>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_LIS</title>
+<path fill="none" stroke="#000000" d="M407.8198,-1786C407.8198,-1786 499.8198,-1786 499.8198,-1786 505.8198,-1786 511.8198,-1792 511.8198,-1798 511.8198,-1798 511.8198,-1875 511.8198,-1875 511.8198,-1881 505.8198,-1887 499.8198,-1887 499.8198,-1887 407.8198,-1887 407.8198,-1887 401.8198,-1887 395.8198,-1881 395.8198,-1875 395.8198,-1875 395.8198,-1798 395.8198,-1798 395.8198,-1792 401.8198,-1786 407.8198,-1786"/>
+<text text-anchor="middle" x="453.8198" y="-1871.8" font-family="Times,serif" font-size="14.00" fill="#000000">LIS</text>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_Workflow_Design</title>
+<path fill="none" stroke="#000000" d="M2238.8198,-662C2238.8198,-662 2618.8198,-662 2618.8198,-662 2624.8198,-662 2630.8198,-668 2630.8198,-674 2630.8198,-674 2630.8198,-1898 2630.8198,-1898 2630.8198,-1904 2624.8198,-1910 2618.8198,-1910 2618.8198,-1910 2238.8198,-1910 2238.8198,-1910 2232.8198,-1910 2226.8198,-1904 2226.8198,-1898 2226.8198,-1898 2226.8198,-674 2226.8198,-674 2226.8198,-668 2232.8198,-662 2238.8198,-662"/>
+<text text-anchor="middle" x="2428.8198" y="-1894.8" font-family="Times,serif" font-size="14.00" fill="#000000">Workflow Design</text>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_Secondary_Analysis</title>
+<path fill="none" stroke="#000000" d="M1932.8198,-1103C1932.8198,-1103 2206.8198,-1103 2206.8198,-1103 2212.8198,-1103 2218.8198,-1109 2218.8198,-1115 2218.8198,-1115 2218.8198,-1172 2218.8198,-1172 2218.8198,-1178 2212.8198,-1184 2206.8198,-1184 2206.8198,-1184 1932.8198,-1184 1932.8198,-1184 1926.8198,-1184 1920.8198,-1178 1920.8198,-1172 1920.8198,-1172 1920.8198,-1115 1920.8198,-1115 1920.8198,-1109 1926.8198,-1103 1932.8198,-1103"/>
+<text text-anchor="middle" x="2069.8198" y="-1168.8" font-family="Times,serif" font-size="14.00" fill="#000000">Secondary Analysis</text>
+</g>
+<g id="clust10" class="cluster">
+<title>cluster_NA_Extraction</title>
+<path fill="none" stroke="#000000" d="M109.8198,-694.5C109.8198,-694.5 371.8198,-694.5 371.8198,-694.5 377.8198,-694.5 383.8198,-700.5 383.8198,-706.5 383.8198,-706.5 383.8198,-835.5 383.8198,-835.5 383.8198,-841.5 377.8198,-847.5 371.8198,-847.5 371.8198,-847.5 109.8198,-847.5 109.8198,-847.5 103.8198,-847.5 97.8198,-841.5 97.8198,-835.5 97.8198,-835.5 97.8198,-706.5 97.8198,-706.5 97.8198,-700.5 103.8198,-694.5 109.8198,-694.5"/>
+<text text-anchor="middle" x="240.8198" y="-832.3" font-family="Times,serif" font-size="14.00" fill="#000000">NA Extraction</text>
+</g>
+<!-- com.roche.udw.ddd.nae.FlexMethod&#45;NAE&#45;flex&#45;method&#45;fetched -->
 <g id="node1" class="node">
-<title>com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened</title>
-<g id="a_node1"><a xlink:title="order opened">
-<polygon fill="#f2f2f2" stroke="#000000" points="748.5,-730.5 633.5,-730.5 633.5,-675.5 748.5,-675.5 748.5,-730.5"/>
-<polygon fill="#e9e40e" stroke="transparent" points="633.5,-675.5 633.5,-730.5 748.5,-730.5 748.5,-675.5 633.5,-675.5"/>
-<polygon fill="none" stroke="#000000" points="635,-694 635,-729 748,-729 748,-694 635,-694"/>
-<text text-anchor="start" x="646" y="-709.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">order opened</text>
-<polygon fill="none" stroke="#000000" points="635,-676 635,-693 748,-693 748,-676 635,-676"/>
-<text text-anchor="start" x="678" y="-682" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Sales</text>
+<title>com.roche.udw.ddd.nae.FlexMethod&#45;NAE&#45;flex&#45;method&#45;fetched</title>
+<g id="a_node1"><a xlink:title="NAE flex method fetched">
+<polygon fill="#f2f2f2" stroke="#000000" points="305.3198,-1150.5 112.3198,-1150.5 112.3198,-1113.5 305.3198,-1113.5 305.3198,-1150.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="112.3198,-1113.5 112.3198,-1150.5 305.3198,-1150.5 305.3198,-1113.5 112.3198,-1113.5"/>
+<polygon fill="none" stroke="#000000" points="113.8198,-1114 113.8198,-1149 304.8198,-1149 304.8198,-1114 113.8198,-1114"/>
+<text text-anchor="start" x="124.8198" y="-1129.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">NAE flex method fetched</text>
 </a>
 </g>
 </g>
-<!-- com.youramaryllis.ddd.example.user.UserManagement -->
-<g id="node12" class="node">
-<title>com.youramaryllis.ddd.example.user.UserManagement</title>
-<g id="a_node12"><a xlink:title="UserManagement">
-<polygon fill="#f2f2f2" stroke="#000000" points="866.5,-594 685.5,-594 685.5,-434 866.5,-434 866.5,-594"/>
-<polygon fill="#c04633" stroke="transparent" points="685.5,-434 685.5,-594 866.5,-594 866.5,-434 685.5,-434"/>
-<polygon fill="none" stroke="#000000" points="687,-553 687,-593 866,-593 866,-553 687,-553"/>
-<text text-anchor="start" x="698" y="-570.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">UserManagement</text>
-<polygon fill="none" stroke="#000000" points="687,-520 687,-552 866,-552 866,-520 687,-520"/>
-<text text-anchor="start" x="759" y="-539.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; user</text>
-<text text-anchor="start" x="761" y="-526.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; test</text>
-<polygon fill="none" stroke="#000000" points="687,-435 687,-519 866,-519 866,-435 687,-435"/>
-<text text-anchor="start" x="732.5" y="-506.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ removeUser</text>
-<text text-anchor="start" x="734.5" y="-493.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ updateUser</text>
-<text text-anchor="start" x="744.5" y="-480.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ listUsers</text>
-<text text-anchor="start" x="732.5" y="-467.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ searchUsers</text>
-<text text-anchor="start" x="744.5" y="-454.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ addUser</text>
-<text text-anchor="start" x="746" y="-441.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ getUser</text>
+<!-- com.roche.udw.ddd.nae.FlexMethod -->
+<g id="node38" class="node">
+<title>com.roche.udw.ddd.nae.FlexMethod</title>
+<g id="a_node38"><a xlink:title="FlexMethod">
+<polygon fill="#f2f2f2" stroke="#000000" points="375.8198,-816.5 225.8198,-816.5 225.8198,-702.5 375.8198,-702.5 375.8198,-816.5"/>
+<polygon fill="#c04633" stroke="transparent" points="225.8198,-702.5 225.8198,-816.5 375.8198,-816.5 375.8198,-702.5 225.8198,-702.5"/>
+<polygon fill="none" stroke="#000000" points="226.8198,-775.5 226.8198,-815.5 374.8198,-815.5 374.8198,-775.5 226.8198,-775.5"/>
+<text text-anchor="start" x="248.8198" y="-792.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">FlexMethod</text>
+<polygon fill="none" stroke="#000000" points="226.8198,-703.5 226.8198,-774.5 374.8198,-774.5 374.8198,-703.5 226.8198,-703.5"/>
+<text text-anchor="start" x="261.8198" y="-761.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; sampleRole</text>
+<text text-anchor="start" x="229.8198" y="-748.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; sampleMassThreshold</text>
+<text text-anchor="start" x="238.3198" y="-735.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; operatorInstruction</text>
+<text text-anchor="start" x="265.8198" y="-722.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; NAEKitIRN</text>
+<text text-anchor="start" x="267.3198" y="-709.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; enableQC</text>
 </a>
 </g>
 </g>
-<!-- com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement -->
-<g id="edge18" class="edge">
-<title>com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement</title>
-<path fill="none" stroke="#000000" d="M703.542,-675.1124C713.1475,-653.7544 726.9069,-623.1599 739.8599,-594.3585"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService -->
-<g id="node2" class="node">
-<title>com.youramaryllis.ddd.example.order.OrderService</title>
-<g id="a_node2"><a xlink:title="OrderService">
-<polygon fill="#f2f2f2" stroke="#000000" points="531.5,-917 392.5,-917 392.5,-809 531.5,-809 531.5,-917"/>
-<polygon fill="#c04633" stroke="transparent" points="392.5,-809 392.5,-917 531.5,-917 531.5,-809 392.5,-809"/>
-<polygon fill="none" stroke="#000000" points="394,-876 394,-916 531,-916 531,-876 394,-876"/>
-<text text-anchor="start" x="405" y="-893.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">OrderService</text>
-<polygon fill="none" stroke="#000000" points="394,-856 394,-875 531,-875 531,-856 394,-856"/>
-<text text-anchor="start" x="438.5" y="-862.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; orders</text>
-<polygon fill="none" stroke="#000000" points="394,-810 394,-855 531,-855 531,-810 394,-810"/>
-<text text-anchor="start" x="423" y="-842.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ openOrder</text>
-<text text-anchor="start" x="397" y="-829.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ addProductToOrder</text>
-<text text-anchor="start" x="444.5" y="-816.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ pay</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened -->
-<g id="edge21" class="edge">
-<title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.user.UserManagement&#45;order&#45;opened</title>
-<path fill="none" stroke="#000000" d="M531.6403,-814.3431C570.9851,-786.8532 618.7241,-753.4985 651.635,-730.5039"/>
-</g>
-<!-- com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered -->
-<g id="node3" class="node">
-<title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered</title>
-<g id="a_node3"><a xlink:title="product ordered">
-<polygon fill="#f2f2f2" stroke="#000000" points="1006,-721.5 872,-721.5 872,-684.5 1006,-684.5 1006,-721.5"/>
-<polygon fill="#e9e40e" stroke="transparent" points="872,-684.5 872,-721.5 1006,-721.5 1006,-684.5 872,-684.5"/>
-<polygon fill="none" stroke="#000000" points="873,-685 873,-720 1005,-720 1005,-685 873,-685"/>
-<text text-anchor="start" x="884" y="-700.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">product ordered</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered -->
-<g id="edge20" class="edge">
-<title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered</title>
-<path fill="none" stroke="#000000" d="M531.5898,-843.2847C591.6535,-825.9079 680.5518,-799.3259 757,-773 803.8931,-756.8517 856.7184,-736.2615 893.3294,-721.6016"/>
-</g>
-<!-- com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted -->
-<g id="node4" class="node">
-<title>com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted</title>
-<g id="a_node4"><a xlink:title="order submitted">
-<polygon fill="#f2f2f2" stroke="#000000" points="1230.5,-721.5 1095.5,-721.5 1095.5,-684.5 1230.5,-684.5 1230.5,-721.5"/>
-<polygon fill="#e9e40e" stroke="transparent" points="1095.5,-684.5 1095.5,-721.5 1230.5,-721.5 1230.5,-684.5 1095.5,-684.5"/>
-<polygon fill="none" stroke="#000000" points="1097,-685 1097,-720 1230,-720 1230,-685 1097,-685"/>
-<text text-anchor="start" x="1108" y="-700.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">order submitted</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted -->
-<g id="edge19" class="edge">
-<title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted</title>
-<path fill="none" stroke="#000000" d="M531.5336,-857.9677C637.7682,-848.8872 845.9573,-825.5808 1015,-773 1056.5255,-760.0835 1101.2796,-737.6027 1130.5705,-721.6037"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.Order -->
-<g id="node5" class="node">
-<title>com.youramaryllis.ddd.example.order.Order</title>
-<g id="a_node5"><a xlink:title="Order">
-<polygon fill="#f2f2f2" stroke="#000000" points="363.5,-773 264.5,-773 264.5,-633 363.5,-633 363.5,-773"/>
-<polygon fill="#ffa500" stroke="transparent" points="264.5,-633 264.5,-773 363.5,-773 363.5,-633 264.5,-633"/>
-<polygon fill="none" stroke="#000000" points="266,-732 266,-772 363,-772 363,-732 266,-732"/>
-<text text-anchor="start" x="289" y="-749.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Order</text>
-<polygon fill="none" stroke="#000000" points="266,-634 266,-731 363,-731 363,-634 266,-634"/>
-<text text-anchor="start" x="285.5" y="-718.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderId</text>
-<text text-anchor="start" x="280" y="-705.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ lineItems</text>
-<text text-anchor="start" x="276.5" y="-692.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderDate</text>
-<text text-anchor="start" x="288.5" y="-679.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ userId</text>
-<text text-anchor="start" x="269" y="-666.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ paymentInfo</text>
-<text text-anchor="start" x="272" y="-653.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ deliveryInfo</text>
-<text text-anchor="start" x="279" y="-640.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ totalPrice</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.order.Order -->
-<g id="edge1" class="edge">
-<title>com.youramaryllis.ddd.example.order.OrderService&#45;&gt;com.youramaryllis.ddd.example.order.Order</title>
-<path fill="none" stroke="#000000" d="M411.894,-808.8313C396.2961,-791.9688 379.1117,-773.391 363.552,-756.5697"/>
-</g>
-<!-- com.youramaryllis.ddd.example.catalog.CatalogService -->
-<g id="node18" class="node">
-<title>com.youramaryllis.ddd.example.catalog.CatalogService</title>
-<g id="a_node18"><a xlink:title="CatalogService">
-<polygon fill="#f2f2f2" stroke="#000000" points="1122,-561.5 966,-561.5 966,-466.5 1122,-466.5 1122,-561.5"/>
-<polygon fill="#c04633" stroke="transparent" points="966,-466.5 966,-561.5 1122,-561.5 1122,-466.5 966,-466.5"/>
-<polygon fill="none" stroke="#000000" points="967,-520 967,-560 1121,-560 1121,-520 967,-520"/>
-<text text-anchor="start" x="978" y="-537.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">CatalogService</text>
-<polygon fill="none" stroke="#000000" points="967,-500 967,-519 1121,-519 1121,-500 967,-500"/>
-<text text-anchor="start" x="1007.5" y="-506.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; catalogList</text>
-<polygon fill="none" stroke="#000000" points="967,-467 967,-499 1121,-499 1121,-467 967,-467"/>
-<text text-anchor="start" x="994.5" y="-486.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createCatalog</text>
-<text text-anchor="start" x="994" y="-473.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createProduct</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService -->
-<g id="edge22" class="edge">
-<title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;product&#45;ordered&#45;&gt;com.youramaryllis.ddd.example.catalog.CatalogService</title>
-<path fill="none" stroke="#000000" d="M949.4517,-684.187C965.1689,-655.8959 995.3964,-601.4865 1017.4553,-561.7804"/>
-</g>
-<!-- com.youramaryllis.ddd.example.payment.PaymentGateway -->
-<g id="node11" class="node">
-<title>com.youramaryllis.ddd.example.payment.PaymentGateway</title>
-<g id="a_node11"><a xlink:title="PaymentGateway">
-<polygon fill="#f2f2f2" stroke="#000000" points="1322.5,-545 1145.5,-545 1145.5,-483 1322.5,-483 1322.5,-545"/>
-<polygon fill="#841de2" stroke="transparent" points="1145.5,-483 1145.5,-545 1322.5,-545 1322.5,-483 1145.5,-483"/>
-<polygon fill="none" stroke="#000000" points="1147,-504 1147,-544 1322,-544 1322,-504 1147,-504"/>
-<text text-anchor="start" x="1158" y="-521.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">PaymentGateway</text>
-<polygon fill="none" stroke="#000000" points="1147,-484 1147,-503 1322,-503 1322,-484 1147,-484"/>
-<text text-anchor="start" x="1196" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ creditCard</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway -->
-<g id="edge23" class="edge">
-<title>com.youramaryllis.ddd.example.payment.PaymentGateway&#45;order&#45;submitted&#45;&gt;com.youramaryllis.ddd.example.payment.PaymentGateway</title>
-<path fill="none" stroke="#000000" d="M1170.0673,-684.187C1182.2736,-651.6943 1207.4223,-584.7492 1222.2808,-545.1963"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.OrderId -->
-<g id="node6" class="node">
-<title>com.youramaryllis.ddd.example.order.OrderId</title>
-<g id="a_node6"><a xlink:title="OrderId">
-<polygon fill="#f2f2f2" stroke="#000000" points="108,-545 16,-545 16,-483 108,-483 108,-545"/>
-<polygon fill="#ffa500" stroke="transparent" points="16,-483 16,-545 108,-545 108,-483 16,-483"/>
-<polygon fill="none" stroke="#000000" points="17,-504 17,-544 107,-544 107,-504 17,-504"/>
-<text text-anchor="start" x="28" y="-521.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">OrderId</text>
-<polygon fill="none" stroke="#000000" points="17,-484 17,-503 107,-503 107,-484 17,-484"/>
-<text text-anchor="start" x="33" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderId</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.OrderId -->
-<g id="edge5" class="edge">
-<title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.OrderId</title>
-<path fill="none" stroke="#000000" d="M264.1028,-693.7884C220.6922,-683.5279 158.4139,-663.1103 117,-625 93.578,-603.4464 78.8551,-569.7148 70.6013,-545.0898"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.LineItem -->
-<g id="node7" class="node">
-<title>com.youramaryllis.ddd.example.order.LineItem</title>
-<g id="a_node7"><a xlink:title="LineItem">
-<polygon fill="#f2f2f2" stroke="#000000" points="228,-564.5 126,-564.5 126,-463.5 228,-463.5 228,-564.5"/>
-<polygon fill="#ffa500" stroke="transparent" points="126,-463.5 126,-564.5 228,-564.5 228,-463.5 126,-463.5"/>
-<polygon fill="none" stroke="#000000" points="127,-523 127,-563 227,-563 227,-523 127,-523"/>
-<text text-anchor="start" x="138" y="-540.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">LineItem</text>
-<polygon fill="none" stroke="#000000" points="127,-464 127,-522 227,-522 227,-464 127,-464"/>
-<text text-anchor="start" x="140" y="-509.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ lineItemId</text>
-<text text-anchor="start" x="136" y="-496.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ productSku</text>
-<text text-anchor="start" x="145.5" y="-483.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ quantity</text>
-<text text-anchor="start" x="143.5" y="-470.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ unitPrice</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.LineItem -->
-<g id="edge4" class="edge">
-<title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.LineItem</title>
-<path fill="none" stroke="#000000" d="M264.4798,-657.105C254.8088,-646.999 245.1516,-636.0116 237,-625 223.2494,-606.425 210.6422,-584.3083 200.5714,-564.7237"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.PaymentInfo -->
-<g id="node8" class="node">
-<title>com.youramaryllis.ddd.example.order.PaymentInfo</title>
-<g id="a_node8"><a xlink:title="PaymentInfo">
-<polygon fill="#f2f2f2" stroke="#000000" points="382,-558 246,-558 246,-470 382,-470 382,-558"/>
-<polygon fill="#ffa500" stroke="transparent" points="246,-470 246,-558 382,-558 382,-470 246,-470"/>
-<polygon fill="none" stroke="#000000" points="247,-517 247,-557 381,-557 381,-517 247,-517"/>
-<text text-anchor="start" x="258" y="-534.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">PaymentInfo</text>
-<polygon fill="none" stroke="#000000" points="247,-471 247,-516 381,-516 381,-471 247,-471"/>
-<text text-anchor="start" x="289.5" y="-503.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
-<text text-anchor="start" x="269" y="-490.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ cardNumber</text>
-<text text-anchor="start" x="265.5" y="-477.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ billingAddress</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.PaymentInfo -->
-<g id="edge3" class="edge">
-<title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.PaymentInfo</title>
-<path fill="none" stroke="#000000" d="M314,-632.892C314,-607.8892 314,-580.441 314,-558.2235"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.DeliveryInfo -->
-<g id="node10" class="node">
-<title>com.youramaryllis.ddd.example.order.DeliveryInfo</title>
-<g id="a_node10"><a xlink:title="DeliveryInfo">
-<polygon fill="#f2f2f2" stroke="#000000" points="532,-551.5 400,-551.5 400,-476.5 532,-476.5 532,-551.5"/>
-<polygon fill="#ffa500" stroke="transparent" points="400,-476.5 400,-551.5 532,-551.5 532,-476.5 400,-476.5"/>
-<polygon fill="none" stroke="#000000" points="401,-510 401,-550 531,-550 531,-510 401,-510"/>
-<text text-anchor="start" x="412" y="-527.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">DeliveryInfo</text>
-<polygon fill="none" stroke="#000000" points="401,-477 401,-509 531,-509 531,-477 401,-477"/>
-<text text-anchor="start" x="441.5" y="-496.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
-<text text-anchor="start" x="435.5" y="-483.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ address</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.DeliveryInfo -->
-<g id="edge2" class="edge">
-<title>com.youramaryllis.ddd.example.order.Order&#45;&gt;com.youramaryllis.ddd.example.order.DeliveryInfo</title>
-<path fill="none" stroke="#000000" d="M363.5053,-655.6212C372.9735,-645.8018 382.5566,-635.3019 391,-625 410.0182,-601.7959 428.9137,-573.7919 442.9811,-551.7174"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.Address -->
-<g id="node9" class="node">
-<title>com.youramaryllis.ddd.example.order.Address</title>
-<g id="a_node9"><a xlink:title="Address">
-<polygon fill="#f2f2f2" stroke="#000000" points="438.5,-388 341.5,-388 341.5,-287 438.5,-287 438.5,-388"/>
-<polygon fill="#ffa500" stroke="transparent" points="341.5,-287 341.5,-388 438.5,-388 438.5,-287 341.5,-287"/>
-<polygon fill="none" stroke="#000000" points="343,-346.5 343,-386.5 438,-386.5 438,-346.5 343,-346.5"/>
-<text text-anchor="start" x="354" y="-363.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Address</text>
-<polygon fill="none" stroke="#000000" points="343,-287.5 343,-345.5 438,-345.5 438,-287.5 343,-287.5"/>
-<text text-anchor="start" x="366" y="-332.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ street</text>
-<text text-anchor="start" x="373" y="-319.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ city</text>
-<text text-anchor="start" x="368.5" y="-306.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ state</text>
-<text text-anchor="start" x="375" y="-293.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ zip</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.order.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address -->
-<g id="edge6" class="edge">
-<title>com.youramaryllis.ddd.example.order.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address</title>
-<path fill="none" stroke="#000000" d="M332.982,-469.9169C343.6657,-445.1052 357.0518,-414.0178 368.1686,-388.2006"/>
-</g>
-<!-- com.youramaryllis.ddd.example.order.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address -->
-<g id="edge7" class="edge">
-<title>com.youramaryllis.ddd.example.order.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.order.Address</title>
-<path fill="none" stroke="#000000" d="M449.6961,-476.1363C438.6177,-450.4082 423.8394,-416.0875 411.7587,-388.0317"/>
-</g>
-<!-- com.youramaryllis.ddd.example.user.User -->
-<g id="node13" class="node">
-<title>com.youramaryllis.ddd.example.user.User</title>
-<g id="a_node13"><a xlink:title="User">
-<polygon fill="#f2f2f2" stroke="#000000" points="828.5,-388 723.5,-388 723.5,-287 828.5,-287 828.5,-388"/>
-<polygon fill="#ffa500" stroke="transparent" points="723.5,-287 723.5,-388 828.5,-388 828.5,-287 723.5,-287"/>
-<polygon fill="none" stroke="#000000" points="725,-346.5 725,-386.5 828,-386.5 828,-346.5 725,-346.5"/>
-<text text-anchor="start" x="756" y="-363.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">User</text>
-<polygon fill="none" stroke="#000000" points="725,-287.5 725,-345.5 828,-345.5 828,-287.5 725,-287.5"/>
-<text text-anchor="start" x="750.5" y="-332.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ userId</text>
-<text text-anchor="start" x="752" y="-319.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
-<text text-anchor="start" x="728" y="-306.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ paymentInfos</text>
-<text text-anchor="start" x="731" y="-293.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ deliveryInfos</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.User -->
+<!-- com.roche.udw.ddd.nae.FlexMethod&#45;NAE&#45;flex&#45;method&#45;fetched&#45;&gt;com.roche.udw.ddd.nae.FlexMethod -->
 <g id="edge9" class="edge">
-<title>com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.User</title>
-<path fill="none" stroke="#000000" d="M776,-433.7551C776,-418.2741 776,-402.4619 776,-388.245"/>
+<title>com.roche.udw.ddd.nae.FlexMethod&#45;NAE&#45;flex&#45;method&#45;fetched&#45;&gt;com.roche.udw.ddd.nae.FlexMethod</title>
+<path fill="none" stroke="#0000ff" d="M213.4451,-1113.2724C226.7631,-1059.3492 265.5932,-902.1294 286.724,-816.5726"/>
 </g>
-<!-- com.youramaryllis.ddd.example.user.UserId -->
-<g id="node14" class="node">
-<title>com.youramaryllis.ddd.example.user.UserId</title>
-<g id="a_node14"><a xlink:title="UserId">
-<polygon fill="#f2f2f2" stroke="#000000" points="942,-228 860,-228 860,-166 942,-166 942,-228"/>
-<polygon fill="#ffa500" stroke="transparent" points="860,-166 860,-228 942,-228 942,-166 860,-166"/>
-<polygon fill="none" stroke="#000000" points="861,-187 861,-227 941,-227 941,-187 861,-187"/>
-<text text-anchor="start" x="872" y="-204.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">UserId</text>
-<polygon fill="none" stroke="#000000" points="861,-167 861,-186 941,-186 941,-167 861,-167"/>
-<text text-anchor="start" x="875" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ userId</text>
+<!-- com.roche.udw.ddd.workflow_management.FlexMethodProcess -->
+<g id="node2" class="node">
+<title>com.roche.udw.ddd.workflow_management.FlexMethodProcess</title>
+<g id="a_node2"><a xlink:title="FlexMethodProcess">
+<polygon fill="#f2f2f2" stroke="#000000" points="1211.8198,-1516 1015.8198,-1516 1015.8198,-1454 1211.8198,-1454 1211.8198,-1516"/>
+<polygon fill="#c04633" stroke="transparent" points="1015.8198,-1454 1015.8198,-1516 1211.8198,-1516 1211.8198,-1454 1015.8198,-1454"/>
+<polygon fill="none" stroke="#000000" points="1016.8198,-1475 1016.8198,-1515 1210.8198,-1515 1210.8198,-1475 1016.8198,-1475"/>
+<text text-anchor="start" x="1027.8198" y="-1492.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">FlexMethodProcess</text>
+<polygon fill="none" stroke="#000000" points="1016.8198,-1455 1016.8198,-1474 1210.8198,-1474 1210.8198,-1455 1016.8198,-1455"/>
+<text text-anchor="start" x="1053.8198" y="-1461.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ fetchFlexMethods</text>
 </a>
 </g>
 </g>
-<!-- com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.UserId -->
-<g id="edge8" class="edge">
-<title>com.youramaryllis.ddd.example.user.UserManagement&#45;&gt;com.youramaryllis.ddd.example.user.UserId</title>
-<path fill="none" stroke="#000000" d="M820.5165,-433.748C826.3979,-421.918 832.0828,-409.755 837,-398 861.4496,-339.5515 882.0816,-268.3071 892.89,-228.2535"/>
-</g>
-<!-- com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.UserId -->
+<!-- com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;&gt;com.roche.udw.ddd.nae.FlexMethod&#45;NAE&#45;flex&#45;method&#45;fetched -->
 <g id="edge12" class="edge">
-<title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.UserId</title>
-<path fill="none" stroke="#000000" d="M821.1279,-286.7763C838.6107,-267.1256 858.0634,-245.2607 873.3941,-228.029"/>
+<title>com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;&gt;com.roche.udw.ddd.nae.FlexMethod&#45;NAE&#45;flex&#45;method&#45;fetched</title>
+<path fill="none" stroke="#0000ff" d="M1015.5547,-1458.0301C861.788,-1414.0719 556.8526,-1319.781 314.8198,-1200.5 285.7321,-1186.1647 254.8489,-1165.51 233.9681,-1150.6339"/>
 </g>
-<!-- com.youramaryllis.ddd.example.user.PaymentInfo -->
-<g id="node15" class="node">
-<title>com.youramaryllis.ddd.example.user.PaymentInfo</title>
-<g id="a_node15"><a xlink:title="PaymentInfo">
-<polygon fill="#f2f2f2" stroke="#000000" points="692,-241 556,-241 556,-153 692,-153 692,-241"/>
-<polygon fill="#ffa500" stroke="transparent" points="556,-153 556,-241 692,-241 692,-153 556,-153"/>
-<polygon fill="none" stroke="#000000" points="557,-200 557,-240 691,-240 691,-200 557,-200"/>
-<text text-anchor="start" x="568" y="-217.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">PaymentInfo</text>
-<polygon fill="none" stroke="#000000" points="557,-154 557,-199 691,-199 691,-154 557,-154"/>
-<text text-anchor="start" x="599.5" y="-186.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
-<text text-anchor="start" x="579" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ cardNumber</text>
-<text text-anchor="start" x="575.5" y="-160.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ billingAddress</text>
+<!-- com.roche.udw.ddd.sequencing_prep.FlexMethods&#45;Sequencing&#45;Prep&#45;flex&#45;method&#45;fetched -->
+<g id="node3" class="node">
+<title>com.roche.udw.ddd.sequencing_prep.FlexMethods&#45;Sequencing&#45;Prep&#45;flex&#45;method&#45;fetched</title>
+<g id="a_node3"><a xlink:title="Sequencing Prep flex method fetched">
+<polygon fill="#f2f2f2" stroke="#000000" points="602.3198,-1150.5 323.3198,-1150.5 323.3198,-1113.5 602.3198,-1113.5 602.3198,-1150.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="323.3198,-1113.5 323.3198,-1150.5 602.3198,-1150.5 602.3198,-1113.5 323.3198,-1113.5"/>
+<polygon fill="none" stroke="#000000" points="324.8198,-1114 324.8198,-1149 601.8198,-1149 601.8198,-1114 324.8198,-1114"/>
+<text text-anchor="start" x="335.8198" y="-1129.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">Sequencing Prep flex method fetched</text>
 </a>
 </g>
 </g>
-<!-- com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.PaymentInfo -->
+<!-- com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;&gt;com.roche.udw.ddd.sequencing_prep.FlexMethods&#45;Sequencing&#45;Prep&#45;flex&#45;method&#45;fetched -->
 <g id="edge11" class="edge">
-<title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.PaymentInfo</title>
-<path fill="none" stroke="#000000" d="M723.2644,-288.7542C706.5442,-273.299 688.1614,-256.3071 671.8078,-241.1907"/>
+<title>com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;&gt;com.roche.udw.ddd.sequencing_prep.FlexMethods&#45;Sequencing&#45;Prep&#45;flex&#45;method&#45;fetched</title>
+<path fill="none" stroke="#0000ff" d="M1056.6184,-1453.983C924.7555,-1382.4813 602.6608,-1207.8277 497.0062,-1150.5373"/>
 </g>
-<!-- com.youramaryllis.ddd.example.user.DeliveryInfo -->
-<g id="node17" class="node">
-<title>com.youramaryllis.ddd.example.user.DeliveryInfo</title>
-<g id="a_node17"><a xlink:title="DeliveryInfo">
-<polygon fill="#f2f2f2" stroke="#000000" points="842,-234.5 710,-234.5 710,-159.5 842,-159.5 842,-234.5"/>
-<polygon fill="#ffa500" stroke="transparent" points="710,-159.5 710,-234.5 842,-234.5 842,-159.5 710,-159.5"/>
-<polygon fill="none" stroke="#000000" points="711,-193 711,-233 841,-233 841,-193 711,-193"/>
-<text text-anchor="start" x="722" y="-210.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">DeliveryInfo</text>
-<polygon fill="none" stroke="#000000" points="711,-160 711,-192 841,-192 841,-160 711,-160"/>
-<text text-anchor="start" x="751.5" y="-179.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
-<text text-anchor="start" x="745.5" y="-166.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ address</text>
+<!-- com.roche.udw.ddd.sequencing.FlexMethods&#45;Sequencing&#45;flex&#45;method&#45;fetched -->
+<g id="node4" class="node">
+<title>com.roche.udw.ddd.sequencing.FlexMethods&#45;Sequencing&#45;flex&#45;method&#45;fetched</title>
+<g id="a_node4"><a xlink:title="Sequencing flex method fetched">
+<polygon fill="#f2f2f2" stroke="#000000" points="863.3198,-1150.5 620.3198,-1150.5 620.3198,-1113.5 863.3198,-1113.5 863.3198,-1150.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="620.3198,-1113.5 620.3198,-1150.5 863.3198,-1150.5 863.3198,-1113.5 620.3198,-1113.5"/>
+<polygon fill="none" stroke="#000000" points="621.8198,-1114 621.8198,-1149 862.8198,-1149 862.8198,-1114 621.8198,-1114"/>
+<text text-anchor="start" x="632.8198" y="-1129.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">Sequencing flex method fetched</text>
 </a>
 </g>
 </g>
-<!-- com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.DeliveryInfo -->
+<!-- com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;&gt;com.roche.udw.ddd.sequencing.FlexMethods&#45;Sequencing&#45;flex&#45;method&#45;fetched -->
 <g id="edge10" class="edge">
-<title>com.youramaryllis.ddd.example.user.User&#45;&gt;com.youramaryllis.ddd.example.user.DeliveryInfo</title>
-<path fill="none" stroke="#000000" d="M776,-286.7763C776,-269.6409 776,-250.8219 776,-234.8594"/>
+<title>com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;&gt;com.roche.udw.ddd.sequencing.FlexMethods&#45;Sequencing&#45;flex&#45;method&#45;fetched</title>
+<path fill="none" stroke="#0000ff" d="M1081.1333,-1453.983C1005.7831,-1382.4813 821.7289,-1207.8277 761.3549,-1150.5373"/>
 </g>
-<!-- com.youramaryllis.ddd.example.user.Address -->
-<g id="node16" class="node">
-<title>com.youramaryllis.ddd.example.user.Address</title>
-<g id="a_node16"><a xlink:title="Address">
-<polygon fill="#f2f2f2" stroke="#000000" points="748.5,-117 651.5,-117 651.5,-16 748.5,-16 748.5,-117"/>
-<polygon fill="#ffa500" stroke="transparent" points="651.5,-16 651.5,-117 748.5,-117 748.5,-16 651.5,-16"/>
-<polygon fill="none" stroke="#000000" points="653,-75.5 653,-115.5 748,-115.5 748,-75.5 653,-75.5"/>
-<text text-anchor="start" x="664" y="-92.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Address</text>
-<polygon fill="none" stroke="#000000" points="653,-16.5 653,-74.5 748,-74.5 748,-16.5 653,-16.5"/>
-<text text-anchor="start" x="676" y="-61.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ street</text>
-<text text-anchor="start" x="683" y="-48.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ city</text>
-<text text-anchor="start" x="678.5" y="-35.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ state</text>
-<text text-anchor="start" x="685" y="-22.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ zip</text>
+<!-- com.roche.udw.ddd.sequencing_prep.FlexMethods -->
+<g id="node25" class="node">
+<title>com.roche.udw.ddd.sequencing_prep.FlexMethods</title>
+<g id="a_node25"><a xlink:title="FlexMethods">
+<polygon fill="#f2f2f2" stroke="#000000" points="537.8198,-780.5 399.8198,-780.5 399.8198,-738.5 537.8198,-738.5 537.8198,-780.5"/>
+<polygon fill="#c04633" stroke="transparent" points="399.8198,-738.5 399.8198,-780.5 537.8198,-780.5 537.8198,-738.5 399.8198,-738.5"/>
+<polygon fill="none" stroke="#000000" points="400.8198,-739.5 400.8198,-779.5 536.8198,-779.5 536.8198,-739.5 400.8198,-739.5"/>
+<text text-anchor="start" x="411.8198" y="-756.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">FlexMethods</text>
 </a>
 </g>
 </g>
-<!-- com.youramaryllis.ddd.example.user.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address -->
+<!-- com.roche.udw.ddd.sequencing_prep.FlexMethods&#45;Sequencing&#45;Prep&#45;flex&#45;method&#45;fetched&#45;&gt;com.roche.udw.ddd.sequencing_prep.FlexMethods -->
 <g id="edge13" class="edge">
-<title>com.youramaryllis.ddd.example.user.PaymentInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address</title>
-<path fill="none" stroke="#000000" d="M649.7301,-152.8187C656.3618,-141.4314 663.552,-129.085 670.3648,-117.3868"/>
+<title>com.roche.udw.ddd.sequencing_prep.FlexMethods&#45;Sequencing&#45;Prep&#45;flex&#45;method&#45;fetched&#45;&gt;com.roche.udw.ddd.sequencing_prep.FlexMethods</title>
+<path fill="none" stroke="#0000ff" d="M463.1214,-1113.2724C464.1338,-1050.4235 467.4063,-847.251 468.4772,-780.7709"/>
 </g>
-<!-- com.youramaryllis.ddd.example.user.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address -->
+<!-- com.roche.udw.ddd.sequencing.FlexMethods -->
+<g id="node29" class="node">
+<title>com.roche.udw.ddd.sequencing.FlexMethods</title>
+<g id="a_node29"><a xlink:title="FlexMethods">
+<polygon fill="#f2f2f2" stroke="#000000" points="810.8198,-780.5 672.8198,-780.5 672.8198,-738.5 810.8198,-738.5 810.8198,-780.5"/>
+<polygon fill="#c04633" stroke="transparent" points="672.8198,-738.5 672.8198,-780.5 810.8198,-780.5 810.8198,-738.5 672.8198,-738.5"/>
+<polygon fill="none" stroke="#000000" points="673.8198,-739.5 673.8198,-779.5 809.8198,-779.5 809.8198,-739.5 673.8198,-739.5"/>
+<text text-anchor="start" x="684.8198" y="-756.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">FlexMethods</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.sequencing.FlexMethods&#45;Sequencing&#45;flex&#45;method&#45;fetched&#45;&gt;com.roche.udw.ddd.sequencing.FlexMethods -->
 <g id="edge14" class="edge">
-<title>com.youramaryllis.ddd.example.user.DeliveryInfo&#45;&gt;com.youramaryllis.ddd.example.user.Address</title>
-<path fill="none" stroke="#000000" d="M754.0177,-159.254C746.3896,-146.1559 737.7076,-131.2479 729.5689,-117.2729"/>
+<title>com.roche.udw.ddd.sequencing.FlexMethods&#45;Sequencing&#45;flex&#45;method&#45;fetched&#45;&gt;com.roche.udw.ddd.sequencing.FlexMethods</title>
+<path fill="none" stroke="#0000ff" d="M741.8198,-1113.2724C741.8198,-1050.4235 741.8198,-847.251 741.8198,-780.7709"/>
 </g>
-<!-- com.youramaryllis.ddd.example.catalog.Catalog -->
-<g id="node19" class="node">
-<title>com.youramaryllis.ddd.example.catalog.Catalog</title>
-<g id="a_node19"><a xlink:title="Catalog">
-<polygon fill="#f2f2f2" stroke="#000000" points="1101.5,-398 986.5,-398 986.5,-277 1101.5,-277 1101.5,-398"/>
-<polygon fill="#ffa500" stroke="transparent" points="986.5,-277 986.5,-398 1101.5,-398 1101.5,-277 986.5,-277"/>
-<polygon fill="none" stroke="#000000" points="988,-356.5 988,-396.5 1101,-396.5 1101,-356.5 988,-356.5"/>
-<text text-anchor="start" x="1011" y="-373.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Catalog</text>
-<polygon fill="none" stroke="#000000" points="988,-310.5 988,-355.5 1101,-355.5 1101,-310.5 988,-310.5"/>
-<text text-anchor="start" x="1009.5" y="-342.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ catalogId</text>
-<text text-anchor="start" x="1020" y="-329.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
-<text text-anchor="start" x="1014" y="-316.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; products</text>
-<polygon fill="none" stroke="#000000" points="988,-277.5 988,-309.5 1101,-309.5 1101,-277.5 988,-277.5"/>
-<text text-anchor="start" x="1003" y="-296.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ addProduct</text>
-<text text-anchor="start" x="991" y="-283.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ removeProduct</text>
+<!-- com.roche.udw.ddd.workflow_design.Workflow&#45;workflow&#45;published -->
+<g id="node5" class="node">
+<title>com.roche.udw.ddd.workflow_design.Workflow&#45;workflow&#45;published</title>
+<g id="a_node5"><a xlink:title="workflow published">
+<polygon fill="#f2f2f2" stroke="#000000" points="1442.8198,-778 1286.8198,-778 1286.8198,-741 1442.8198,-741 1442.8198,-778"/>
+<polygon fill="#e9e40e" stroke="transparent" points="1286.8198,-741 1286.8198,-778 1442.8198,-778 1442.8198,-741 1286.8198,-741"/>
+<polygon fill="none" stroke="#000000" points="1287.8198,-741.5 1287.8198,-776.5 1441.8198,-776.5 1441.8198,-741.5 1287.8198,-741.5"/>
+<text text-anchor="start" x="1298.8198" y="-756.9" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">workflow published</text>
 </a>
 </g>
 </g>
-<!-- com.youramaryllis.ddd.example.catalog.CatalogService&#45;&gt;com.youramaryllis.ddd.example.catalog.Catalog -->
+<!-- com.roche.udw.ddd.workflow_design.Workflow -->
+<g id="node32" class="node">
+<title>com.roche.udw.ddd.workflow_design.Workflow</title>
+<g id="a_node32"><a xlink:title="Workflow Template: something&#10;">
+<polygon fill="#f2f2f2" stroke="#000000" points="2362.8198,-1555 2236.8198,-1555 2236.8198,-1415 2362.8198,-1415 2362.8198,-1555"/>
+<polygon fill="#c04633" stroke="transparent" points="2236.8198,-1415 2236.8198,-1555 2362.8198,-1555 2362.8198,-1415 2236.8198,-1415"/>
+<polygon fill="none" stroke="#000000" points="2237.8198,-1514 2237.8198,-1554 2361.8198,-1554 2361.8198,-1514 2237.8198,-1514"/>
+<text text-anchor="start" x="2258.8198" y="-1531.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Workflow</text>
+<polygon fill="none" stroke="#000000" points="2237.8198,-1416 2237.8198,-1513 2361.8198,-1513 2361.8198,-1416 2237.8198,-1416"/>
+<text text-anchor="start" x="2290.3198" y="-1500.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; id</text>
+<text text-anchor="start" x="2276.8198" y="-1487.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; owner</text>
+<text text-anchor="start" x="2278.3198" y="-1474.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; name</text>
+<text text-anchor="start" x="2240.8198" y="-1461.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; workflowTemplate</text>
+<text text-anchor="start" x="2264.3198" y="-1448.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; batch_size</text>
+<text text-anchor="start" x="2264.8198" y="-1435.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; order_info</text>
+<text text-anchor="start" x="2278.8198" y="-1422.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; panel</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.Workflow&#45;workflow&#45;published&#45;&gt;com.roche.udw.ddd.workflow_design.Workflow -->
 <g id="edge15" class="edge">
-<title>com.youramaryllis.ddd.example.catalog.CatalogService&#45;&gt;com.youramaryllis.ddd.example.catalog.Catalog</title>
-<path fill="none" stroke="#000000" d="M1044,-466.2366C1044,-445.3077 1044,-420.5001 1044,-398.2751"/>
+<title>com.roche.udw.ddd.workflow_design.Workflow&#45;workflow&#45;published&#45;&gt;com.roche.udw.ddd.workflow_design.Workflow</title>
+<path fill="none" stroke="#0000ff" d="M1442.9996,-776.8281C1634.3367,-820.8077 2118.1727,-942.0184 2222.8198,-1065 2234.1095,-1078.2677 2270.3441,-1298.5573 2288.7971,-1414.65"/>
 </g>
-<!-- com.youramaryllis.ddd.example.catalog.Product -->
-<g id="node20" class="node">
-<title>com.youramaryllis.ddd.example.catalog.Product</title>
-<g id="a_node20"><a xlink:title="Product">
-<polygon fill="#f2f2f2" stroke="#000000" points="1090.5,-241 997.5,-241 997.5,-153 1090.5,-153 1090.5,-241"/>
-<polygon fill="#ffa500" stroke="transparent" points="997.5,-153 997.5,-241 1090.5,-241 1090.5,-153 997.5,-153"/>
-<polygon fill="none" stroke="#000000" points="999,-200 999,-240 1090,-240 1090,-200 999,-200"/>
-<text text-anchor="start" x="1010" y="-217.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Product</text>
-<polygon fill="none" stroke="#000000" points="999,-154 999,-199 1090,-199 1090,-154 999,-154"/>
-<text text-anchor="start" x="1003.5" y="-186.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ productSku</text>
-<text text-anchor="start" x="1022.5" y="-173.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ price</text>
-<text text-anchor="start" x="1020" y="-160.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ name</text>
+<!-- com.roche.udw.ddd.workflow_management.Workflow -->
+<g id="node6" class="node">
+<title>com.roche.udw.ddd.workflow_management.Workflow</title>
+<g id="a_node6"><a xlink:title="Workflow">
+<polygon fill="#f2f2f2" stroke="#000000" points="1325.3198,-1169.5 1208.3198,-1169.5 1208.3198,-1094.5 1325.3198,-1094.5 1325.3198,-1169.5"/>
+<polygon fill="#c04633" stroke="transparent" points="1208.3198,-1094.5 1208.3198,-1169.5 1325.3198,-1169.5 1325.3198,-1094.5 1208.3198,-1094.5"/>
+<polygon fill="none" stroke="#000000" points="1209.8198,-1128 1209.8198,-1168 1324.8198,-1168 1324.8198,-1128 1209.8198,-1128"/>
+<text text-anchor="start" x="1226.3198" y="-1145.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Workflow</text>
+<polygon fill="none" stroke="#000000" points="1209.8198,-1095 1209.8198,-1127 1324.8198,-1127 1324.8198,-1095 1209.8198,-1095"/>
+<text text-anchor="start" x="1212.8198" y="-1114.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createWorkflow</text>
+<text text-anchor="start" x="1218.8198" y="-1101.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ startWorkflow</text>
 </a>
 </g>
 </g>
-<!-- com.youramaryllis.ddd.example.catalog.Catalog&#45;&gt;com.youramaryllis.ddd.example.catalog.Product -->
-<g id="edge16" class="edge">
-<title>com.youramaryllis.ddd.example.catalog.Catalog&#45;&gt;com.youramaryllis.ddd.example.catalog.Product</title>
-<path fill="none" stroke="#000000" d="M1044,-276.6918C1044,-264.8256 1044,-252.5934 1044,-241.3827"/>
-</g>
-<!-- com.youramaryllis.ddd.example.catalog.ProductSku -->
-<g id="node21" class="node">
-<title>com.youramaryllis.ddd.example.catalog.ProductSku</title>
-<g id="a_node21"><a xlink:title="ProductSku">
-<polygon fill="#f2f2f2" stroke="#000000" points="1107,-97.5 981,-97.5 981,-35.5 1107,-35.5 1107,-97.5"/>
-<polygon fill="#ffa500" stroke="transparent" points="981,-35.5 981,-97.5 1107,-97.5 1107,-35.5 981,-35.5"/>
-<polygon fill="none" stroke="#000000" points="982,-56.5 982,-96.5 1106,-96.5 1106,-56.5 982,-56.5"/>
-<text text-anchor="start" x="993" y="-73.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">ProductSku</text>
-<polygon fill="none" stroke="#000000" points="982,-36.5 982,-55.5 1106,-55.5 1106,-36.5 982,-36.5"/>
-<text text-anchor="start" x="1027" y="-42.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ sku</text>
-</a>
-</g>
-</g>
-<!-- com.youramaryllis.ddd.example.catalog.Product&#45;&gt;com.youramaryllis.ddd.example.catalog.ProductSku -->
+<!-- com.roche.udw.ddd.workflow_management.Workflow&#45;&gt;com.roche.udw.ddd.workflow_design.Workflow&#45;workflow&#45;published -->
 <g id="edge17" class="edge">
-<title>com.youramaryllis.ddd.example.catalog.Product&#45;&gt;com.youramaryllis.ddd.example.catalog.ProductSku</title>
-<path fill="none" stroke="#000000" d="M1044,-152.8187C1044,-134.7764 1044,-114.3267 1044,-97.8618"/>
+<title>com.roche.udw.ddd.workflow_management.Workflow&#45;&gt;com.roche.udw.ddd.workflow_design.Workflow&#45;workflow&#45;published</title>
+<path fill="none" stroke="#0000ff" d="M1276.7559,-1094.2328C1297.4368,-1015.6241 1344.4628,-836.8773 1359.8472,-778.401"/>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;started -->
+<g id="node7" class="node">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;started</title>
+<g id="a_node7"><a xlink:title="workflow started">
+<polygon fill="#f2f2f2" stroke="#000000" points="1238.8198,-787 1096.8198,-787 1096.8198,-732 1238.8198,-732 1238.8198,-787"/>
+<polygon fill="#e9e40e" stroke="transparent" points="1096.8198,-732 1096.8198,-787 1238.8198,-787 1238.8198,-732 1096.8198,-732"/>
+<polygon fill="none" stroke="#000000" points="1097.8198,-750.5 1097.8198,-785.5 1237.8198,-785.5 1237.8198,-750.5 1097.8198,-750.5"/>
+<text text-anchor="start" x="1108.8198" y="-765.9" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">workflow started</text>
+<polygon fill="none" stroke="#000000" points="1097.8198,-732.5 1097.8198,-749.5 1237.8198,-749.5 1237.8198,-732.5 1097.8198,-732.5"/>
+<text text-anchor="start" x="1146.3198" y="-738.5" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Lab Tech</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Workflow&#45;&gt;com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;started -->
+<g id="edge16" class="edge">
+<title>com.roche.udw.ddd.workflow_management.Workflow&#45;&gt;com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;started</title>
+<path fill="none" stroke="#0000ff" d="M1256.7823,-1094.2328C1236.8735,-1019.3234 1192.7967,-853.4788 1175.2435,-787.4325"/>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant -->
+<g id="node30" class="node">
+<title>com.roche.udw.ddd.tenant.Tenant</title>
+<g id="a_node30"><a xlink:title="Tenant">
+<polygon fill="#f2f2f2" stroke="#000000" points="1161.3198,-454 1060.3198,-454 1060.3198,-333 1161.3198,-333 1161.3198,-454"/>
+<polygon fill="#c04633" stroke="transparent" points="1060.3198,-333 1060.3198,-454 1161.3198,-454 1161.3198,-333 1060.3198,-333"/>
+<polygon fill="none" stroke="#000000" points="1061.8198,-412.5 1061.8198,-452.5 1160.8198,-452.5 1160.8198,-412.5 1061.8198,-412.5"/>
+<text text-anchor="start" x="1081.3198" y="-429.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Tenant</text>
+<polygon fill="none" stroke="#000000" points="1061.8198,-366.5 1061.8198,-411.5 1160.8198,-411.5 1160.8198,-366.5 1061.8198,-366.5"/>
+<text text-anchor="start" x="1101.8198" y="-398.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; id</text>
+<text text-anchor="start" x="1089.8198" y="-385.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; name</text>
+<text text-anchor="start" x="1090.8198" y="-372.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; users</text>
+<polygon fill="none" stroke="#000000" points="1061.8198,-333.5 1061.8198,-365.5 1160.8198,-365.5 1160.8198,-333.5 1061.8198,-333.5"/>
+<text text-anchor="start" x="1079.3198" y="-352.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ addUser</text>
+<text text-anchor="start" x="1064.8198" y="-339.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createTenant</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;started&#45;&gt;com.roche.udw.ddd.tenant.Tenant -->
+<g id="edge18" class="edge">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;started&#45;&gt;com.roche.udw.ddd.tenant.Tenant</title>
+<path fill="none" stroke="#0000ff" d="M1163.5355,-731.9905C1154.3961,-673.306 1132.8009,-534.6419 1120.2696,-454.1781"/>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;order&#45;created -->
+<g id="node8" class="node">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;order&#45;created</title>
+<g id="a_node8"><a xlink:title="order created">
+<polygon fill="#f2f2f2" stroke="#000000" points="999.8198,-1159.5 881.8198,-1159.5 881.8198,-1104.5 999.8198,-1104.5 999.8198,-1159.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="881.8198,-1104.5 881.8198,-1159.5 999.8198,-1159.5 999.8198,-1104.5 881.8198,-1104.5"/>
+<polygon fill="none" stroke="#000000" points="882.8198,-1123 882.8198,-1158 998.8198,-1158 998.8198,-1123 882.8198,-1123"/>
+<text text-anchor="start" x="893.8198" y="-1138.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">order created</text>
+<polygon fill="none" stroke="#000000" points="882.8198,-1105 882.8198,-1122 998.8198,-1122 998.8198,-1105 882.8198,-1105"/>
+<text text-anchor="start" x="910.8198" y="-1111" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Lab Director</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;order&#45;created&#45;&gt;com.roche.udw.ddd.tenant.Tenant -->
+<g id="edge19" class="edge">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;order&#45;created&#45;&gt;com.roche.udw.ddd.tenant.Tenant</title>
+<path fill="none" stroke="#0000ff" d="M947.1737,-1104.3978C971.8874,-997.0387 1061.9587,-605.7583 1096.8657,-454.1183"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Order -->
+<g id="node9" class="node">
+<title>com.roche.udw.ddd.workflow_management.Order</title>
+<g id="a_node9"><a xlink:title="Order">
+<polygon fill="#f2f2f2" stroke="#000000" points="1325.8198,-1532.5 1229.8198,-1532.5 1229.8198,-1437.5 1325.8198,-1437.5 1325.8198,-1532.5"/>
+<polygon fill="#c04633" stroke="transparent" points="1229.8198,-1437.5 1229.8198,-1532.5 1325.8198,-1532.5 1325.8198,-1437.5 1229.8198,-1437.5"/>
+<polygon fill="none" stroke="#000000" points="1230.8198,-1491 1230.8198,-1531 1324.8198,-1531 1324.8198,-1491 1230.8198,-1491"/>
+<text text-anchor="start" x="1252.3198" y="-1508.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Order</text>
+<polygon fill="none" stroke="#000000" points="1230.8198,-1458 1230.8198,-1490 1324.8198,-1490 1324.8198,-1458 1230.8198,-1458"/>
+<text text-anchor="start" x="1251.8198" y="-1477.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; sample</text>
+<text text-anchor="start" x="1246.3198" y="-1464.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; workflow</text>
+<polygon fill="none" stroke="#000000" points="1230.8198,-1438 1230.8198,-1457 1324.8198,-1457 1324.8198,-1438 1230.8198,-1438"/>
+<text text-anchor="start" x="1233.8198" y="-1444.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createOrder</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Order&#45;&gt;com.roche.udw.ddd.workflow_management.Workflow -->
+<g id="edge1" class="edge">
+<title>com.roche.udw.ddd.workflow_management.Order&#45;&gt;com.roche.udw.ddd.workflow_management.Workflow</title>
+<path fill="none" stroke="#000000" d="M1276.3363,-1437.3928C1274.1254,-1366.4448 1270.0108,-1234.4012 1267.9946,-1169.7014"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Order&#45;&gt;com.roche.udw.ddd.tenant.Tenant&#45;order&#45;created -->
+<g id="edge20" class="edge">
+<title>com.roche.udw.ddd.workflow_management.Order&#45;&gt;com.roche.udw.ddd.tenant.Tenant&#45;order&#45;created</title>
+<path fill="none" stroke="#0000ff" d="M1240.1738,-1437.3482C1233.8474,-1429.7562 1227.2469,-1422.0772 1220.8198,-1415 1129.6514,-1314.6092 1097.9685,-1298.1012 1003.8198,-1200.5 991.032,-1187.2432 977.1402,-1172.2095 965.6635,-1159.6103"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Sample -->
+<g id="node26" class="node">
+<title>com.roche.udw.ddd.workflow_management.Sample</title>
+<g id="a_node26"><a xlink:title="Sample">
+<polygon fill="#f2f2f2" stroke="#000000" points="1189.8198,-1163 1099.8198,-1163 1099.8198,-1101 1189.8198,-1101 1189.8198,-1163"/>
+<polygon fill="#c04633" stroke="transparent" points="1099.8198,-1101 1099.8198,-1163 1189.8198,-1163 1189.8198,-1101 1099.8198,-1101"/>
+<polygon fill="none" stroke="#000000" points="1100.8198,-1122 1100.8198,-1162 1188.8198,-1162 1188.8198,-1122 1100.8198,-1122"/>
+<text text-anchor="start" x="1111.8198" y="-1139.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Sample</text>
+<polygon fill="none" stroke="#000000" points="1100.8198,-1102 1100.8198,-1121 1188.8198,-1121 1188.8198,-1102 1100.8198,-1102"/>
+<text text-anchor="start" x="1112.8198" y="-1108.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; sampleId</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Order&#45;&gt;com.roche.udw.ddd.workflow_management.Sample -->
+<g id="edge2" class="edge">
+<title>com.roche.udw.ddd.workflow_management.Order&#45;&gt;com.roche.udw.ddd.workflow_management.Sample</title>
+<path fill="none" stroke="#000000" d="M1259.8828,-1437.3928C1232.2299,-1363.9983 1179.9431,-1225.2221 1156.5953,-1163.2538"/>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;Sample&#45;Info&#45;entered -->
+<g id="node10" class="node">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;Sample&#45;Info&#45;entered</title>
+<g id="a_node10"><a xlink:title="Sample Info entered">
+<polygon fill="#f2f2f2" stroke="#000000" points="198.3198,-1512.5 35.3198,-1512.5 35.3198,-1457.5 198.3198,-1457.5 198.3198,-1512.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="35.3198,-1457.5 35.3198,-1512.5 198.3198,-1512.5 198.3198,-1457.5 35.3198,-1457.5"/>
+<polygon fill="none" stroke="#000000" points="36.8198,-1476 36.8198,-1511 197.8198,-1511 197.8198,-1476 36.8198,-1476"/>
+<text text-anchor="start" x="47.8198" y="-1491.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">Sample Info entered</text>
+<polygon fill="none" stroke="#000000" points="36.8198,-1458 36.8198,-1475 197.8198,-1475 197.8198,-1458 36.8198,-1458"/>
+<text text-anchor="start" x="95.8198" y="-1464" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Lab Tech</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;Sample&#45;Info&#45;entered&#45;&gt;com.roche.udw.ddd.tenant.Tenant -->
+<g id="edge21" class="edge">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;Sample&#45;Info&#45;entered&#45;&gt;com.roche.udw.ddd.tenant.Tenant</title>
+<path fill="none" stroke="#0000ff" d="M104.9958,-1457.4728C58.6079,-1344.7515 -99.1618,-912.5434 93.8198,-662 215.7002,-503.7657 871.8584,-419.9042 1060.2302,-398.8494"/>
+</g>
+<!-- com.roche.udw.ddd.lis.Lis -->
+<g id="node11" class="node">
+<title>com.roche.udw.ddd.lis.Lis</title>
+<g id="a_node11"><a xlink:title="Lis">
+<polygon fill="#f2f2f2" stroke="#000000" points="503.3198,-1856 404.3198,-1856 404.3198,-1794 503.3198,-1794 503.3198,-1856"/>
+<polygon fill="#841de2" stroke="transparent" points="404.3198,-1794 404.3198,-1856 503.3198,-1856 503.3198,-1794 404.3198,-1794"/>
+<polygon fill="none" stroke="#000000" points="405.8198,-1815 405.8198,-1855 502.8198,-1855 502.8198,-1815 405.8198,-1815"/>
+<text text-anchor="start" x="441.8198" y="-1832.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Lis</text>
+<polygon fill="none" stroke="#000000" points="405.8198,-1795 405.8198,-1814 502.8198,-1814 502.8198,-1795 405.8198,-1795"/>
+<text text-anchor="start" x="408.8198" y="-1801.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ enterSample</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.lis.Lis&#45;&gt;com.roche.udw.ddd.tenant.Tenant&#45;Sample&#45;Info&#45;entered -->
+<g id="edge23" class="edge">
+<title>com.roche.udw.ddd.lis.Lis&#45;&gt;com.roche.udw.ddd.tenant.Tenant&#45;Sample&#45;Info&#45;entered</title>
+<path fill="none" stroke="#0000ff" d="M423.0199,-1793.9259C357.7009,-1728.0255 206.1899,-1575.1657 144.1024,-1512.5255"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Sample&#45;Sample&#45;Info&#45;entered -->
+<g id="node12" class="node">
+<title>com.roche.udw.ddd.workflow_management.Sample&#45;Sample&#45;Info&#45;entered</title>
+<g id="a_node12"><a xlink:title="Sample Info entered">
+<polygon fill="#f2f2f2" stroke="#000000" points="1507.3198,-1503.5 1344.3198,-1503.5 1344.3198,-1466.5 1507.3198,-1466.5 1507.3198,-1503.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="1344.3198,-1466.5 1344.3198,-1503.5 1507.3198,-1503.5 1507.3198,-1466.5 1344.3198,-1466.5"/>
+<polygon fill="none" stroke="#000000" points="1345.8198,-1467 1345.8198,-1502 1506.8198,-1502 1506.8198,-1467 1345.8198,-1467"/>
+<text text-anchor="start" x="1356.8198" y="-1482.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">Sample Info entered</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.lis.Lis&#45;&gt;com.roche.udw.ddd.workflow_management.Sample&#45;Sample&#45;Info&#45;entered -->
+<g id="edge22" class="edge">
+<title>com.roche.udw.ddd.lis.Lis&#45;&gt;com.roche.udw.ddd.workflow_management.Sample&#45;Sample&#45;Info&#45;entered</title>
+<path fill="none" stroke="#0000ff" d="M503.4646,-1818.1351C642.7548,-1797.2842 1046.0892,-1725.9198 1337.8198,-1563.5 1366.0822,-1547.765 1392.9792,-1521.5506 1409.4305,-1503.7862"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Sample&#45;Sample&#45;Info&#45;entered&#45;&gt;com.roche.udw.ddd.workflow_management.Sample -->
+<g id="edge24" class="edge">
+<title>com.roche.udw.ddd.workflow_management.Sample&#45;Sample&#45;Info&#45;entered&#45;&gt;com.roche.udw.ddd.workflow_management.Sample</title>
+<path fill="none" stroke="#0000ff" d="M1410.712,-1466.0212C1364.7711,-1408.309 1226.4201,-1234.5085 1169.5949,-1163.1232"/>
+</g>
+<!-- com.roche.udw.ddd.ordering.HyperDesignInternalTools&#45;TE&#45;Probes/Primers&#45;purchased -->
+<g id="node13" class="node">
+<title>com.roche.udw.ddd.ordering.HyperDesignInternalTools&#45;TE&#45;Probes/Primers&#45;purchased</title>
+<g id="a_node13"><a xlink:title="TE Probes/Primers purchased">
+<polygon fill="#f2f2f2" stroke="#000000" points="3339.3198,-1512.5 3114.3198,-1512.5 3114.3198,-1457.5 3339.3198,-1457.5 3339.3198,-1512.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="3114.3198,-1457.5 3114.3198,-1512.5 3339.3198,-1512.5 3339.3198,-1457.5 3114.3198,-1457.5"/>
+<polygon fill="none" stroke="#000000" points="3115.8198,-1476 3115.8198,-1511 3338.8198,-1511 3338.8198,-1476 3115.8198,-1476"/>
+<text text-anchor="start" x="3126.8198" y="-1491.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">TE Probes/Primers purchased</text>
+<polygon fill="none" stroke="#000000" points="3115.8198,-1458 3115.8198,-1475 3338.8198,-1475 3338.8198,-1458 3115.8198,-1458"/>
+<text text-anchor="start" x="3205.3198" y="-1464" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Affiliates</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.ordering.HyperDesignInternalTools -->
+<g id="node28" class="node">
+<title>com.roche.udw.ddd.ordering.HyperDesignInternalTools</title>
+<g id="a_node28"><a xlink:title="HyperDesignInternalTools">
+<polygon fill="#f2f2f2" stroke="#000000" points="3066.3198,-1163 2813.3198,-1163 2813.3198,-1101 3066.3198,-1101 3066.3198,-1163"/>
+<polygon fill="#c04633" stroke="transparent" points="2813.3198,-1101 2813.3198,-1163 3066.3198,-1163 3066.3198,-1101 2813.3198,-1101"/>
+<polygon fill="none" stroke="#000000" points="2814.8198,-1122 2814.8198,-1162 3065.8198,-1162 3065.8198,-1122 2814.8198,-1122"/>
+<text text-anchor="start" x="2825.8198" y="-1139.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">HyperDesignInternalTools</text>
+<polygon fill="none" stroke="#000000" points="2814.8198,-1102 2814.8198,-1121 3065.8198,-1121 3065.8198,-1102 2814.8198,-1102"/>
+<text text-anchor="start" x="2905.8198" y="-1108.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderKits</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.ordering.HyperDesignInternalTools&#45;TE&#45;Probes/Primers&#45;purchased&#45;&gt;com.roche.udw.ddd.ordering.HyperDesignInternalTools -->
+<g id="edge25" class="edge">
+<title>com.roche.udw.ddd.ordering.HyperDesignInternalTools&#45;TE&#45;Probes/Primers&#45;purchased&#45;&gt;com.roche.udw.ddd.ordering.HyperDesignInternalTools</title>
+<path fill="none" stroke="#0000ff" d="M3204.2994,-1457.3007C3151.574,-1392.4504 3020.4067,-1231.1191 2965.0768,-1163.0653"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.ShoppingList -->
+<g id="node14" class="node">
+<title>com.roche.udw.ddd.workflow_design.ShoppingList</title>
+<g id="a_node14"><a xlink:title="ShoppingList">
+<polygon fill="#f2f2f2" stroke="#000000" points="2622.8198,-1879 2464.8198,-1879 2464.8198,-1771 2622.8198,-1771 2622.8198,-1879"/>
+<polygon fill="#c04633" stroke="transparent" points="2464.8198,-1771 2464.8198,-1879 2622.8198,-1879 2622.8198,-1771 2464.8198,-1771"/>
+<polygon fill="none" stroke="#000000" points="2465.8198,-1838 2465.8198,-1878 2621.8198,-1878 2621.8198,-1838 2465.8198,-1838"/>
+<text text-anchor="start" x="2485.8198" y="-1855.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">ShoppingList</text>
+<polygon fill="none" stroke="#000000" points="2465.8198,-1818 2465.8198,-1837 2621.8198,-1837 2621.8198,-1818 2465.8198,-1818"/>
+<text text-anchor="start" x="2512.3198" y="-1824.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; workflow</text>
+<polygon fill="none" stroke="#000000" points="2465.8198,-1772 2465.8198,-1817 2621.8198,-1817 2621.8198,-1772 2465.8198,-1772"/>
+<text text-anchor="start" x="2479.3198" y="-1804.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createShoppingList</text>
+<text text-anchor="start" x="2468.8198" y="-1791.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderTEProbesPrimers</text>
+<text text-anchor="start" x="2509.3198" y="-1778.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderKits</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.ShoppingList&#45;&gt;com.roche.udw.ddd.ordering.HyperDesignInternalTools&#45;TE&#45;Probes/Primers&#45;purchased -->
+<g id="edge27" class="edge">
+<title>com.roche.udw.ddd.workflow_design.ShoppingList&#45;&gt;com.roche.udw.ddd.ordering.HyperDesignInternalTools&#45;TE&#45;Probes/Primers&#45;purchased</title>
+<path fill="none" stroke="#0000ff" d="M2623.2667,-1792.2104C2733.7238,-1745.6901 2938.9297,-1655.869 3105.8198,-1563.5 3133.8629,-1547.9789 3164.1129,-1528.3539 3187.3521,-1512.6092"/>
+</g>
+<!-- com.roche.udw.ddd.ordering.RocheWebsite&#45;Kits&#45;purchased -->
+<g id="node15" class="node">
+<title>com.roche.udw.ddd.ordering.RocheWebsite&#45;Kits&#45;purchased</title>
+<g id="a_node15"><a xlink:title="Kits purchased">
+<polygon fill="#f2f2f2" stroke="#000000" points="3096.3198,-1512.5 2971.3198,-1512.5 2971.3198,-1457.5 3096.3198,-1457.5 3096.3198,-1512.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="2971.3198,-1457.5 2971.3198,-1512.5 3096.3198,-1512.5 3096.3198,-1457.5 2971.3198,-1457.5"/>
+<polygon fill="none" stroke="#000000" points="2972.8198,-1476 2972.8198,-1511 3095.8198,-1511 3095.8198,-1476 2972.8198,-1476"/>
+<text text-anchor="start" x="2983.8198" y="-1491.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">Kits purchased</text>
+<polygon fill="none" stroke="#000000" points="2972.8198,-1458 2972.8198,-1475 3095.8198,-1475 3095.8198,-1458 2972.8198,-1458"/>
+<text text-anchor="start" x="3004.3198" y="-1464" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Lab Director</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.ShoppingList&#45;&gt;com.roche.udw.ddd.ordering.RocheWebsite&#45;Kits&#45;purchased -->
+<g id="edge26" class="edge">
+<title>com.roche.udw.ddd.workflow_design.ShoppingList&#45;&gt;com.roche.udw.ddd.ordering.RocheWebsite&#45;Kits&#45;purchased</title>
+<path fill="none" stroke="#0000ff" d="M2623.1675,-1782.0731C2709.0998,-1733.9539 2848.4105,-1651.1215 2956.8198,-1563.5 2975.8241,-1548.1398 2995.0741,-1528.5148 3009.573,-1512.7299"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.ShoppingList&#45;&gt;com.roche.udw.ddd.workflow_design.Workflow -->
+<g id="edge4" class="edge">
+<title>com.roche.udw.ddd.workflow_design.ShoppingList&#45;&gt;com.roche.udw.ddd.workflow_design.Workflow</title>
+<path fill="none" stroke="#000000" d="M2504.8875,-1770.75C2462.9762,-1712.3491 2396.1569,-1619.2403 2350.251,-1555.273"/>
+</g>
+<!-- com.roche.udw.ddd.ordering.RocheWebsite -->
+<g id="node27" class="node">
+<title>com.roche.udw.ddd.ordering.RocheWebsite</title>
+<g id="a_node27"><a xlink:title="RocheWebsite">
+<polygon fill="#f2f2f2" stroke="#000000" points="2795.3198,-1163 2646.3198,-1163 2646.3198,-1101 2795.3198,-1101 2795.3198,-1163"/>
+<polygon fill="#c04633" stroke="transparent" points="2646.3198,-1101 2646.3198,-1163 2795.3198,-1163 2795.3198,-1101 2646.3198,-1101"/>
+<polygon fill="none" stroke="#000000" points="2647.8198,-1122 2647.8198,-1162 2794.8198,-1162 2794.8198,-1122 2647.8198,-1122"/>
+<text text-anchor="start" x="2658.8198" y="-1139.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">RocheWebsite</text>
+<polygon fill="none" stroke="#000000" points="2647.8198,-1102 2647.8198,-1121 2794.8198,-1121 2794.8198,-1102 2647.8198,-1102"/>
+<text text-anchor="start" x="2686.8198" y="-1108.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ orderKits</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.ordering.RocheWebsite&#45;Kits&#45;purchased&#45;&gt;com.roche.udw.ddd.ordering.RocheWebsite -->
+<g id="edge28" class="edge">
+<title>com.roche.udw.ddd.ordering.RocheWebsite&#45;Kits&#45;purchased&#45;&gt;com.roche.udw.ddd.ordering.RocheWebsite</title>
+<path fill="none" stroke="#0000ff" d="M3009.2592,-1457.3007C2951.7574,-1392.4504 2808.7072,-1231.1191 2748.3649,-1163.0653"/>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;created -->
+<g id="node16" class="node">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;created</title>
+<g id="a_node16"><a xlink:title="workflow created">
+<polygon fill="#f2f2f2" stroke="#000000" points="2974.3198,-787 2831.3198,-787 2831.3198,-732 2974.3198,-732 2974.3198,-787"/>
+<polygon fill="#e9e40e" stroke="transparent" points="2831.3198,-732 2831.3198,-787 2974.3198,-787 2974.3198,-732 2831.3198,-732"/>
+<polygon fill="none" stroke="#000000" points="2832.8198,-750.5 2832.8198,-785.5 2973.8198,-785.5 2973.8198,-750.5 2832.8198,-750.5"/>
+<text text-anchor="start" x="2843.8198" y="-765.9" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">workflow created</text>
+<polygon fill="none" stroke="#000000" points="2832.8198,-732.5 2832.8198,-749.5 2973.8198,-749.5 2973.8198,-732.5 2832.8198,-732.5"/>
+<text text-anchor="start" x="2873.3198" y="-738.5" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Lab Director</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;created&#45;&gt;com.roche.udw.ddd.tenant.Tenant -->
+<g id="edge29" class="edge">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;created&#45;&gt;com.roche.udw.ddd.tenant.Tenant</title>
+<path fill="none" stroke="#0000ff" d="M2837.2191,-731.9842C2783.5853,-710.3807 2705.3631,-680.8912 2634.8198,-662 2066.4843,-509.8022 1355.2313,-421.5098 1161.5068,-399.1671"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowProcess -->
+<g id="node17" class="node">
+<title>com.roche.udw.ddd.workflow_design.WorkflowProcess</title>
+<g id="a_node17"><a xlink:title="WorkflowProcess">
+<polygon fill="#f2f2f2" stroke="#000000" points="2446.8198,-1872.5 2234.8198,-1872.5 2234.8198,-1777.5 2446.8198,-1777.5 2446.8198,-1872.5"/>
+<polygon fill="#c04633" stroke="transparent" points="2234.8198,-1777.5 2234.8198,-1872.5 2446.8198,-1872.5 2446.8198,-1777.5 2234.8198,-1777.5"/>
+<polygon fill="none" stroke="#000000" points="2235.8198,-1831 2235.8198,-1871 2445.8198,-1871 2445.8198,-1831 2235.8198,-1831"/>
+<text text-anchor="start" x="2265.3198" y="-1848.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">WorkflowProcess</text>
+<polygon fill="none" stroke="#000000" points="2235.8198,-1811 2235.8198,-1830 2445.8198,-1830 2445.8198,-1811 2235.8198,-1811"/>
+<text text-anchor="start" x="2309.3198" y="-1817.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; workflow</text>
+<polygon fill="none" stroke="#000000" points="2235.8198,-1778 2235.8198,-1810 2445.8198,-1810 2445.8198,-1778 2235.8198,-1778"/>
+<text text-anchor="start" x="2286.3198" y="-1797.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ createWorkflow</text>
+<text text-anchor="start" x="2238.8198" y="-1784.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ publishToWorkflowManagement</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;created -->
+<g id="edge35" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.tenant.Tenant&#45;workflow&#45;created</title>
+<path fill="none" stroke="#0000ff" d="M2441.7325,-1777.464C2446.4906,-1775.2701 2451.2047,-1773.1064 2455.8198,-1771 2662.8082,-1676.5293 2776.3488,-1736.7664 2923.8198,-1563.5 2968.048,-1511.5355 2937.7444,-1478.4639 2962.8198,-1415 3002.6464,-1314.2019 3052.2293,-1305.5684 3078.8198,-1200.5 3093.5949,-1142.1184 3094.3793,-1123.1775 3078.8198,-1065 3048.6927,-952.3537 2965.944,-838.1876 2925.5722,-787.1409"/>
+</g>
+<!-- com.roche.udw.ddd.panel.Panel&#45;Panel&#45;fetched -->
+<g id="node18" class="node">
+<title>com.roche.udw.ddd.panel.Panel&#45;Panel&#45;fetched</title>
+<g id="a_node18"><a xlink:title="Panel fetched">
+<polygon fill="#f2f2f2" stroke="#000000" points="1817.8198,-1503.5 1699.8198,-1503.5 1699.8198,-1466.5 1817.8198,-1466.5 1817.8198,-1503.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="1699.8198,-1466.5 1699.8198,-1503.5 1817.8198,-1503.5 1817.8198,-1466.5 1699.8198,-1466.5"/>
+<polygon fill="none" stroke="#000000" points="1700.8198,-1467 1700.8198,-1502 1816.8198,-1502 1816.8198,-1467 1700.8198,-1467"/>
+<text text-anchor="start" x="1711.8198" y="-1482.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">Panel fetched</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.panel.Panel&#45;Panel&#45;fetched -->
+<g id="edge34" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.panel.Panel&#45;Panel&#45;fetched</title>
+<path fill="none" stroke="#0000ff" d="M2234.5793,-1784.7988C2125.8404,-1740.5836 1955.2057,-1662.4802 1827.8198,-1563.5 1805.4681,-1546.1325 1784.7352,-1520.7816 1771.9482,-1503.6263"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;NAE/SPA/Sequencing&#45;Params&#45;fetched -->
+<g id="node19" class="node">
+<title>com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;NAE/SPA/Sequencing&#45;Params&#45;fetched</title>
+<g id="a_node19"><a xlink:title="NAE/SPA/Sequencing Params fetched">
+<polygon fill="#f2f2f2" stroke="#000000" points="2914.8198,-1503.5 2638.8198,-1503.5 2638.8198,-1466.5 2914.8198,-1466.5 2914.8198,-1503.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="2638.8198,-1466.5 2638.8198,-1503.5 2914.8198,-1503.5 2914.8198,-1466.5 2638.8198,-1466.5"/>
+<polygon fill="none" stroke="#000000" points="2639.8198,-1467 2639.8198,-1502 2913.8198,-1502 2913.8198,-1467 2639.8198,-1467"/>
+<text text-anchor="start" x="2650.8198" y="-1482.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">NAE/SPA/Sequencing Params fetched</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;NAE/SPA/Sequencing&#45;Params&#45;fetched -->
+<g id="edge33" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;NAE/SPA/Sequencing&#45;Params&#45;fetched</title>
+<path fill="none" stroke="#0000ff" d="M2401.9028,-1777.3665C2499.6318,-1701.1558 2686.8645,-1555.1486 2752.9809,-1503.59"/>
+</g>
+<!-- com.roche.udw.ddd.panel.TeEnrichmentParams&#45;LP/TE&#45;params&#45;fetched -->
+<g id="node20" class="node">
+<title>com.roche.udw.ddd.panel.TeEnrichmentParams&#45;LP/TE&#45;params&#45;fetched</title>
+<g id="a_node20"><a xlink:title="LP/TE params fetched">
+<polygon fill="#f2f2f2" stroke="#000000" points="2009.3198,-1503.5 1836.3198,-1503.5 1836.3198,-1466.5 2009.3198,-1466.5 2009.3198,-1503.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="1836.3198,-1466.5 1836.3198,-1503.5 2009.3198,-1503.5 2009.3198,-1466.5 1836.3198,-1466.5"/>
+<polygon fill="none" stroke="#000000" points="1837.8198,-1467 1837.8198,-1502 2008.8198,-1502 2008.8198,-1467 1837.8198,-1467"/>
+<text text-anchor="start" x="1848.8198" y="-1482.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">LP/TE params fetched</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.panel.TeEnrichmentParams&#45;LP/TE&#45;params&#45;fetched -->
+<g id="edge32" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.panel.TeEnrichmentParams&#45;LP/TE&#45;params&#45;fetched</title>
+<path fill="none" stroke="#0000ff" d="M2282.0141,-1777.3415C2217.4229,-1724.9714 2110.6541,-1638.3364 2018.8198,-1563.5 1993.7854,-1543.0994 1965.1292,-1519.6549 1945.6904,-1503.7376"/>
+</g>
+<!-- com.roche.udw.ddd.analysis.AnalysisParams&#45;Analysis&#45;params&#45;fetched -->
+<g id="node21" class="node">
+<title>com.roche.udw.ddd.analysis.AnalysisParams&#45;Analysis&#45;params&#45;fetched</title>
+<g id="a_node21"><a xlink:title="Analysis params fetched">
+<polygon fill="#f2f2f2" stroke="#000000" points="2218.3198,-1503.5 2027.3198,-1503.5 2027.3198,-1466.5 2218.3198,-1466.5 2218.3198,-1503.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="2027.3198,-1466.5 2027.3198,-1503.5 2218.3198,-1503.5 2218.3198,-1466.5 2027.3198,-1466.5"/>
+<polygon fill="none" stroke="#000000" points="2028.8198,-1467 2028.8198,-1502 2217.8198,-1502 2217.8198,-1467 2028.8198,-1467"/>
+<text text-anchor="start" x="2039.8198" y="-1482.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">Analysis params fetched</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.analysis.AnalysisParams&#45;Analysis&#45;params&#45;fetched -->
+<g id="edge31" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.analysis.AnalysisParams&#45;Analysis&#45;params&#45;fetched</title>
+<path fill="none" stroke="#0000ff" d="M2310.2783,-1777.3665C2261.4138,-1701.1558 2167.7974,-1555.1486 2134.7392,-1503.59"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Workflow&#45;workflow&#45;published -->
+<g id="node22" class="node">
+<title>com.roche.udw.ddd.workflow_management.Workflow&#45;workflow&#45;published</title>
+<g id="a_node22"><a xlink:title="workflow published">
+<polygon fill="#f2f2f2" stroke="#000000" points="1681.8198,-1512.5 1525.8198,-1512.5 1525.8198,-1457.5 1681.8198,-1457.5 1681.8198,-1512.5"/>
+<polygon fill="#e9e40e" stroke="transparent" points="1525.8198,-1457.5 1525.8198,-1512.5 1681.8198,-1512.5 1681.8198,-1457.5 1525.8198,-1457.5"/>
+<polygon fill="none" stroke="#000000" points="1526.8198,-1476 1526.8198,-1511 1680.8198,-1511 1680.8198,-1476 1526.8198,-1476"/>
+<text text-anchor="start" x="1537.8198" y="-1491.4" font-family="Bitstream Vera Sans" font-weight="bold" font-size="12.00" fill="#000000">workflow published</text>
+<polygon fill="none" stroke="#000000" points="1526.8198,-1458 1526.8198,-1475 1680.8198,-1475 1680.8198,-1458 1526.8198,-1458"/>
+<text text-anchor="start" x="1573.8198" y="-1464" font-family="Bitstream Vera Sans" font-size="10.00" fill="#000000">Lab Director</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.workflow_management.Workflow&#45;workflow&#45;published -->
+<g id="edge30" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.workflow_management.Workflow&#45;workflow&#45;published</title>
+<path fill="none" stroke="#0000ff" d="M2234.6942,-1794.9866C2101.3669,-1754.5092 1868.5268,-1674.4902 1690.8198,-1563.5 1668.2159,-1549.3823 1645.9642,-1529.1575 1629.6232,-1512.7726"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.workflow_design.Workflow -->
+<g id="edge8" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowProcess&#45;&gt;com.roche.udw.ddd.workflow_design.Workflow</title>
+<path fill="none" stroke="#000000" d="M2335.0757,-1777.3665C2328.1005,-1719.5231 2316.2767,-1621.4721 2308.2642,-1555.0267"/>
+</g>
+<!-- com.roche.udw.ddd.panel.Panel -->
+<g id="node23" class="node">
+<title>com.roche.udw.ddd.panel.Panel</title>
+<g id="a_node23"><a xlink:title="Panel">
+<polygon fill="#f2f2f2" stroke="#000000" points="1677.3198,-1153 1604.3198,-1153 1604.3198,-1111 1677.3198,-1111 1677.3198,-1153"/>
+<polygon fill="#c04633" stroke="transparent" points="1604.3198,-1111 1604.3198,-1153 1677.3198,-1153 1677.3198,-1111 1604.3198,-1111"/>
+<polygon fill="none" stroke="#000000" points="1605.8198,-1112 1605.8198,-1152 1676.8198,-1152 1676.8198,-1112 1605.8198,-1112"/>
+<text text-anchor="start" x="1616.8198" y="-1129.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Panel</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.panel.Panel&#45;Panel&#45;fetched&#45;&gt;com.roche.udw.ddd.panel.Panel -->
+<g id="edge36" class="edge">
+<title>com.roche.udw.ddd.panel.Panel&#45;Panel&#45;fetched&#45;&gt;com.roche.udw.ddd.panel.Panel</title>
+<path fill="none" stroke="#0000ff" d="M1752.4756,-1466.0212C1732.2263,-1405.4448 1669.224,-1216.972 1647.9327,-1153.2786"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;NAE/SPA/Sequencing&#45;Params&#45;fetched&#45;&gt;com.roche.udw.ddd.workflow_management.FlexMethodProcess -->
+<g id="edge37" class="edge">
+<title>com.roche.udw.ddd.workflow_management.FlexMethodProcess&#45;NAE/SPA/Sequencing&#45;Params&#45;fetched&#45;&gt;com.roche.udw.ddd.workflow_management.FlexMethodProcess</title>
+<path fill="none" stroke="#0000ff" d="M2768.2734,-1503.7927C2749.2584,-1542.9977 2699.2615,-1632.7245 2625.8198,-1667.25 2485.4464,-1733.2406 1365.7944,-1741.8849 1229.8198,-1667.25 1171.1311,-1635.0365 1137.8888,-1559.1395 1123.1404,-1516.1386"/>
+</g>
+<!-- com.roche.udw.ddd.panel.TeEnrichmentParams -->
+<g id="node24" class="node">
+<title>com.roche.udw.ddd.panel.TeEnrichmentParams</title>
+<g id="a_node24"><a xlink:title="TeEnrichmentParams">
+<polygon fill="#f2f2f2" stroke="#000000" points="1904.3198,-1169.5 1695.3198,-1169.5 1695.3198,-1094.5 1904.3198,-1094.5 1904.3198,-1169.5"/>
+<polygon fill="#c04633" stroke="transparent" points="1695.3198,-1094.5 1695.3198,-1169.5 1904.3198,-1169.5 1904.3198,-1094.5 1695.3198,-1094.5"/>
+<polygon fill="none" stroke="#000000" points="1696.8198,-1128 1696.8198,-1168 1903.8198,-1168 1903.8198,-1128 1696.8198,-1128"/>
+<text text-anchor="start" x="1707.8198" y="-1145.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">TeEnrichmentParams</text>
+<polygon fill="none" stroke="#000000" points="1696.8198,-1095 1696.8198,-1127 1903.8198,-1127 1903.8198,-1095 1696.8198,-1095"/>
+<text text-anchor="start" x="1747.3198" y="-1114.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; multiplexPooling</text>
+<text text-anchor="start" x="1766.8198" y="-1101.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; enableQC</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.panel.TeEnrichmentParams&#45;LP/TE&#45;params&#45;fetched&#45;&gt;com.roche.udw.ddd.panel.TeEnrichmentParams -->
+<g id="edge38" class="edge">
+<title>com.roche.udw.ddd.panel.TeEnrichmentParams&#45;LP/TE&#45;params&#45;fetched&#45;&gt;com.roche.udw.ddd.panel.TeEnrichmentParams</title>
+<path fill="none" stroke="#0000ff" d="M1916.2068,-1466.0212C1896.6962,-1410.0274 1839.1087,-1244.756 1812.9793,-1169.7667"/>
+</g>
+<!-- com.roche.udw.ddd.analysis.AnalysisParams -->
+<g id="node36" class="node">
+<title>com.roche.udw.ddd.analysis.AnalysisParams</title>
+<g id="a_node36"><a xlink:title="AnalysisParams">
+<polygon fill="#f2f2f2" stroke="#000000" points="2210.8198,-1153 2046.8198,-1153 2046.8198,-1111 2210.8198,-1111 2210.8198,-1153"/>
+<polygon fill="#c04633" stroke="transparent" points="2046.8198,-1111 2046.8198,-1153 2210.8198,-1153 2210.8198,-1111 2046.8198,-1111"/>
+<polygon fill="none" stroke="#000000" points="2047.8198,-1112 2047.8198,-1152 2209.8198,-1152 2209.8198,-1112 2047.8198,-1112"/>
+<text text-anchor="start" x="2058.8198" y="-1129.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">AnalysisParams</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.analysis.AnalysisParams&#45;Analysis&#45;params&#45;fetched&#45;&gt;com.roche.udw.ddd.analysis.AnalysisParams -->
+<g id="edge39" class="edge">
+<title>com.roche.udw.ddd.analysis.AnalysisParams&#45;Analysis&#45;params&#45;fetched&#45;&gt;com.roche.udw.ddd.analysis.AnalysisParams</title>
+<path fill="none" stroke="#0000ff" d="M2123.1424,-1466.0212C2124.172,-1405.4448 2127.3755,-1216.972 2128.4581,-1153.2786"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_management.Workflow&#45;workflow&#45;published&#45;&gt;com.roche.udw.ddd.workflow_management.Workflow -->
+<g id="edge40" class="edge">
+<title>com.roche.udw.ddd.workflow_management.Workflow&#45;workflow&#45;published&#45;&gt;com.roche.udw.ddd.workflow_management.Workflow</title>
+<path fill="none" stroke="#0000ff" d="M1577.376,-1457.3007C1517.4046,-1394.482 1371.0061,-1241.1328 1302.8398,-1169.7301"/>
+</g>
+<!-- com.roche.udw.ddd.tenant.User -->
+<g id="node31" class="node">
+<title>com.roche.udw.ddd.tenant.User</title>
+<g id="a_node31"><a xlink:title="Roles: Each role defines a set of permission in UDW. &#160;A user could have multiple roles.&#10;">
+<polygon fill="#f2f2f2" stroke="#000000" points="1143.3198,-117 1078.3198,-117 1078.3198,-16 1143.3198,-16 1143.3198,-117"/>
+<polygon fill="#ffa500" stroke="transparent" points="1078.3198,-16 1078.3198,-117 1143.3198,-117 1143.3198,-16 1078.3198,-16"/>
+<polygon fill="none" stroke="#000000" points="1079.8198,-75.5 1079.8198,-115.5 1142.8198,-115.5 1142.8198,-75.5 1079.8198,-75.5"/>
+<text text-anchor="start" x="1090.8198" y="-92.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">User</text>
+<polygon fill="none" stroke="#000000" points="1079.8198,-16.5 1079.8198,-74.5 1142.8198,-74.5 1142.8198,-16.5 1079.8198,-16.5"/>
+<text text-anchor="start" x="1101.8198" y="-61.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; id</text>
+<text text-anchor="start" x="1089.8198" y="-48.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; name</text>
+<text text-anchor="start" x="1092.3198" y="-35.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; roles</text>
+<text text-anchor="start" x="1095.3198" y="-22.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; JTW</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.tenant.Tenant&#45;&gt;com.roche.udw.ddd.tenant.User -->
+<g id="edge3" class="edge">
+<title>com.roche.udw.ddd.tenant.Tenant&#45;&gt;com.roche.udw.ddd.tenant.User</title>
+<path fill="none" stroke="#000000" d="M1110.8198,-332.7602C1110.8198,-270.7013 1110.8198,-175.426 1110.8198,-117.2574"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowTemplate -->
+<g id="node33" class="node">
+<title>com.roche.udw.ddd.workflow_design.WorkflowTemplate</title>
+<g id="a_node33"><a xlink:title="WorkflowTemplate">
+<polygon fill="#f2f2f2" stroke="#000000" points="2453.3198,-1199 2266.3198,-1199 2266.3198,-1065 2453.3198,-1065 2453.3198,-1199"/>
+<polygon fill="#c04633" stroke="transparent" points="2266.3198,-1065 2266.3198,-1199 2453.3198,-1199 2453.3198,-1065 2266.3198,-1065"/>
+<polygon fill="none" stroke="#000000" points="2267.8198,-1158 2267.8198,-1198 2452.8198,-1198 2452.8198,-1158 2267.8198,-1158"/>
+<text text-anchor="start" x="2278.8198" y="-1175.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">WorkflowTemplate</text>
+<polygon fill="none" stroke="#000000" points="2267.8198,-1099 2267.8198,-1157 2452.8198,-1157 2452.8198,-1099 2267.8198,-1099"/>
+<text text-anchor="start" x="2350.8198" y="-1144.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; id</text>
+<text text-anchor="start" x="2334.3198" y="-1131.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; version</text>
+<text text-anchor="start" x="2295.3198" y="-1118.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; target_assay_profile</text>
+<text text-anchor="start" x="2323.8198" y="-1105.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; ecosystem</text>
+<polygon fill="none" stroke="#000000" points="2267.8198,-1066 2267.8198,-1098 2452.8198,-1098 2452.8198,-1066 2267.8198,-1066"/>
+<text text-anchor="start" x="2272.3198" y="-1085.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ get_workflow_template_list</text>
+<text text-anchor="start" x="2303.8198" y="-1072.4" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">+ create_workflow</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.Workflow&#45;&gt;com.roche.udw.ddd.workflow_design.WorkflowTemplate -->
+<g id="edge5" class="edge">
+<title>com.roche.udw.ddd.workflow_design.Workflow&#45;&gt;com.roche.udw.ddd.workflow_design.WorkflowTemplate</title>
+<path fill="none" stroke="#000000" d="M2311.7456,-1414.8365C2322.4083,-1352.1041 2337.9276,-1260.7989 2348.4251,-1199.0389"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.TargetAssayProfile -->
+<g id="node34" class="node">
+<title>com.roche.udw.ddd.workflow_design.TargetAssayProfile</title>
+<g id="a_node34"><a xlink:title="Application: &#10;Specimen_type: &#10;">
+<polygon fill="#f2f2f2" stroke="#000000" points="2601.3198,-849 2412.3198,-849 2412.3198,-670 2601.3198,-670 2601.3198,-849"/>
+<polygon fill="#ffa500" stroke="transparent" points="2412.3198,-670 2412.3198,-849 2601.3198,-849 2601.3198,-670 2412.3198,-670"/>
+<polygon fill="none" stroke="#000000" points="2413.8198,-807.5 2413.8198,-847.5 2600.8198,-847.5 2600.8198,-807.5 2413.8198,-807.5"/>
+<text text-anchor="start" x="2424.8198" y="-824.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">TargetAssayProfile</text>
+<polygon fill="none" stroke="#000000" points="2413.8198,-670.5 2413.8198,-806.5 2600.8198,-806.5 2600.8198,-670.5 2413.8198,-670.5"/>
+<text text-anchor="start" x="2470.3198" y="-793.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; application</text>
+<text text-anchor="start" x="2457.8198" y="-780.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; specimen_type</text>
+<text text-anchor="start" x="2450.3198" y="-767.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; nucleic_acid_type</text>
+<text text-anchor="start" x="2467.3198" y="-754.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; read_length</text>
+<text text-anchor="start" x="2465.8198" y="-741.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; variant_type</text>
+<text text-anchor="start" x="2474.8198" y="-728.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; organism</text>
+<text text-anchor="start" x="2459.8198" y="-715.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; te_product_irn</text>
+<text text-anchor="start" x="2470.8198" y="-702.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; nae_kit_irn</text>
+<text text-anchor="start" x="2474.8198" y="-689.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; qc_kit_irn</text>
+<text text-anchor="start" x="2464.8198" y="-676.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; polish_kit_irn</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowTemplate&#45;&gt;com.roche.udw.ddd.workflow_design.TargetAssayProfile -->
+<g id="edge7" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowTemplate&#45;&gt;com.roche.udw.ddd.workflow_design.TargetAssayProfile</title>
+<path fill="none" stroke="#000000" d="M2386.2702,-1064.9743C2410.0765,-1004.6489 2445.2433,-915.5356 2471.4577,-849.1081"/>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.EcoSystem -->
+<g id="node35" class="node">
+<title>com.roche.udw.ddd.workflow_design.EcoSystem</title>
+<g id="a_node35"><a xlink:title="EcoSystem">
+<polygon fill="#f2f2f2" stroke="#000000" points="2393.8198,-810 2253.8198,-810 2253.8198,-709 2393.8198,-709 2393.8198,-810"/>
+<polygon fill="#ffa500" stroke="transparent" points="2253.8198,-709 2253.8198,-810 2393.8198,-810 2393.8198,-709 2253.8198,-709"/>
+<polygon fill="none" stroke="#000000" points="2254.8198,-768.5 2254.8198,-808.5 2392.8198,-808.5 2392.8198,-768.5 2254.8198,-768.5"/>
+<text text-anchor="start" x="2275.3198" y="-785.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">EcoSystem</text>
+<polygon fill="none" stroke="#000000" points="2254.8198,-709.5 2254.8198,-767.5 2392.8198,-767.5 2392.8198,-709.5 2254.8198,-709.5"/>
+<text text-anchor="start" x="2260.3198" y="-754.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; hasSequencingPrep</text>
+<text text-anchor="start" x="2276.8198" y="-741.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; hasSequencer</text>
+<text text-anchor="start" x="2273.8198" y="-728.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; sequencerType</text>
+<text text-anchor="start" x="2257.8198" y="-715.9" font-family="Bitstream Vera Sans" font-size="12.00" fill="#000000">&#45; hasAnalysisSoftware</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.workflow_design.WorkflowTemplate&#45;&gt;com.roche.udw.ddd.workflow_design.EcoSystem -->
+<g id="edge6" class="edge">
+<title>com.roche.udw.ddd.workflow_design.WorkflowTemplate&#45;&gt;com.roche.udw.ddd.workflow_design.EcoSystem</title>
+<path fill="none" stroke="#000000" d="M2353.3421,-1064.9743C2346.2671,-991.7669 2335.0947,-876.1641 2328.7156,-810.1577"/>
+</g>
+<!-- com.roche.udw.ddd.analysis.Analysis -->
+<g id="node37" class="node">
+<title>com.roche.udw.ddd.analysis.Analysis</title>
+<g id="a_node37"><a xlink:title="Analysis">
+<polygon fill="#f2f2f2" stroke="#000000" points="2028.3198,-1153 1929.3198,-1153 1929.3198,-1111 2028.3198,-1111 2028.3198,-1153"/>
+<polygon fill="#c04633" stroke="transparent" points="1929.3198,-1111 1929.3198,-1153 2028.3198,-1153 2028.3198,-1111 1929.3198,-1111"/>
+<polygon fill="none" stroke="#000000" points="1930.8198,-1112 1930.8198,-1152 2027.8198,-1152 2027.8198,-1112 1930.8198,-1112"/>
+<text text-anchor="start" x="1941.8198" y="-1129.2" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">Analysis</text>
+</a>
+</g>
+</g>
+<!-- com.roche.udw.ddd.nae.NAEStep -->
+<g id="node39" class="node">
+<title>com.roche.udw.ddd.nae.NAEStep</title>
+<g id="a_node39"><a xlink:title="NAEStep">
+<polygon fill="#f2f2f2" stroke="#000000" points="207.3198,-780.5 106.3198,-780.5 106.3198,-738.5 207.3198,-738.5 207.3198,-780.5"/>
+<polygon fill="#c04633" stroke="transparent" points="106.3198,-738.5 106.3198,-780.5 207.3198,-780.5 207.3198,-738.5 106.3198,-738.5"/>
+<polygon fill="none" stroke="#000000" points="107.8198,-739.5 107.8198,-779.5 206.8198,-779.5 206.8198,-739.5 107.8198,-739.5"/>
+<text text-anchor="start" x="118.8198" y="-756.7" font-family="Bitstream Vera Sans" font-weight="bold" font-size="16.00" fill="#000000">NAEStep</text>
+</a>
+</g>
 </g>
 </g>
 </svg>
